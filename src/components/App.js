@@ -17,11 +17,11 @@ function App() {
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/inscription" component={Inscription}></Route>
           <Route exact path="/connexion" component={Connexion}></Route>
-          <Route  path="/espacepro" component={EspacePro}></Route>
+          <Route path="/espacepro" component={EspacePro}></Route>
           <Route path="/espaceparents" component={EspaceParents}></Route>
           <Route path="/vieprivee" component={ViePrivee}></Route>
           <Route path="/mentions" component={Mentions}></Route>
-          <Route path='/contact' component={Contact}></Route>
+          <Route path="/contact" component={Contact}></Route>
         </Switch>
       </Router>
     </div>

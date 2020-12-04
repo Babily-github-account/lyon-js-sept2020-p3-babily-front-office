@@ -1,8 +1,7 @@
-import React from "react"
+import React from "react";
 
 const ViePrivee = () => {
-
-    return <div></div>
-}
+  return <div></div>;
+};
 
 export default ViePrivee;
