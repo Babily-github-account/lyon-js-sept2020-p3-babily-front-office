@@ -72,10 +72,10 @@ const Home = () => {
       <img className='simulator' src={Simulator} alt='simulateur' />
       <img className='train' src={Train} alt='train' />
       <img className='bandeau' src={Bandeau} alt='Beandeau' />
-      <div class='water'>
-        <div class='ripple-one'></div>
-        <div class='ripple-two'></div>
-        <div class='ripple-three'></div>
+      <div className='water'>
+        <div className='ripple-one'></div>
+        <div className='ripple-two'></div>
+        <div className='ripple-three'></div>
       </div>
       <Footer />
     </>
