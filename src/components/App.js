@@ -7,12 +7,15 @@ import EspaceParents from "./EspaceParents";
 import ViePrivee from "./ViePrivee";
 import Mentions from "./Mentions";
 import Contact from "./Contact";
+import Footer from "./Footer";
+import Header from "./Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Router>
+      <Header />
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/inscription" component={Inscription}></Route>
@@ -23,6 +26,7 @@ function App() {
           <Route path="/mentions" component={Mentions}></Route>
           <Route path="/contact" component={Contact}></Route>
         </Switch>
+      <Footer />
       </Router>
     </div>
   );

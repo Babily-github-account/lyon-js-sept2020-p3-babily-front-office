@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
-import Header from "./Header";
 import "../style/Home.css";
 import CalendrierHome from "../img/calendrier:HOME.png";
 import Formejaune from "../img/forme2:home.png";
@@ -18,7 +16,6 @@ import "../style/Footer.css";
 const Home = () => {
   return (
     <>
-      <Header />
       <main>
         <img className="formeBig" src={FormeBig} alt="forme jaune 2" />
         <img className="imgFille" src={ImageFille} alt="fillette" />
@@ -77,7 +74,6 @@ const Home = () => {
         <div className="ripple-two"></div>
         <div className="ripple-three"></div>
       </div>
-      <Footer />
     </>
   );
 };

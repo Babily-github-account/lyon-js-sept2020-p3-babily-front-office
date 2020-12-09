@@ -112,7 +112,7 @@ const Contact = () => {
           <div className="section-rendezvous">
             <Mailto
               email="email@email.com"
-              subject="Envoyer un mail"
+              subject={inputs.subject}
               body="Bonjour Babily! Après consultation de vos offres, je souhaite vous envoyer un mail"
             >
               <img
