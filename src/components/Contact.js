@@ -111,39 +111,43 @@ const Contact = () => {
               <img
                 src={IconeEnvoi}
                 alt="Envoyer un mail"
+                title="Envoyer un mail à Babily"
                 className="email-share-button"
               />
             </Mailto>
             <Mailto
               email="email@email.com"
-              subject="Envoyer un mail"
+              subject="Prendre un Café"
               body="Bonjour Babily! Après consultation de vos offres, je souhaite vous prendre un café avec un de vos consultants"
             >
               <img
                 src={Cafe}
                 alt="Prendre un Café"
+                title="Prendre un Café avec un consultant de Babily"
                 className="email-share-button"
               />
             </Mailto>
             <Mailto
               email="email@email.com"
-              subject="Envoyer un mail"
+              subject="Rendez-vous en Facetime"
               body="Bonjour Babily! Après consultation de vos offres, je souhaite m'entretenir avec vous en Visio"
             >
               <img
                 src={Facetime}
                 alt="Rendez-vous en Facetime"
+                title="Prendre un rendez-vous en Facetime avec Babily"
                 className="email-share-button facetime"
               />
             </Mailto>
             <Mailto
               email="email@email.com"
-              subject="Envoyer un mail"
+              subject="Prendre un rendez-vous en présentiel avec Babily"
               body="Bonjour Babily! Après consultation de vos offres, je souhaite m'entretenir avec vous en présentiel"
             >
               <img
                 src={MainsSerrees}
                 alt="Rendez-vous en présentiel"
+                title="Rendez-vous en présentiel"
                 className="email-share-button mainsserrees"
               />
             </Mailto>
