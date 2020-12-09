@@ -6,7 +6,80 @@
   margin: 0;
   padding: 0;
 }
+.fillevole{
+  float: left;
+  width: 50%;
+}
 
+.containerContact{
+  display: flex;
+  align-items: center;
+}
+.form {
+  float: right;
+  width: 40%;
+  height: 100%;
+  
+}
+
+.container-bloc1 input{
+  border-radius: 5px;
+  height: 50px;
+  background: white;
+}
+.container-bloc1 {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.container-bloc2 select {
+  height: 50px;
+  width: 90%;
+  border-radius: 5px;
+  background: white;
+}
+
+.container-bloc2 input {
+  height: 50px;
+  width: 90%;
+  background: #FFBB69;
+  color: white;
+}
+.container-bloc2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  margin: 10px;
+  
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  
+}
+.box3{
+  width: 100%;
+}
+.box2 textarea{
+  width: 100%;
+  height: 200PX;
+  border-radius: 5px;
+  background: white;
+  
+}
 .contactAnim {
   font-size: calc(16px + (32 - 16) * (100vw - 320px) / (1280 - 320));
   color: #17181c;
@@ -173,9 +246,24 @@
   font-family: "Montserrat Alternates", sans-serif;
   color: #ffbb69;
 }
+
+
+
+/*ICONS*/
+
+.section-rendezvous{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .email-share-button {
-  width: 20px;
-  height: 20px;
-  border-radius: 50;
-  margin-right: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.facetime{
+  background-color: #0575A5;
+}
+.mainsserrees{
+  background-color: #FCCE6B;
 }
