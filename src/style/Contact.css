@@ -173,7 +173,7 @@
   font-family: "Montserrat Alternates", sans-serif;
   color: #ffbb69;
 }
-.section-rendezvous{
+.section-rendezvous {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -183,9 +183,9 @@
   height: 80px;
   border-radius: 50px;
 }
-.facetime{
-  background-color: #0575A5;
+.facetime {
+  background-color: #0575a5;
 }
-.mainsserrees{
-  background-color: #FCCE6B;
+.mainsserrees {
+  background-color: #fcce6b;
 }

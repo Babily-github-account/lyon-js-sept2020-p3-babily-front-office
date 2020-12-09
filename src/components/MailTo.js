@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Mailto = ({ email, subject, body, children }) => {
   return (
     <a
       href={`mailto:${email}?subject=${
-        encodeURIComponent(subject) || ''
-      }&body=${encodeURIComponent(body) || ''}`}
+        encodeURIComponent(subject) || ""
+      }&body=${encodeURIComponent(body) || ""}`}
       rel="noopener noreferrer"
       target="_blank"
     >

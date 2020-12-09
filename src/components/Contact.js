@@ -103,47 +103,58 @@ const Contact = () => {
             ></textarea>
           </div>
           <div className="section-rendezvous">
-        <Mailto 
-          email="email@email.com"
-          subject="Envoyer un mail" 
-          body="Bonjour Babily! Après consultation de vos offres, je souhaite vous envoyer un mail" 
-        >
-            <img src={IconeEnvoi} alt="Envoyer un mail" className="email-share-button"/>
-          </Mailto>
-          <Mailto 
-          email="email@email.com"
-          subject="Envoyer un mail" 
-          body="Bonjour Babily! Après consultation de vos offres, je souhaite vous prendre un café avec un de vos consultants" 
-        >
-          <img src={Cafe} alt="Prendre un Café" className="email-share-button"/>
-        </Mailto>
-        <Mailto 
-          email="email@email.com"
-          subject="Envoyer un mail" 
-          body="Bonjour Babily! Après consultation de vos offres, je souhaite m'entretenir avec vous en Visio" 
-        >
-          <img src={Facetime} alt="Rendez-vous en Facetime" className="email-share-button facetime"/>
-        </Mailto>
-        <Mailto 
-          email="email@email.com"
-          subject="Envoyer un mail" 
-          body="Bonjour Babily! Après consultation de vos offres, je souhaite m'entretenir avec vous en présentiel" 
-        >
-          <img src={MainsSerrees} alt="Rendez-vous en présentiel" className="email-share-button mainsserrees"/>
-        </Mailto>
-          
-        </div>
+            <Mailto
+              email="email@email.com"
+              subject="Envoyer un mail"
+              body="Bonjour Babily! Après consultation de vos offres, je souhaite vous envoyer un mail"
+            >
+              <img
+                src={IconeEnvoi}
+                alt="Envoyer un mail"
+                className="email-share-button"
+              />
+            </Mailto>
+            <Mailto
+              email="email@email.com"
+              subject="Envoyer un mail"
+              body="Bonjour Babily! Après consultation de vos offres, je souhaite vous prendre un café avec un de vos consultants"
+            >
+              <img
+                src={Cafe}
+                alt="Prendre un Café"
+                className="email-share-button"
+              />
+            </Mailto>
+            <Mailto
+              email="email@email.com"
+              subject="Envoyer un mail"
+              body="Bonjour Babily! Après consultation de vos offres, je souhaite m'entretenir avec vous en Visio"
+            >
+              <img
+                src={Facetime}
+                alt="Rendez-vous en Facetime"
+                className="email-share-button facetime"
+              />
+            </Mailto>
+            <Mailto
+              email="email@email.com"
+              subject="Envoyer un mail"
+              body="Bonjour Babily! Après consultation de vos offres, je souhaite m'entretenir avec vous en présentiel"
+            >
+              <img
+                src={MainsSerrees}
+                alt="Rendez-vous en présentiel"
+                className="email-share-button mainsserrees"
+              />
+            </Mailto>
+          </div>
           <input
             className="contact-input"
             type="submit"
             value="Envoyer"
             id="input-submit"
           />
-          
-            
-          
         </form>
-       
       </div>
       <div className="contactAnim">
         <div className="press">
