@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Enjeux from "./Enjeux";
 import Precautions from "./Precautions";
+import Securite from "./Securite";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" component={Contact}></Route>
           <Route path="/enjeux" component={Enjeux}></Route>
           <Route path="/precautions" component={Precautions}></Route>
+          <Route path="/securite" component={Securite}></Route>
         </Switch>
       </Router>
     </div>
