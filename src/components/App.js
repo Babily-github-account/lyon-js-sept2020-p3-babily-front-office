@@ -8,6 +8,7 @@ import ViePrivee from "./ViePrivee";
 import Mentions from "./Mentions";
 import Contact from "./Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Enjeux from "./Enjeux";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/vieprivee" component={ViePrivee}></Route>
           <Route path="/mentions" component={Mentions}></Route>
           <Route path="/contact" component={Contact}></Route>
+          <Route path="/enjeux" component={Enjeux}></Route>
         </Switch>
       </Router>
     </div>
