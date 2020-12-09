@@ -3,7 +3,8 @@
   padding: 0;
 }
 a,
-button {
+button ,
+input[type=submit]{
   cursor: pointer;
 }
 main {

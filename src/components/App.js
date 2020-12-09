@@ -9,10 +9,12 @@ import Mentions from "./Mentions";
 import Contact from "./Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+
 function App() {
   return (
     <div className="App">
       <Router>
+       
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/inscription" component={Inscription}></Route>
