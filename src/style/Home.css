@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krub:wght@600;700&family=Montserrat+Alternates:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@600;700&family=Montserrat+Alternates:wght@800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@
   left: 113px;
   top: 321px;
 
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 46px;
@@ -37,7 +37,7 @@
   left: 113px;
   top: 385px;
 
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 46px;
@@ -63,7 +63,7 @@
   left: 113px;
   top: 469px;
 
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -83,7 +83,7 @@
   left: 113px;
   top: 542px;
 
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -167,7 +167,7 @@
   left: 493px;
   top: 932px;
 
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 35px;
@@ -200,7 +200,7 @@
   right: 13%;
   top: 1105px;
 
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -219,7 +219,7 @@
   right: 17%;
   top: 165%;
 
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -234,7 +234,7 @@
   left: 32%;
   top: 165%;
 
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -255,7 +255,7 @@
   left: 9%;
   top: 220%;
 
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 35px;
@@ -282,7 +282,7 @@
   left: 9%;
   top: 231%;
 
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -304,7 +304,7 @@
   left: 9%;
   top: 240%;
 
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
