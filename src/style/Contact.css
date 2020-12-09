@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krub:wght@600;700&family=Montserrat+Alternates:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@600;700&family=Montserrat+Alternates:wght@800&display=swap");
 
 * {
   border: 0;
@@ -6,10 +6,6 @@
   margin: 0;
   padding: 0;
 }
-
-
-
-
 
 .contactAnim {
   font-size: calc(16px + (32 - 16) * (100vw - 320px) / (1280 - 320));
@@ -73,7 +69,7 @@
       4em 6em;
   background-repeat: repeat-y;
   color: #17181c;
-  content: '';
+  content: "";
   display: block;
   top: -6em;
   left: 0;
@@ -174,7 +170,7 @@
 .titre {
   text-align: center;
   margin-top: 20px;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   color: #ffbb69;
 }
 .email-share-button {
