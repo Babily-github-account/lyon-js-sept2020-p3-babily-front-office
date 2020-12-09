@@ -3,7 +3,11 @@ import "../style/Contact.css";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { EmailIcon, EmailShareButton } from "react-share";
+import Cafe from "../img/café.png";
+import IconeEnvoi from "../img/icone.png";
+import Facetime from "../img/facetime.png";
+import MainsSerrees from "../img/main.png";
+import Mailto from "./MailTo";
 
 const Contact = () => {
   const [inputs, setInputs] = useState({
@@ -98,19 +102,48 @@ const Contact = () => {
               value={inputs.message}
             ></textarea>
           </div>
+          <div className="section-rendezvous">
+        <Mailto 
+          email="email@email.com"
+          subject="Envoyer un mail" 
+          body="Bonjour Babily! Après consultation de vos offres, je souhaite vous envoyer un mail" 
+        >
+            <img src={IconeEnvoi} alt="Envoyer un mail" className="email-share-button"/>
+          </Mailto>
+          <Mailto 
+          email="email@email.com"
+          subject="Envoyer un mail" 
+          body="Bonjour Babily! Après consultation de vos offres, je souhaite vous prendre un café avec un de vos consultants" 
+        >
+          <img src={Cafe} alt="Prendre un Café" className="email-share-button"/>
+        </Mailto>
+        <Mailto 
+          email="email@email.com"
+          subject="Envoyer un mail" 
+          body="Bonjour Babily! Après consultation de vos offres, je souhaite m'entretenir avec vous en Visio" 
+        >
+          <img src={Facetime} alt="Rendez-vous en Facetime" className="email-share-button facetime"/>
+        </Mailto>
+        <Mailto 
+          email="email@email.com"
+          subject="Envoyer un mail" 
+          body="Bonjour Babily! Après consultation de vos offres, je souhaite m'entretenir avec vous en présentiel" 
+        >
+          <img src={MainsSerrees} alt="Rendez-vous en présentiel" className="email-share-button mainsserrees"/>
+        </Mailto>
+          
+        </div>
           <input
             className="contact-input"
             type="submit"
             value="Envoyer"
             id="input-submit"
           />
-          <EmailShareButton
-            url={"https://www.gmail.com/"}
-            className="email-share-button"
-          >
-            <EmailIcon size={50} borderRadius={50}></EmailIcon>
-          </EmailShareButton>
+          
+            
+          
         </form>
+       
       </div>
       <div className="contactAnim">
         <div className="press">

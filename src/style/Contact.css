@@ -173,9 +173,19 @@
   font-family: "Montserrat Alternates", sans-serif;
   color: #ffbb69;
 }
+.section-rendezvous{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .email-share-button {
-  width: 20px;
-  height: 20px;
-  border-radius: 50;
-  margin-right: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.facetime{
+  background-color: #0575A5;
+}
+.mainsserrees{
+  background-color: #FCCE6B;
 }
