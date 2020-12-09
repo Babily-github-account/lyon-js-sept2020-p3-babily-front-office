@@ -3,12 +3,13 @@ import "../style/Contact.css";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { EmailIcon, EmailShareButton } from "react-share";
+
 import fillevole from "../img/fillevole.jpeg";
 import Cafe from "../img/café.png";
 import IconeEnvoi from "../img/icone.png";
 import Facetime from "../img/facetime.png";
 import MainsSerrees from "../img/main.png";
+import Mailto from "./MailTo";
 
 const Contact = () => {
   const [inputs, setInputs] = useState({
@@ -107,44 +108,63 @@ const Contact = () => {
                 <option value="Autre">Autre</option>
               </select>
             </div>
-            <div className="section-rendezvous">
-              <EmailShareButton>
-                <img
-                  src={IconeEnvoi}
-                  alt="Envoyer un mail"
-                  className="email-share-button"
-                />
-              </EmailShareButton>
-              <EmailShareButton>
-                <img
-                  src={Cafe}
-                  alt="Prendre un Café"
-                  className="email-share-button"
-                />
-              </EmailShareButton>
-              <EmailShareButton>
-                <img
-                  src={Facetime}
-                  alt="Rendez-vous en Facetime"
-                  className="email-share-button facetime"
-                />
-              </EmailShareButton>
-              <EmailShareButton>
-                <img
-                  src={MainsSerrees}
-                  alt="Rendez-vous en présentiel"
-                  className="email-share-button mainsserrees"
-                />
-              </EmailShareButton>
-            </div>
-
-            <input
-              className="box"
-              type="submit"
-              value="Envoyer"
-              id="input-submit"
-            />
           </div>
+          <div className="section-rendezvous">
+            <Mailto
+              email="email@email.com"
+              subject="Envoyer un mail"
+              body="Bonjour Babily! Après consultation de vos offres, je souhaite vous envoyer un mail"
+            >
+              <img
+                src={IconeEnvoi}
+                alt="Envoyer un mail"
+                title="Envoyer un mail à Babily"
+                className="email-share-button"
+              />
+            </Mailto>
+            <Mailto
+              email="email@email.com"
+              subject="Prendre un Café"
+              body="Bonjour Babily! Après consultation de vos offres, je souhaite vous prendre un café avec un de vos consultants"
+            >
+              <img
+                src={Cafe}
+                alt="Prendre un Café"
+                title="Prendre un Café avec un consultant de Babily"
+                className="email-share-button"
+              />
+            </Mailto>
+            <Mailto
+              email="email@email.com"
+              subject="Rendez-vous en Facetime"
+              body="Bonjour Babily! Après consultation de vos offres, je souhaite m'entretenir avec vous en Visio"
+            >
+              <img
+                src={Facetime}
+                alt="Rendez-vous en Facetime"
+                title="Prendre un rendez-vous en Facetime avec Babily"
+                className="email-share-button facetime"
+              />
+            </Mailto>
+            <Mailto
+              email="email@email.com"
+              subject="Prendre un rendez-vous en présentiel avec Babily"
+              body="Bonjour Babily! Après consultation de vos offres, je souhaite m'entretenir avec vous en présentiel"
+            >
+              <img
+                src={MainsSerrees}
+                alt="Rendez-vous en présentiel"
+                title="Rendez-vous en présentiel"
+                className="email-share-button mainsserrees"
+              />
+            </Mailto>
+          </div>
+          <input
+            className="contact-input"
+            type="submit"
+            value="Envoyer"
+            id="input-submit"
+          />
         </form>
       </div>
       <div className="contactAnim">
