@@ -107,8 +107,7 @@ const Contact = () => {
                 </option>
                 <option value="Autre">Autre</option>
               </select>
-            </div>           
-            
+            </div>
           </div>
           <div className="section-rendezvous">
             <Mailto
