@@ -144,8 +144,6 @@ const Contact = () => {
               value="Envoyer"
               id="input-submit"
             />
-            
-            
           </div>
         </form>
       </div>
