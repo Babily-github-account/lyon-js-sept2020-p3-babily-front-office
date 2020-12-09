@@ -9,6 +9,7 @@ import Mentions from "./Mentions";
 import Contact from "./Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Enjeux from "./Enjeux";
+import Precautions from "./Precautions";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/mentions" component={Mentions}></Route>
           <Route path="/contact" component={Contact}></Route>
           <Route path="/enjeux" component={Enjeux}></Route>
+          <Route path="/precautions" component={Precautions}></Route>
         </Switch>
       </Router>
     </div>
