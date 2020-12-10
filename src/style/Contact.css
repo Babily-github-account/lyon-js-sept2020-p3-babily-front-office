@@ -6,18 +6,17 @@
   margin: 0;
   padding: 0;
 }
-.fillevole{
+.fillevole {
   float: left;
   width: 50%;
 }
-
 
 .form {
   float: right;
   width: 40%;
 }
 
-.container-bloc1 input{
+.container-bloc1 input {
   border-radius: 5px;
   height: 50px;
   background: white;
@@ -25,7 +24,6 @@
 .container-bloc1 {
   display: flex;
   flex-direction: row;
-
 }
 
 .container-bloc2 select {
@@ -35,14 +33,14 @@
   background: white;
 }
 
-.contact-input{
+.contact-input {
   margin: 15px;
   height: 50px;
   width: 95%;
-  background: #FFBB69;
+  background: #ffbb69;
   color: white;
 }
-.container-bloc2{
+.container-bloc2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,17 +62,15 @@
   flex-direction: row;
   width: 50%;
   height: 100%;
-  
 }
-.box3{
+.box3 {
   width: 100%;
 }
-.box2 textarea{
+.box2 textarea {
   width: 100%;
-  height: 200PX;
+  height: 200px;
   border-radius: 5px;
   background: white;
-  
 }
 .contactAnim {
   font-size: calc(16px + (32 - 16) * (100vw - 320px) / (1280 - 320));
@@ -250,11 +246,9 @@
   color: #ffbb69;
 }
 
-
-
 /*ICONS*/
 
-.section-rendezvous{
+.section-rendezvous {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -267,8 +261,8 @@
   box-shadow: 1px 1px #2e3138;
   margin: 0 10px 0 10px;
 }
-.facetime{
-  background-color: #0575A5;
+.facetime {
+  background-color: #0575a5;
 }
 .mainsserrees {
   background-color: #fcce6b;
@@ -298,39 +292,37 @@
     margin-right: 0;
   }
 }
-.mainsserrees{
-  background-color: #FCCE6B;
+.mainsserrees {
+  background-color: #fcce6b;
 }
 
 .email-share-button:hover {
   transform: scale(1.1);
 }
 
-@media screen and (max-width:1024px){
-  .fillevole{
+@media screen and (max-width: 1024px) {
+  .fillevole {
     display: none;
   }
 
-  .form{
+  .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    width: 100%;
-    
 
+    width: 100%;
   }
-  .container-bloc1{
+  .container-bloc1 {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-.container-bloc1 input{
+  .container-bloc1 input {
     margin: 15px;
-}
-  .container-bloc2{
+  }
+  .container-bloc2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -339,31 +331,25 @@
   }
 
   .container-bloc2 select {
-    
     justify-content: center;
     margin: 0;
     width: 90%;
   }
-  
 
-  .box1, .box2{
-    
+  .box1,
+  .box2 {
     width: 90%;
-
   }
-  .box3{
+  .box3 {
     margin: 15px;
     display: flex;
     justify-content: center;
   }
-  .contact-input{
+  .contact-input {
     margin: 20px;
   }
 
-  .section-rendezvous{
+  .section-rendezvous {
     margin: 20px;
   }
-  
 }
-
-
