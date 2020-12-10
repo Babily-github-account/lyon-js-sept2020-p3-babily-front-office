@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <>
       <div className="containerForm">
         <img className="fillevole" src={fillevole} alt="forme jaune 2" />
 
@@ -185,9 +185,8 @@ const Contact = () => {
           <div className="roll"></div>
         </div>
 
-        <form></form>
       </div>
-    </div>
+    </>
   );
 };
 
