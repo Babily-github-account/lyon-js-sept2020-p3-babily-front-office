@@ -17,7 +17,7 @@
   width: 40%;
   margin-bottom: 20px;
 }
-.containerForm{
+.containerForm {
   height: 350px;
 }
 
@@ -325,13 +325,13 @@
     margin-right: 0;
     width: 100%;
   }
-  .press{
+  .press {
     position: relative;
   }
   .sheet,
-.roll {
-  left: 40%;
-}
+  .roll {
+    left: 40%;
+  }
   .container-bloc1 {
     width: 100%;
     display: flex;

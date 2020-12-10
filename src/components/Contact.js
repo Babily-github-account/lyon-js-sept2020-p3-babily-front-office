@@ -184,7 +184,6 @@ const Contact = () => {
           <div className="sheet"></div>
           <div className="roll"></div>
         </div>
-
       </div>
     </>
   );
