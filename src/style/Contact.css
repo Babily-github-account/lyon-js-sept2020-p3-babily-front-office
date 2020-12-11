@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Krub:wght@600;700&family=Montserrat+Alternates:wght@800&display=swap");
 
-
 .fillevole {
   float: left;
   display: flex;
@@ -13,7 +12,7 @@
   text-align: center;
   left: -100px;
 }
-.fillevole h1{
+.fillevole h1 {
   color: #3c84fb;
   text-decoration: underline;
 }
