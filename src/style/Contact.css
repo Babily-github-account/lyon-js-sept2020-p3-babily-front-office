@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Krub:wght@600;700&family=Montserrat+Alternates:wght@800&display=swap");
 
-* {
-  border: 0;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 .fillevole {
   float: left;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
   width: 50%;
+  background: no-repeat url(../img/fillevole.jpeg) 50% 100%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  text-align: center;
+  left: -100px;
 }
-
+.fillevole h1{
+  color: #3c84fb;
+  text-decoration: underline;
+}
 .form {
   margin-right: 60px;
   float: right;
@@ -18,7 +24,7 @@
   margin-bottom: 20px;
 }
 .containerForm {
-  height: 350px;
+  background-color: #faf5f0;
 }
 
 .container-bloc1 input {
@@ -33,7 +39,7 @@
 
 .container-bloc2 select {
   height: 50px;
-  width: 95%;
+  width: 90%;
   border-radius: 5px;
   background: white;
 }
@@ -53,6 +59,8 @@
 .box {
   margin: 10px;
   padding: 5px;
+  border: none;
+  box-shadow: -1px 1px rgb(192, 192, 192);
 }
 
 .box1 {
@@ -97,6 +105,11 @@
   height: 50px;
   color: white;
   margin: 10px;
+  border-radius: 5px;
+  border: none;
+
+  font-size: 1em;
+  font-weight: bold;
 }
 .press,
 .sheet {
@@ -107,6 +120,7 @@
   width: 100%;
   position: relative;
   height: 400px;
+  transform: scale(0.5);
 }
 .sheet,
 .sheet:before,
@@ -284,9 +298,6 @@
   transform: scale(1.1);
 }
 @media screen and (max-width: 800px) {
-  .fillevole {
-    display: none;
-  }
   .form {
     width: 100%;
   }
@@ -315,7 +326,9 @@
 
 @media screen and (max-width: 1024px) {
   .fillevole {
-    display: none;
+    background: none;
+    width: 80%;
+    padding: 10% 10vw;
   }
 
   .form {
@@ -353,7 +366,6 @@
   .container-bloc2 select {
     justify-content: center;
     margin: 0;
-    width: 90%;
   }
 
   .box1,

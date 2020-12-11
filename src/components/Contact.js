@@ -43,8 +43,11 @@ const Contact = () => {
   return (
     <>
       <div className="containerForm">
-        <img className="fillevole" src={fillevole} alt="forme jaune 2" />
-
+        <div className="fillevole">
+            <h1>Contact personnalisé</h1>
+            <p>Chez Babily, votre interrogation est des plus importante et nous serons ravis d'y répondre de lamanière dont vous souhaitez</p>
+        </div>
+        <div>
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <div className="container-bloc1">
             <div className="box1">
@@ -162,27 +165,28 @@ const Contact = () => {
           <input
             className="contact-input"
             type="submit"
-            value="Envoyer"
+            value="ENVOYER"
             id="input-submit"
           />
         </form>
-      </div>
-      <div className="contactAnim">
-        <div className="press">
-          <div className="sheet"></div>
-          <div className="roll"></div>
-          <div className="sheet"></div>
-          <div className="roll"></div>
-          <div className="sheet"></div>
-          <div className="roll"></div>
+          {/* <div className="contactAnim">
+            <div className="press">
+              <div className="sheet"></div>
+              <div className="roll"></div>
+              <div className="sheet"></div>
+              <div className="roll"></div>
+              <div className="sheet"></div>
+              <div className="roll"></div>
 
-          <div className="sheet"></div>
-          <div className="sheet"></div>
-          <div className="sheet"></div>
+              <div className="sheet"></div>
+              <div className="sheet"></div>
+              <div className="sheet"></div>
 
-          <div className="sheet"></div>
-          <div className="sheet"></div>
-          <div className="roll"></div>
+              <div className="sheet"></div>
+              <div className="sheet"></div>
+              <div className="roll"></div>
+            </div>
+          </div> */}
         </div>
       </div>
     </>
