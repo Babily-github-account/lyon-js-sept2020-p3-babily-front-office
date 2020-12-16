@@ -37,6 +37,17 @@ export default function LeSaviezVous() {
   const palette = {
     margin: 'auto',
   };
+  const chiffreValeur1 = {
+    position: 'absolute',
+    width: '300px',
+    height: '300px',
+    textAlign: 'center',
+    top: '25%',
+    left: '50%',
+    transform: 'translate(-50%)',
+    color: 'white',
+  };
+
   const chiffreValeur = {
     position: 'absolute',
     width: '300px',
@@ -55,7 +66,7 @@ export default function LeSaviezVous() {
     fontSize: '1.6rem',
   };
   const texte = {
-    margin: 'auto',
+    marginTop: 'auto',
     paddingLeft: '20%',
     paddingRight: '20%',
   };
@@ -72,7 +83,7 @@ export default function LeSaviezVous() {
             height={300}
             style={palette}
           />
-          <div style={chiffreValeur}>
+          <div style={chiffreValeur1}>
             <animated.span style={nombre}>
               {heuresDisponibles.val.interpolate((val) => Math.floor(val))}
             </animated.span>
