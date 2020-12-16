@@ -1,46 +1,37 @@
-import Link from 'next/link';
-import { RiFacebookBoxLine } from 'react-icons/ri';
+import { RiFacebookBoxLine, RiLinkedinBoxLine } from 'react-icons/ri';
 import { FaTwitterSquare } from 'react-icons/fa';
-import { RiLinkedinBoxLine } from 'react-icons/ri';
-
 
 export default function Footer() {
+  const containerFooter = {
+    display: 'flex',
+    alignItems: 'flex-end',
 
-  const containerFooter ={
-    display:'flex',
-    alignItems:"flex-end",
+    backgroundImage: `url(/images/FooterWaves.svg)`,
+    backgroundSize: '100%',
+    backgroundRepeat: 'no-repeat',
 
-    
-    backgroundImage:`url(/images/FooterWaves.svg)`,
-    backgroundSize:"100%",
-    backgroundRepeat:'no-repeat',
-    
-    height:'400px',
-    width:"100%",
-    color:'white',
-    fontFamily:"'Montserrat Alternates', sans-serif",
-  }
+    height: '400px',
+    width: '100%',
+    color: 'white',
+    fontFamily: "'Montserrat Alternates', sans-serif",
+  };
 
-  const containerReseaux ={
-    paddingLeft:'40px',
-    display:"flex",
-    flexDirection:'column',
-    alignItems:'center',
-    paddingBottom:'20px',
-    
-  }
-  const titleFooter ={
-    fontSize:'24px',
-    margin:'0',
-  }
+  const containerReseaux = {
+    paddingLeft: '40px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    paddingBottom: '20px',
+  };
+  const titleFooter = {
+    fontSize: '24px',
+    margin: '0',
+  };
 
-  const followFooter ={
-    fontSize:"10px",
-  }
+  const followFooter = {
+    fontSize: '10px',
+  };
 
-  
-
-  
   return (
     <div style={containerFooter}>
       <div style={containerReseaux}>
