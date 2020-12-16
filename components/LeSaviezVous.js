@@ -9,7 +9,7 @@ export default function LeSaviezVous() {
 
   const containerSaviezVous = {
     width: '100%',
-    padding: '15%',
+    padding: '10%',
   };
 
   const titreSaviezVous = {
@@ -20,7 +20,6 @@ export default function LeSaviezVous() {
     textDecorationStyle: 'solid',
     textDecorationColor: '#fa6870',
     textDecorationThickness: '15px',
-    paddingTop: '5%',
     paddingBottom: '7%',
   };
 
@@ -28,7 +27,7 @@ export default function LeSaviezVous() {
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    textAlign: 'center',
   };
 
   const notion = {
@@ -36,16 +35,16 @@ export default function LeSaviezVous() {
     margin: '50px auto',
   };
   const palette = {
-    height: '200px',
+    margin: 'auto',
   };
   const chiffreValeur = {
     position: 'absolute',
-    width: '350px',
-    height: '350px',
+    width: '300px',
+    height: '300px',
     textAlign: 'center',
-    top: '50%',
+    top: '30%',
     left: '50%',
-    transform: 'translate(-55%, -30%)',
+    transform: 'translate(-50%)',
     color: 'white',
   };
   const nombre = {
@@ -53,11 +52,12 @@ export default function LeSaviezVous() {
     fontFamily: 'Montserrat Alternates, sans-serif',
   };
   const valeur = {
-    fontSize: '1.2rem',
+    fontSize: '1.6rem',
   };
   const texte = {
     margin: 'auto',
-    padding: '0 50px',
+    paddingLeft: '20%',
+    paddingRight: '20%',
   };
 
   return (
@@ -68,14 +68,14 @@ export default function LeSaviezVous() {
           <Image
             src="/images/paletteRouge.png"
             alt="palette rouge"
-            width={350}
-            height={350}
+            width={300}
+            height={300}
             style={palette}
           />
           <div style={chiffreValeur}>
             <animated.span style={nombre}>
               {heuresDisponibles.val.interpolate((val) => Math.floor(val))}
-            </animated.span>{' '}
+            </animated.span>
             <p style={valeur}>millions</p>
           </div>
           <p style={texte}>
@@ -87,15 +87,15 @@ export default function LeSaviezVous() {
           <Image
             src="/images/paletteJaune.png"
             alt="palette jaune"
-            width={350}
-            height={350}
+            width={300}
+            height={300}
             style={palette}
           />
           <div style={chiffreValeur}>
             <animated.span style={nombre}>
               {placesEnCreche.val.interpolate((val) => Math.floor(val))}
             </animated.span>
-            <p style={valeur}>%</p>
+            <span style={valeur}>%</span>
           </div>
           <p style={texte}>
             Des enfants (de 10 semaines à 3 ans) ont une place en crèche
@@ -105,15 +105,15 @@ export default function LeSaviezVous() {
           <Image
             src="/images/paletteBleue.png"
             alt="palette bleue"
-            width={350}
-            height={350}
+            width={300}
+            height={300}
             style={palette}
           />
           <div style={chiffreValeur}>
             <animated.span style={nombre}>
               {tauxOccupation.val.interpolate((val) => Math.floor(val))}
             </animated.span>
-            <p style={valeur}>%</p>
+            <span style={valeur}>%</span>
           </div>
           <p style={texte}>Le taux d'occupation réel moyen des crèches</p>
         </div>
