@@ -26,44 +26,45 @@ export default function VagueHome() {
     textDecoration: 'underline',
     textDecorationThickness: '15px',
     gridArea: '2/2/6/6',
+    fontFamily: "'Montserrat Alternates', sans-serif",
     textAlign: 'center',
     margin: 'auto',
   };
 
   const logo1 = {
-    gridArea: '10/2/12/3',
+    gridArea: '9/2/11/3',
     maxWidth: '100px',
   };
   const logo2 = {
-    gridArea: '9/3/11/4',
+    gridArea: '8/3/10/4',
     maxWidth: '100px',
   };
   const logo3 = {
-    gridArea: '8/4/10/5',
+    gridArea: '7/4/9/5',
     maxWidth: '100px',
   };
   const logo4 = {
-    gridArea: '7/5/9/6',
+    gridArea: '6/5/8/6',
     maxWidth: '100px',
   };
   const logo5 = {
-    gridArea: '6/6/8/7',
+    gridArea: '5/6/7/7',
     maxWidth: '100px',
   };
   const logo6 = {
-    gridArea: '5/7/7/8',
+    gridArea: '4/7/6/8',
     maxWidth: '100px',
   };
   const logo7 = {
-    gridArea: '4/8/6/9',
+    gridArea: '3/8/5/9',
     maxWidth: '100px',
   };
   const logo8 = {
-    gridArea: '3/9/5/10',
+    gridArea: '2/9/4/10',
     maxWidth: '100px',
   };
   const logo9 = {
-    gridArea: '2/10/4/11',
+    gridArea: '1/10/3/11',
     maxWidth: '100px',
   };
 
@@ -73,7 +74,7 @@ export default function VagueHome() {
         <h5 style={titre}>Ils contribuent au dispositif</h5>
         <div style={logo1}>
           <Image
-            src="/images/logosContibuteurs/advizi.png"
+            src="/images/logosContributeurs/advizi.png"
             alt="logo Advizi"
             width={100}
             height={100}
@@ -81,7 +82,7 @@ export default function VagueHome() {
         </div>
         <div style={logo2}>
           <Image
-            src="/images/logosContibuteurs/caf.png"
+            src="/images/logosContributeurs/caf.png"
             alt="logo Allocations Familiales"
             width={100}
             height={100}
@@ -89,7 +90,7 @@ export default function VagueHome() {
         </div>
         <div style={logo3}>
           <Image
-            src="/images/logosContibuteurs/boostinlyon.png"
+            src="/images/logosContributeurs/boostinlyon.png"
             alt="logo Boost in Lyon"
             width={100}
             height={100}
@@ -97,7 +98,7 @@ export default function VagueHome() {
         </div>
         <div style={logo4}>
           <Image
-            src="/images/logosContibuteurs/h7.png"
+            src="/images/logosContributeurs/h7.png"
             alt="logo h 7"
             width={100}
             height={100}
@@ -105,7 +106,7 @@ export default function VagueHome() {
         </div>
         <div style={logo5}>
           <Image
-            src="/images/logosContibuteurs/bpiFrance.png"
+            src="/images/logosContributeurs/bpiFrance.png"
             alt="logo B P I France"
             width={100}
             height={100}
@@ -113,7 +114,7 @@ export default function VagueHome() {
         </div>
         <div style={logo6}>
           <Image
-            src="/images/logosContibuteurs/frenchTech.png"
+            src="/images/logosContributeurs/frenchTech.png"
             alt="logo la french tech"
             width={100}
             height={100}
@@ -121,7 +122,7 @@ export default function VagueHome() {
         </div>
         <div style={logo7}>
           <Image
-            src="/images/logosContibuteurs/inpi.png"
+            src="/images/logosContributeurs/inpi.png"
             alt="logo I N P I"
             width={100}
             height={100}
@@ -130,7 +131,7 @@ export default function VagueHome() {
 
         <div style={logo8}>
           <Image
-            src="/images/logosContibuteurs/adie.png"
+            src="/images/logosContributeurs/adie.png"
             alt="logo adie"
             width={100}
             height={100}
@@ -138,7 +139,7 @@ export default function VagueHome() {
         </div>
         <div style={logo9}>
           <Image
-            src="/images/logosContibuteurs/region.png"
+            src="/images/logosContributeurs/region.png"
             alt="logo region auvergne rhone alpes"
             width={100}
             height={100}
