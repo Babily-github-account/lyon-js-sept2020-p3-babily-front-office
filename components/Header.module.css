@@ -1,0 +1,68 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* position: fixed; */
+  background-color: transparent;
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s;
+}
+
+.logoHeader {
+  width: 12vw;
+  min-width: 150px;
+  box-sizing: border-box;
+}
+
+.navLogin {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navLogin a {
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  height: 30px;
+}
+
+.aLogin {
+  color: black;
+}
+
+.aSignin {
+  color: white;
+  background-color: #4d84f3;
+}
+
+/* .headerContainer {
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+
+.menu {
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menuItem {
+  list-style-type: none;
+  margin-left: 15px;
+}
+
+.link {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+.link:hover {
+  color: wheat;
+} */
