@@ -1,11 +1,12 @@
 import { RiFacebookBoxLine, RiLinkedinBoxLine } from 'react-icons/ri';
 import { FaTwitterSquare } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Footer() {
   const containerFooter = {
     display: 'flex',
     alignItems: 'flex-end',
-
+    justifyContent: 'space-around',
     backgroundImage: `url(/images/FooterWaves.svg)`,
     backgroundSize: '100%',
     backgroundRepeat: 'no-repeat',
@@ -17,7 +18,6 @@ export default function Footer() {
   };
 
   const containerReseaux = {
-    paddingLeft: '40px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -32,6 +32,21 @@ export default function Footer() {
     fontSize: '10px',
   };
 
+  const footerNav = {
+    width:'50%',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    listStyle: 'none',
+    justifyContent: 'space-around',
+    paddingBottom: '80px',
+  };
+
+  const containerAdress = {
+    fontSize: '12px',
+    paddingBottom: '40px',
+  };
+
   return (
     <div style={containerFooter}>
       <div style={containerReseaux}>
@@ -42,26 +57,35 @@ export default function Footer() {
           <FaTwitterSquare />
           <RiLinkedinBoxLine />
         </div>
-        <div>
-          {/* <Link to='/decouvrir'>
-            <a>Découvrir</a>
-          </Link>
-          <Link to='/votrespace'>
-            <a>Votre espace</a>
-          </Link>
-          <Link to="/temoignages">
-            <a>Témoignages</a>
-          </Link>
-          <Link to="/contact">
-            <a>Contact </a>
-          </Link>
-          <Link to ="/confidentialites">
-            <a>Confidentialités</a>
-          </Link>
-          <Link to='/mentions'>
-            <a>Mentions</a>
-          </Link> */}
-        </div>
+      </div>
+
+      <ul style={footerNav}>
+        <Link href="/decouvrir">
+          <a>Découvrir</a>
+        </Link>
+        <Link href="/votrespace">
+          <a>Votre espace</a>
+        </Link>{' '}
+        <Link href="/temoignages">
+          <a>Témoignages</a>
+        </Link>
+        <Link href="/contact">
+          <a>Contact </a>
+        </Link>
+        <Link href="/confidentialites">
+          <a>Confidentialités</a>
+        </Link>
+        <Link href="/mentions">
+          <a>Mentions</a>
+        </Link>
+      </ul>
+
+      <div style={containerAdress}>
+        <p>61 Cours de la Liberté</p>
+        <p>69003 Lyon </p>
+        <p>Nicolas Lorut</p>
+        <p>ecrivez-nous@babily.fr</p>
+        <p> 0 608 970 282 </p>
       </div>
     </div>
   );
