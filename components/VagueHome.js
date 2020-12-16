@@ -11,7 +11,6 @@ export default function VagueHome() {
   };
 
   const gridContainer = {
-    backgroundColor: 'pink',
     height: '400px',
     display: 'grid',
     gridTemplateRows: 'repeat(11, 2fr)',
