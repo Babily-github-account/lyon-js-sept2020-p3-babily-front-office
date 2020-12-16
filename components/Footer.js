@@ -1,48 +1,77 @@
 import Link from 'next/link';
-import styles from './Footer.module.css';
+import { RiFacebookBoxLine } from 'react-icons/ri';
+import { FaTwitterSquare } from 'react-icons/fa';
+import { RiLinkedinBoxLine } from 'react-icons/ri';
+
 
 export default function Footer() {
-  return (
-    <footer className={styles.footer}>
-      <div className={styles.footerReseaux}>
-        {/* <Link className={styles.footerLink} {styles.footerReseauxP} href="/">
-          <a>babily.fr</a>
-        </Link>
-        <p className={styles.footerReseauxIcons} {styles.footerReseauxP}">
-          <AiFillFacebook style={{ fontSize: '30px' }} />
-        </p>
-        <p className={styles.footerReseauxIcons} {styles.footerReseauxP}">
-          <AiFillTwitterCircle style={{ fontSize: '30px' }} />
-        </p>
-        <p className={styles.footerReseauxIcons} {styles.footerReseauxP}">
-          <AiFillInstagram style={{ fontSize: '30px' }} />
-        </p> */}
 
-        <Link className={styles.footerLink} href="/contact">
-          <a>Contact</a>
-        </Link>
+  const containerFooter ={
+    display:'flex',
+    alignItems:"flex-end",
+
+    
+    backgroundImage:`url(/images/FooterWaves.svg)`,
+    backgroundSize:"100%",
+    backgroundRepeat:'no-repeat',
+    
+    height:'400px',
+    width:"100%",
+    color:'white',
+    fontFamily:"'Montserrat Alternates', sans-serif",
+  }
+
+  const containerReseaux ={
+    paddingLeft:'40px',
+    display:"flex",
+    flexDirection:'column',
+    alignItems:'center',
+    paddingBottom:'20px',
+    
+  }
+  const titleFooter ={
+    fontSize:'24px',
+    margin:'0',
+  }
+
+  const followFooter ={
+    fontSize:"10px",
+  }
+
+  
+
+  
+  return (
+    <div style={containerFooter}>
+      <div style={containerReseaux}>
+        <h5 style={titleFooter}>Babily.fr</h5>
+        <p style={followFooter}>Suivez-nous !</p>
+        <div>
+          <RiFacebookBoxLine />
+          <FaTwitterSquare />
+          <RiLinkedinBoxLine />
+        </div>
+        <div>
+          {/* <Link to='/decouvrir'>
+            <a>Découvrir</a>
+          </Link>
+          <Link to='/votrespace'>
+            <a>Votre espace</a>
+          </Link>
+          <Link to="/temoignages">
+            <a>Témoignages</a>
+          </Link>
+          <Link to="/contact">
+            <a>Contact </a>
+          </Link>
+          <Link to ="/confidentialites">
+            <a>Confidentialités</a>
+          </Link>
+          <Link to='/mentions'>
+            <a>Mentions</a>
+          </Link> */}
+        </div>
       </div>
-      <div className={styles.footerNav}>
-        <Link className={styles.footerLink} href="/espacepro">
-          <a>Espace professionnel</a>
-        </Link>
-        <Link className={styles.footerLink} href="/espaceparents">
-          <a>Espace parents</a>
-        </Link>
-        <Link className={styles.footerLink} href="/vieprivee">
-          <a>Vie privée</a>
-        </Link>
-        <Link className={styles.footerLink} href="/mentions">
-          <a>Mentions</a>
-        </Link>
-      </div>
-      <div className={styles.footerAdresse}>
-        <p>66 Cours de la liberté</p>
-        <p>69003 Lyon</p>
-        <p>Nicolas Lorut</p>
-        <p>ecrivez-nous@babily.fr</p>
-        <p>06 08 97 02 82</p>
-      </div>
-    </footer>
+    </div>
   );
 }
