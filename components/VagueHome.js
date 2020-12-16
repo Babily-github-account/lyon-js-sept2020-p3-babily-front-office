@@ -24,7 +24,7 @@ export default function VagueHome() {
     fontSize: '1.2rem',
     textDecoration: 'underline',
     textDecorationThickness: '15px',
-    gridArea: '2/2/6/6',
+    gridArea: '2/2/6/5',
     fontFamily: "'Montserrat Alternates', sans-serif",
     textAlign: 'center',
     margin: 'auto',
