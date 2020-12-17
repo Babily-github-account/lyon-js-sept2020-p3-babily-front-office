@@ -66,9 +66,15 @@ export default function LeSaviezVous() {
     fontSize: '1.6rem',
   };
   const texte = {
-    marginTop: 'auto',
+    marginTop: '1.2rem',
     paddingLeft: '20%',
     paddingRight: '20%',
+    fontFamily: 'Krub, sans-serif',
+  };
+
+  const heures = {
+    color: '#fa6870',
+    fontFamily: 'Krub, sans-serif',
   };
 
   return (
@@ -90,7 +96,8 @@ export default function LeSaviezVous() {
             <p style={valeur}>millions</p>
           </div>
           <p style={texte}>
-            D'heures d'accueil disponibles en France chaque année 12 %
+            D'<span style={heures}>heures</span> d'accueil disponibles en France
+            chaque année 12 %
           </p>
         </div>
 
