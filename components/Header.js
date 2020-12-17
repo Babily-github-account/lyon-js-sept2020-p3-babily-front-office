@@ -37,7 +37,7 @@ export default function Header() {
           <Link href="/">
             <a className={styles.linkNav}>Accueil</a>
           </Link>
-          <Link href="/decouvrir">
+          <Link href="/concept">
             <a className={styles.linkNav}>Découvrir</a>
           </Link>
           <Link href="/espaceparents">
@@ -69,7 +69,7 @@ export default function Header() {
                 width={25}
                 height={25}
               />
-              Connexion
+              <span>Connexion</span>
             </a>
           </Link>
           <Link href="/inscription">

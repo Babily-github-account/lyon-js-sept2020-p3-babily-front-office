@@ -12,6 +12,7 @@ body,
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #faf5f0;
 }
 
 a {
@@ -22,10 +23,9 @@ a {
 * {
   box-sizing: border-box;
 }
-p {
-  line-height: 25px;
-  margin-bottom: 50px;
-}
+
+
+
 
 button {
   cursor: pointer;

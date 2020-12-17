@@ -1,5 +1,6 @@
 import NextNprogress from 'nextjs-progressbar';
 import Head from 'next/head';
+import GoogleFonts from 'next-google-fonts';
 
 import OfflineBanner from './OfflineBanner';
 import Header from './Header';
@@ -11,6 +12,7 @@ export default function Layout({ children, pageTitle }) {
       <Head>
         <title>{pageTitle ? `${pageTitle} - ` : ''}Babily</title>
       </Head>
+      <GoogleFonts href="https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Montserrat+Alternates:ital,wght@0,800;1,600&display=swap" />
       <NextNprogress
         color="#29D"
         startPosition={0.3}

@@ -31,6 +31,7 @@
   cursor: pointer;
 }
 .linkPro {
+  text-align: center;
   min-width: 240px;
   color: #D07910;
   box-sizing: content-box;
@@ -39,7 +40,8 @@
   justify-content: center;
   text-decoration: none;
   margin-top: 25px;
-  margin-left: 50px;
+  margin-left: 20px;
+  margin-right: 10px;
   border-radius: 20px;
   padding: 5px 20px 5px 20px;
   height: 30px;
@@ -130,8 +132,31 @@
   }
  }
  @media screen and (max-width: 900px){
-  .logoHeader{
-    /* display: none; */
+   .header{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 150px;
+   }
+   .navHeader{
+     display: flex;
+     flex-direction: column;
+   }
+   .logoHeader{
+     margin-left: 10px;
+     margin-right: 40px;
+   }
+  .linkLogin{
+    min-width: 30px;
+  }
+  .linkLogin span{
+    display: none;
+  }
+  .linkPro{
+    padding: 8px 20px 8px 20px;
+    min-width: 120px;
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
  }
  
