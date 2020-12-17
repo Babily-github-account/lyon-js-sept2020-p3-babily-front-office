@@ -23,16 +23,6 @@ a {
   box-sizing: border-box;
 }
 
-main {
-  padding: 20px;
-  flex: 1 0 auto;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 p {
   line-height: 25px;
   margin-bottom: 50px;
@@ -41,3 +31,7 @@ p {
 button {
   cursor: pointer;
 }
+main {
+  overflow: auto;
+}
+

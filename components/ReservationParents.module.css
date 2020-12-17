@@ -1,0 +1,87 @@
+.containerReservation {
+ margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-image: url(/images/fond_home.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  height: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+ }
+.containerText {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  min-width: 400px;
+  max-width: 600px;
+  margin-top: 120px;
+ }
+.titleHome {
+  color: #3c84fb;
+  font-size: 42px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #3c84fb;
+  text-decoration-thickness: 30px;
+  min-width: 400px;
+ }
+.textHome {
+  font-size: 20px;
+  font-family: 'Krub', sans-serif;
+ }
+.boxReservation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+ }
+.btnReservation {
+  font-family: 'Krub', sans-serif;
+  font-size: 14px;
+  padding: 12px;
+  box-sizing: content-box;
+  width: 50%;
+  min-width: 100px;
+  background-color: #3c84fb;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 14px;
+ }
+.btnReservation:hover{
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.linkDispo {
+  font-family: 'Krub', sans-serif;
+  color: #3c84fb;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #3c84fb;
+  box-sizing: content-box;
+  font-size: 14px;
+  margin-left: 10px;
+  min-width: 150px;
+ }
+.imgFormeJaune {
+  position: absolute;
+  bottom: 250px;
+  opacity: 0.5;
+ }
+.imgFormeRouge {
+  position: absolute;
+  left: 300px;
+  transform: rotate(90deg);
+  opacity: 0.5;
+ }
+ @media screen and (min-widtth: 1347px){
+  .containerReservation {
+    margin-top: 0;
+  }
+ }
