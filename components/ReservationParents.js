@@ -29,7 +29,7 @@ export default function ReservationParents() {
         <Image
           src="/images/fillette:home.png"
           alt="Fille en crèche"
-          layout="responsive"
+          // layout="responsive"
           width={600}
           height={600}
         />
