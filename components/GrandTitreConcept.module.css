@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
+
+.containerBackground {
+  background-image: url(/images/background3.jpg);
+  background-size: cover;
+}
+
+.containerParagraphe {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.containerSousTitre {
+  width: 30%;
+}
+
+.containerImg {
+  filter: drop-shadow(0 0 0.5rem grey);
+}
+
+.titleParagraphe {
+  font-size: 2.5rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #3c84fb;
+}
+
+.paragrapheConcept {
+  font-family: 'Krub', sans-serif;
+  font-size: 16px;
+}

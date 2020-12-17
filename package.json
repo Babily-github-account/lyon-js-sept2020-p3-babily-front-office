@@ -1,5 +1,5 @@
 {
-  "name": "next-pwa-poc",
+  "name": "next-pwa-babily",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -37,7 +37,8 @@
     "nextjs-progressbar": "0.0.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-icons": "^4.1.0"
+    "react-icons": "^4.1.0",
+    "react-spring": "^8.0.27"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
