@@ -1,5 +1,5 @@
 {
-  "name": "next-pwa-poc",
+  "name": "next-pwa-babily",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "next": "10.0.3",
+    "next": "^10.0.3",
     "next-google-fonts": "^1.2.1",
     "next-pwa": "^5.0.0",
     "nextjs-progressbar": "0.0.7",
