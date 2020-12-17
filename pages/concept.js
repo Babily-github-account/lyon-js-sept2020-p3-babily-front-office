@@ -4,6 +4,7 @@ import Espaces from '../components/Espaces';
 import GrandTitreConcept from '../components/GrandTitreConcept';
 import IlsParlentDeNous from '../components/IlsParlentDeNous';
 import Information from '../components/Information';
+import LesChiffresBabilyConcept from '../components/LesChiffresBabilyConcept';
 
 export default function concept() {
   const containerHead = {
@@ -55,6 +56,7 @@ export default function concept() {
       <SuiteConcept />
       <Espaces />
       <GrandTitreConcept />
+      <LesChiffresBabilyConcept />
       <IlsParlentDeNous />
       <Information />
     </Layout>
