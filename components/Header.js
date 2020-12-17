@@ -6,20 +6,45 @@ export default function Header() {
   return (
     <>
       <header className={styles.header}>
-        <Link href="/">
-          <Image
-            src="/images/BabilylogoSansBaselineCoul.png"
-            alt="Babily.fr"
-            width={180}
-            height={80}
-          />
-        </Link>
-        <div className={styles.navLogin}>
-          <Link className={styles.aLogin} href="/connexion">
-            <a>Connectez-Vous</a>
+        <div className={styles.navHeader}>
+          <Link href="/" className={styles.logoHeader}>
+            <Image
+              src="/images/BabilylogoSansBaselineCoul.png"
+              alt="Babily.fr"
+              width={220}
+              height={100}
+            />
           </Link>
-          <Link className={styles.aSignin} href="/inscription">
-            <a>S'inscrire</a>
+          <Link href="/espacepro">
+            <a className={styles.linkPro}>Vous êtes un professionnel ?</a>
+          </Link>
+        </div>
+        <div className={styles.navLogin}>
+          <Link href="/">
+            <a className={styles.linkNav}>Accueil</a>
+          </Link>
+          <Link href="/decouvrir">
+            <a className={styles.linkNav}>Découvrir</a>
+          </Link>
+          <Link href="/espaceparents">
+            <a className={styles.linkNav}>Votre Espace</a>
+          </Link>
+          <Link href="/contact">
+            <a className={styles.linkNav}>Contact</a>
+          </Link>
+          <Link href="/connexion">
+            <a className={styles.linkLogin}>
+              <Image
+                alt="Se connecter"
+                src="/images/icon_connexion.png"
+                width={25}
+                height={25}
+              />
+              Connexion
+            </a>
+          </Link>
+          <Link href="/inscription">
+            <a className={styles.linkSignin}>Inscription</a>
           </Link>
         </div>
       </header>
