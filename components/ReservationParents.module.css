@@ -20,7 +20,7 @@
   width: 45%;
   min-width: 400px;
   max-width: 600px;
-  margin-top: 120px;
+  margin-top: 80px;
  }
 .titleHome {
   color: #3c84fb;
@@ -71,18 +71,24 @@
   min-width: 150px;
  }
 .imgFormeJaune {
-  position: absolute;
-  bottom: 250px;
+  position:absolute;
+  /* bottom: 350px;
+  left: 50vw; */
   opacity: 0.5;
  }
 .imgFormeRouge {
   position: absolute;
-  left: 300px;
-  transform: rotate(90deg);
+  /* left: 30vw; */
+  transform: rotate(90deg) scale(1.2);
   opacity: 0.5;
  }
- @media screen and (min-widtth: 1347px){
+ @media screen and (max-width: 1347px){
   .containerReservation {
-    margin-top: 0;
+    margin-top: 60px;
+  }
+ }
+ @media screen and (max-width: 900px){
+  .imgFilleCreche{
+    
   }
  }

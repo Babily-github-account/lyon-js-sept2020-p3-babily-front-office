@@ -22,7 +22,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 p {
   line-height: 25px;
   margin-bottom: 50px;
@@ -31,7 +30,3 @@ p {
 button {
   cursor: pointer;
 }
-main {
-  overflow: auto;
-}
-

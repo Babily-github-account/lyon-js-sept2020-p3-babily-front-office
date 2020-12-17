@@ -27,6 +27,7 @@ export default function ReservationParents() {
           </div>
         </div>
         <Image
+          className={styles.imgFilleCreche}
           src="/images/fillette:home.png"
           alt="Fille en crèche"
           // layout="responsive"
