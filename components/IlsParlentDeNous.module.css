@@ -7,11 +7,12 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  /* background-image: url(/ images/mainBg.png); */
-  /* // backgroundSize: cover; */
   background-repeat: no-repeat;
   padding-top: 5%;
   padding-bottom: 5%;
+  background-image: url(/images/background4.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .containerArticle {

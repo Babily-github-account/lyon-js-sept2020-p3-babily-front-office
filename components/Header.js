@@ -7,12 +7,14 @@ export default function Header() {
     <>
       <header className={styles.header}>
         <Link href="/">
-          <Image
-            src="/images/BabilylogoSansBaselineCoul.png"
-            alt="Babily.fr"
-            width={180}
-            height={80}
-          />
+          <a>
+            <Image
+              src="/images/BabilylogoSansBaselineCoul.png"
+              alt="Babily.fr"
+              width={180}
+              height={80}
+            />
+          </a>
         </Link>
         <div className={styles.navLogin}>
           <Link className={styles.aLogin} href="/connexion">

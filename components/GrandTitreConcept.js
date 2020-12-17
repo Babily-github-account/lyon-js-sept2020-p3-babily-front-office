@@ -3,15 +3,16 @@ import styles from './GrandTitreConcept.module.css';
 
 export default function GrandTitreConcept() {
   return (
-    <div>
+    <div className={styles.containerBackground}>
       <div className={styles.containerParagraphe}>
-        <Image
-          // className={containerImg}
-          src="/images/parent.jpg"
-          alt="Picture of the author"
-          width={600}
-          height={500}
-        />
+        <div className={styles.containerImg}>
+          <Image
+            src="/images/bbCote.jpg"
+            alt="Picture of the author"
+            width={600}
+            height={800}
+          />
+        </div>
         <div className={styles.containerSousTitre}>
           <h3 className={styles.titleParagraphe}>Les enjeux</h3>
           <p className={styles.paragrapheConcept}>
@@ -28,13 +29,14 @@ export default function GrandTitreConcept() {
         </div>
       </div>
       <div className={styles.containerParagraphe}>
-        <Image
-          // className={containerImg}
-          src="/images/parent.jpg"
-          alt="Picture of the author"
-          width={600}
-          height={500}
-        />
+        <div className={styles.containerImg}>
+          <Image
+            src="/images/mainBb.jpg"
+            alt="Picture of the author"
+            width={600}
+            height={800}
+          />
+        </div>
         <div className={styles.containerSousTitre}>
           <h3 className={styles.titleParagraphe}>Les précautions</h3>
           <p className={styles.paragrapheConcept}>
@@ -50,13 +52,15 @@ export default function GrandTitreConcept() {
           </p>
         </div>
         <div className={styles.containerParagraphe}>
-          <Image
-            // className={containerImg}
-            src="/images/parent.jpg"
-            alt="Picture of the author"
-            width={600}
-            height={500}
-          />
+          <div className={styles.containerImg}>
+            <Image
+              // className={containerImg}
+              src="/images/bbEntier.jpg"
+              alt="Picture of the author"
+              width={600}
+              height={800}
+            />
+          </div>
           <div className={styles.containerSousTitre}>
             <h3 className={styles.titleParagraphe}>En securité</h3>
             <p className={styles.paragrapheConcept}>
