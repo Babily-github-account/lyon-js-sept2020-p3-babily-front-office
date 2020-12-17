@@ -7,13 +7,16 @@ export default function Header() {
     <>
       <header className={styles.header}>
         <div className={styles.navHeader}>
-          <Link href="/" className={styles.logoHeader}>
-            <Image
-              src="/images/BabilylogoSansBaselineCoul.png"
-              alt="Babily.fr"
-              width={220}
-              height={100}
-            />
+          <Link href="/">
+            <a className={styles.logoHeader}>
+              <Image
+                src="/images/BabilylogoSansBaselineCoul.png"
+                alt="Babily.fr"
+                layout="fixed"
+                width={220}
+                height={100}
+              />
+            </a>
           </Link>
           <Link href="/espacepro">
             <a className={styles.linkPro}>Vous êtes un professionnel ?</a>
@@ -32,11 +35,34 @@ export default function Header() {
           <Link href="/contact">
             <a className={styles.linkNav}>Contact</a>
           </Link>
+          <ul className={styles.navOnMobileWindow}>
+            <li>
+              <Link href="/">
+                <a className={styles.linkNav}>Accueil</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/decouvrir">
+                <a className={styles.linkNav}>Découvrir</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/espaceparents">
+                <a className={styles.linkNav}>Votre Espace</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact">
+                <a className={styles.linkNav}>Contact</a>
+              </Link>
+            </li>
+          </ul>
           <Link href="/connexion">
             <a className={styles.linkLogin}>
               <Image
                 alt="Se connecter"
                 src="/images/icon_connexion.png"
+                layout="fixed"
                 width={25}
                 height={25}
               />
