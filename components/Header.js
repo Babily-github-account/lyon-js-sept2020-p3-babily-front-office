@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+// import { slide as Menu } from 'react-burger-menu';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -13,7 +14,7 @@ export default function Header() {
                 src="/images/BabilylogoSansBaselineCoul.png"
                 alt="Babily.fr"
                 layout="fixed"
-                width={220}
+                width={200}
                 height={100}
               />
             </a>
@@ -23,6 +24,16 @@ export default function Header() {
           </Link>
         </div>
         <div className={styles.navLogin}>
+          <Link href="/">
+            <a
+              className={styles.linkSignin}
+              style={{ width: '20px', minWidth: '20px' }}
+            >
+              <span className={styles.line} />
+              <span className={styles.line} />
+              <span className={styles.line} />
+            </a>
+          </Link>
           <Link href="/">
             <a className={styles.linkNav}>Accueil</a>
           </Link>
@@ -35,28 +46,20 @@ export default function Header() {
           <Link href="/contact">
             <a className={styles.linkNav}>Contact</a>
           </Link>
-          <ul className={styles.navOnMobileWindow}>
-            <li>
-              <Link href="/">
-                <a className={styles.linkNav}>Accueil</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/decouvrir">
-                <a className={styles.linkNav}>Découvrir</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/espaceparents">
-                <a className={styles.linkNav}>Votre Espace</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact">
-                <a className={styles.linkNav}>Contact</a>
-              </Link>
-            </li>
-          </ul>
+          {/* <Menu />
+            <Link href="/">
+              <a className={styles.linkNav}>Accueil</a>
+            </Link>
+            <Link href="/decouvrir">
+              <a className={styles.linkNav}>Découvrir</a>
+            </Link>
+            <Link href="/espaceparents">
+              <a className={styles.linkNav}>Votre Espace</a>
+            </Link>
+            <Link href="/contact">
+              <a className={styles.linkNav}>Contact</a>
+            </Link>
+          </Menu> */}
           <Link href="/connexion">
             <a className={styles.linkLogin}>
               <Image
@@ -75,28 +78,5 @@ export default function Header() {
         </div>
       </header>
     </>
-    // <header className={styles.headerContainer}>
-    //   <nav>
-    //     <ul className={styles.menu}>
-    //       <li className={styles.menuItem}>
-    //         <Link href="/">
-    //           <a href="" className={styles.link}>
-    //             Home
-    //           </a>
-    //         </Link>
-    //       </li>
-    //       <li className={styles.menuItem}>
-    //         <Link href="/dynamic-content">
-    //           <a className={styles.link}>Dynamic content</a>
-    //         </Link>
-    //       </li>
-    //       <li className={styles.menuItem}>
-    //         <Link href="/about">
-    //           <a className={styles.link}>About Us</a>
-    //         </Link>
-    //       </li>
-    //     </ul>
-    //   </nav>
-    // </header>
   );
 }
