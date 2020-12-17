@@ -1,0 +1,34 @@
+import React from 'react';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
+
+export default class MyDocument extends Document {
+  render() {
+    return (
+      <Html lang="en">
+        <Head>
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="icon" href="/images/icon-192.png" />
+          <link rel="apple-touch-icon" href="/images/icon-192.png" />
+          <meta name="theme-color" content="#317EFB" />
+          <meta name="description" content="Put your description here." />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+}
+
+MyDocument.getInitialProps = async (ctx) => {
+  const initialProps = await Document.getInitialProps(ctx);
+
+  return {
+    ...initialProps,
+  };
+};

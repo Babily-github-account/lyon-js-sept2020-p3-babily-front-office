@@ -1,0 +1,114 @@
+.header {
+  height: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #F9F5F1;
+  z-index: 1;
+  top: 0;
+  transition: top 0.5s;
+}
+.navHeader{
+  float: left;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.logoHeader {
+  cursor: pointer;
+}
+.linkPro {
+  min-width: 240px;
+  color: #D07910;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 25px;
+  margin-left: 50px;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  height: 30px;
+  /* float: left; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #FFDCB1;
+}
+.linkPro:hover{
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.navLogin {
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.navLogin a {
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 10px 10px 0 0;
+  border-radius: 20px;
+  padding: 10px;
+  height: 30px;
+}
+
+.linkNav {
+  color: black;
+  min-width: 80px;
+}
+.linkNav:hover{
+  color: #4d84f3;
+}
+.linkLogin:hover{
+  color: #4d84f3;
+}
+.linkSignin {
+  font-size: 14px;
+  color: white;
+  background-color: #4d84f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+.linkSignin:hover{
+  box-shadow: inset -2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-widtth: 1347px){
+  .header {
+    min-height: 100px;
+  }
+  .logoHeader {
+    min-height: 80px;
+    min-width: 180px;
+  }
+ }
+/* .headerContainer {
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+
+.menu {
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menuItem {
+  list-style-type: none;
+  margin-left: 15px;
+}
+
+.link {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+.link:hover {
+  color: wheat;
+} */
