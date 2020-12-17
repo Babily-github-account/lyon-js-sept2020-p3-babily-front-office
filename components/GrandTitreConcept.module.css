@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
+
+.containerParagraphe {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.containerSousTitre {
+  width: 30%;
+}
+
+.titleParagraphe {
+  font-size: 2.5rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #3c84fb;
+}
+
+.paragrapheConcept {
+  font-family: 'Krub', sans-serif;
+  font-size: 16px;
+}
+
+/* // const containerImg = {
+//   boxShadow: 'inset 0px 4px 4px rgba(0, 0, 0, 0.25)',
+// }; */

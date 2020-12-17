@@ -1,9 +1,9 @@
-import GoogleFonts from 'next-google-fonts';
 import Layout from '../components/Layout';
 import SuiteConcept from '../components/SuiteConcept';
 import Espaces from '../components/Espaces';
 import GrandTitreConcept from '../components/GrandTitreConcept';
 import IlsParlentDeNous from '../components/IlsParlentDeNous';
+import Information from '../components/Information';
 
 export default function concept() {
   const containerHead = {
@@ -41,7 +41,6 @@ export default function concept() {
   };
   return (
     <Layout pageTitle="Inscription">
-      <GoogleFonts href="https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:wght@700&display=swap" />
       <div style={conceptStart}>
         <div style={containerHead}>
           <h1 style={titleHead}>Découvrez Babily</h1>
@@ -57,6 +56,7 @@ export default function concept() {
       <Espaces />
       <GrandTitreConcept />
       <IlsParlentDeNous />
+      <Information />
     </Layout>
   );
 }
