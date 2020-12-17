@@ -1,0 +1,68 @@
+.vagueHomeContainer {
+    background-color: #FA6870;
+    height: 500px;
+    z-index: -1;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  .gridContainer {
+    height: 400px;
+    /* display: grid;
+    grid-template-rows: repeat(11, 2fr);
+    grid-template-columns: repeat(11, 2fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto); */
+  }
+  .inlineContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .titre {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 15px;
+    grid-area: 2/2/6/5;
+    font-family: "Montserrat Alternates; sans-serif";
+    text-align: center;
+    margin: auto;
+  }
+  /* .logo1 {
+    gridArea: 9/2/11/3;
+    maxWidth: 100px;
+  }
+  .logo2 {
+    gridArea: 8/3/10/4;
+    maxWidth: 100px;
+  }
+  .logo3 {
+    gridArea: 7/4/9/5;
+    maxWidth: 100px;
+  }
+  .logo4 {
+    gridArea: 6/5/8/6;
+    maxWidth: 100px;
+  }
+  .logo5 {
+    gridArea: 5/6/7/7;
+    maxWidth: 100px;
+  }
+  .logo6 {
+    gridArea: 4/7/6/8;
+    maxWidth: 100px;
+  }
+  .logo7 {
+    gridArea: 3/8/5/9;
+    maxWidth: 100px;
+  }
+  .logo8 {
+    gridArea: 2/9/4/10;
+    maxWidth: 100px;
+  }
+  .logo9 {
+    gridArea: 1/10/3/11;
+    maxWidth: 100px;
+  } */
