@@ -58,7 +58,7 @@ export default function CestQuoiBabily() {
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus
         </p>
-        <Link href="/decouvrir">
+        <Link href="/concept">
           <button type="button" style={boutonDecouvrir}>
             Découvrir
           </button>

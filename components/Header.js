@@ -8,12 +8,14 @@ export default function Header() {
       <header className={styles.header}>
         <div className={styles.navHeader}>
           <Link href="/" className={styles.logoHeader}>
-            <Image
-              src="/images/BabilylogoSansBaselineCoul.png"
-              alt="Babily.fr"
-              width={220}
-              height={100}
-            />
+            <a>
+              <Image
+                src="/images/BabilylogoSansBaselineCoul.png"
+                alt="Babily.fr"
+                width={220}
+                height={100}
+              />
+            </a>
           </Link>
           <Link href="/espacepro">
             <a className={styles.linkPro}>Vous êtes un professionnel ?</a>
