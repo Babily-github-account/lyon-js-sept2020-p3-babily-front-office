@@ -72,13 +72,10 @@
  }
 .imgFormeJaune {
   position:absolute;
-  /* bottom: 350px;
-  left: 50vw; */
   opacity: 0.5;
  }
 .imgFormeRouge {
   position: absolute;
-  /* left: 30vw; */
   transform: rotate(90deg) scale(1.2);
   opacity: 0.5;
  }
@@ -88,7 +85,12 @@
   }
  }
  @media screen and (max-width: 900px){
-  .imgFilleCreche{
-    
+  .containerReservation {
+    margin-top: 150px;
+  }
+  .imgFormeJaune, 
+  .imgFormeRouge, 
+  .imgFilleCreche {
+    display: none;
   }
  }
