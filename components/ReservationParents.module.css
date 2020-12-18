@@ -29,7 +29,8 @@
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: #3c84fb;
-  text-decoration-thickness: 30px;
+  text-decoration-thickness: 20px;
+  line-height: 4.5rem;
   min-width: 400px;
  }
 .textHome {
@@ -85,10 +86,5 @@
  @media screen and (max-width: 1347px){
   .containerReservation {
     margin-top: 60px;
-  }
- }
- @media screen and (max-width: 900px){
-  .imgFilleCreche{
-    
   }
  }
