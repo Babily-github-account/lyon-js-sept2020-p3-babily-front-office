@@ -12,8 +12,9 @@
 .titreLesChiffresBabily {
   color: #FA6870;
   text-decoration: overline;
-  text-decoration-thickness: 10px;
-  font-size: 2rem;
+  text-decoration-thickness: 1.2rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
   width: 100%;
   margin-left: 3%;
   height: auto;
@@ -36,7 +37,7 @@
 
 .notions {
   text-align: center;
-  font-family: Krub, sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .notion {
@@ -59,15 +60,15 @@
   fill: rgba(250,104,112,0.5);
   position: absolute;
   transform: rotate(-30deg);
-  top: -30%;
-  left: -1%;
+  top: -27%;
+  left: 4%;
 }
 .paletteA2 {
   fill: rgba(250,104,112,1);
   position: absolute;
   transform: rotate(-70deg);
   top: -35%;
-  left: 1%;
+  left: 3%;
 
 }
 .paletteB2 {
@@ -82,7 +83,7 @@
   position: absolute;
   transform: rotate(-10deg);
   top: -30%;
-  left: -1%;
+  left: 1%;
 
 }
 .paletteB3 {
