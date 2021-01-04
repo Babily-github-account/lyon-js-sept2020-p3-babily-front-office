@@ -11,10 +11,10 @@ export default function lesChiffresBabilyConcept() {
       <h3 className={styles.titreLesChiffresBabily}>Les chiffres Babily</h3>
       <div className={styles.chiffres}>
         <div className={styles.notion}>
-          <svg viewBox="0 0 50 50" className={styles.paletteA}>
+          <svg viewBox="0 0 50 50" className={styles.paletteA1}>
             <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
           </svg>
-          <svg viewBox="0 0 50 50" className={styles.paletteB}>
+          <svg viewBox="0 0 50 50" className={styles.paletteB1}>
             <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
           </svg>
           <div className={styles.chiffreTexte}>
@@ -28,10 +28,10 @@ export default function lesChiffresBabilyConcept() {
         </div>
 
         <div className={styles.notion}>
-          <svg viewBox="0 0 50 50" className={styles.paletteA}>
+          <svg viewBox="0 0 50 50" className={styles.paletteA2}>
             <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
           </svg>
-          <svg viewBox="0 0 50 50" className={styles.paletteB}>
+          <svg viewBox="0 0 50 50" className={styles.paletteB2}>
             <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
           </svg>
           <div className={styles.chiffreTexte}>
@@ -44,10 +44,10 @@ export default function lesChiffresBabilyConcept() {
           </div>
         </div>
         <div className={styles.notion}>
-          <svg viewBox="0 0 50 50" className={styles.paletteA}>
+          <svg viewBox="0 0 50 50" className={styles.paletteA3}>
             <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
           </svg>
-          <svg viewBox="0 0 50 50" className={styles.paletteB}>
+          <svg viewBox="0 0 50 50" className={styles.paletteB3}>
             <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
           </svg>
           <div className={styles.chiffreTexte}>
@@ -62,10 +62,10 @@ export default function lesChiffresBabilyConcept() {
         </div>
         <div className={styles.notion}>
           <div>
-            <svg viewBox="0 0 50 50" className={styles.paletteA}>
+            <svg viewBox="0 0 50 50" className={styles.paletteA4}>
               <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
             </svg>
-            <svg viewBox="0 0 50 50" className={styles.paletteB}>
+            <svg viewBox="0 0 50 50" className={styles.paletteB4}>
               <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
             </svg>
           </div>

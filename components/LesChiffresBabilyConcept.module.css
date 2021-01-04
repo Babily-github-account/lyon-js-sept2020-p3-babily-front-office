@@ -17,7 +17,7 @@
   width: 100%;
   margin-left: 3%;
   height: auto;
-  padding: 15% 5% 2% 0%;
+  padding: 12% 5% 2% 0%;
 }
 
 .chiffres {
@@ -27,9 +27,9 @@
   align-items: center;
   width: 100%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 2%;
   padding: 1%;
-  color: black;
+  color: white;
   text-align: center;
 
 }
@@ -43,19 +43,70 @@
   min-width: 300px;
   min-height: 230px;
   position: relative;
+  margin: 45px;
 }
 
 
 
-.paletteA {
+.paletteA1 {
   fill: rgba(250,104,112,1);
   position: absolute;
+  top: -30%;
+  left: -1%;
+
 }
-.paletteB {
+.paletteB1 {
   fill: rgba(250,104,112,0.5);
-  transform: rotate(-30deg);
   position: absolute;
+  transform: rotate(-30deg);
+  top: -30%;
+  left: -1%;
 }
+.paletteA2 {
+  fill: rgba(250,104,112,1);
+  position: absolute;
+  transform: rotate(-70deg);
+  top: -35%;
+  left: 1%;
+
+}
+.paletteB2 {
+  fill: rgba(250,104,112,0.5);
+  position: absolute;
+  transform: rotate(-130deg);
+  top: -45%;
+  left: 5%;
+}
+.paletteA3 {
+  fill: rgba(250,104,112,1);
+  position: absolute;
+  transform: rotate(-10deg);
+  top: -30%;
+  left: -1%;
+
+}
+.paletteB3 {
+  fill: rgba(250,104,112,0.5);
+  position: absolute;
+  transform: rotate(-110deg);
+  top: -42%;
+  left: 5%;
+}
+.paletteA4 {
+  fill: rgba(250,104,112,1);
+  position: absolute;
+  transform: rotate(160deg);
+  top: -50%;
+  left: -3%;
+}
+.paletteB4 {
+  fill: rgba(250,104,112,0.5);
+  position: absolute;
+  transform: rotate(-160deg);
+  top: -45%;
+  left: 3%;
+}
+
 .chiffreTexte {
   position: relative;
 }
