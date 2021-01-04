@@ -11,38 +11,72 @@ export default function lesChiffresBabilyConcept() {
       <h3 className={styles.titreLesChiffresBabily}>Les chiffres Babily</h3>
       <div className={styles.chiffres}>
         <div className={styles.notion}>
-          <div className={styles.chiffre}>
-            <animated.span>
-              {heuresDaccueil.val.interpolate((val) => Math.floor(val))}
-            </animated.span>
+          <svg viewBox="0 0 50 50" className={styles.paletteA}>
+            <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
+          </svg>
+          <svg viewBox="0 0 50 50" className={styles.paletteB}>
+            <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
+          </svg>
+          <div className={styles.chiffreTexte}>
+            <div className={styles.chiffre}>
+              <animated.span>
+                {heuresDaccueil.val.interpolate((val) => Math.floor(val))}
+              </animated.span>
+            </div>
+            <p>heures d'accueil pourvues</p>
           </div>
-          <p>heures d'accueil pourvues</p>
         </div>
 
         <div className={styles.notion}>
-          <div className={styles.chiffre}>
-            <animated.span>
-              {famillesInscrites.val.interpolate((val) => Math.floor(val))}
-            </animated.span>
+          <svg viewBox="0 0 50 50" className={styles.paletteA}>
+            <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
+          </svg>
+          <svg viewBox="0 0 50 50" className={styles.paletteB}>
+            <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
+          </svg>
+          <div className={styles.chiffreTexte}>
+            <div className={styles.chiffre}>
+              <animated.span>
+                {famillesInscrites.val.interpolate((val) => Math.floor(val))}
+              </animated.span>
+            </div>
+            <p>familles inscrites</p>
           </div>
-          <p>familles inscrites</p>
         </div>
         <div className={styles.notion}>
-          <div className={styles.chiffre}>
-            +
-            <animated.span>
-              {reservations.val.interpolate((val) => Math.floor(val))}
-            </animated.span>
+          <svg viewBox="0 0 50 50" className={styles.paletteA}>
+            <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
+          </svg>
+          <svg viewBox="0 0 50 50" className={styles.paletteB}>
+            <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
+          </svg>
+          <div className={styles.chiffreTexte}>
+            <div className={styles.chiffre}>
+              +
+              <animated.span>
+                {reservations.val.interpolate((val) => Math.floor(val))}
+              </animated.span>
+            </div>
+            <p>réservations</p>
           </div>
-          <p>réservations</p>
         </div>
         <div className={styles.notion}>
-          <div className={styles.chiffre}>
-            <animated.span>
-              {crechespartenaires.val.interpolate((val) => Math.floor(val))}
-            </animated.span>
+          <div>
+            <svg viewBox="0 0 50 50" className={styles.paletteA}>
+              <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
+            </svg>
+            <svg viewBox="0 0 50 50" className={styles.paletteB}>
+              <path d="M46.5,11.5c3.7,18.6-2.5,32-16.3,32S2.7,33,.4,21.2,5.3,4.9,18.9,2.2C29.8.1,43.5-4.2,46.5,11.5Z" />
+            </svg>
           </div>
-          <p>crèches partenaires</p>
+          <div className={styles.chiffreTexte}>
+            <div className={styles.chiffre}>
+              <animated.span>
+                {crechespartenaires.val.interpolate((val) => Math.floor(val))}
+              </animated.span>
+            </div>
+            <p>crèches partenaires</p>
+          </div>
         </div>
       </div>
     </div>
