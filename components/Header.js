@@ -24,7 +24,7 @@ export default function Header() {
           </Link>
         </div>
         <div className={styles.navLogin}>
-          <Link href="/">
+          {/* <Link href="/">
             <a
               className={styles.linkSignin}
               style={{ width: '20px', minWidth: '20px' }}
@@ -33,7 +33,7 @@ export default function Header() {
               <span className={styles.line} />
               <span className={styles.line} />
             </a>
-          </Link>
+          </Link> */}
           <Link href="/">
             <a className={styles.linkNav}>Accueil</a>
           </Link>
