@@ -28,7 +28,7 @@ export default function concept() {
   };
 
   const containerSousTitle = {
-    marginBottom: '15%',
+    marginBottom: '10%',
     marginTop: '5%',
   };
 

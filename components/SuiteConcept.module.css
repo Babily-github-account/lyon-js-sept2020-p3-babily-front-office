@@ -1,59 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
+
 .containerNotreConcept {
+  display: flex;
+  flex-direction: wrap;
   background-color: #faf5f0;
-  height: 40vh;
+  height: auto;
   width: 100%;
-  margin-top: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 12%;
 }
-.containerNotreConcept2 {
+
+
+.containerNotreConceptTexte {
   display: flex;
   flex-direction: column;
+  width: 55%;
+  min-width: 320px;
+  height: auto;
+  padding: 5% 8%;
 }
-
 .titleConcept {
-  margin: 0;
   font-family: 'Montserrat Alternates', sans-serif;
-  line-height: 44px;
-  padding-bottom: 50px;
-  color: #3c84fb;
   font-size: 2rem;
+  line-height: 2.5rem;
+  padding-bottom: 5%;
+  color: #3c84fb;
 }
-
-.parentImg {
-  float: right;
-}
-
 .paragrapheConcept {
   font-family: 'Krub', sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-  margin: 0;
-  width: 80%;
+  font-size: 1.3 rem;
+  line-height: 1.5rem;
+  width: 100%;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .containerNotreConcept {
-    padding: 0;
-  }
-  .parentImg {
+.conceptImg {
+  position: relative;
+  width: 35%;
+  height: auto;
+}
+.palette {
+  fill: rgba(250,104,112,1);
+  transform: rotate(110deg);
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 5%;
+  right: -5%;
+}
+.photoFilles {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 26%;
+  margin-left: 10%;
+  overflow: hidden;
+}
+
+
+
+@media screen and (max-device-width: 760px) {
+
+  .conceptImg {
     display: none;
   }
 
-  .titleConcept {
-    font-size: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-  }
-
-  .paragrapheConcept {
-    font-size: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-    width: 100%;
-    padding-left: 1%;
-    padding-right: 1%;
-  }
 }
