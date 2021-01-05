@@ -7,11 +7,10 @@ export default function GrandTitreConcept() {
       <div className={styles.containerParagraphe}>
         <div className={styles.containerImg}>
           <Image
-            src="/images/filleAuCrayon.jpeg"
-            alt="Picture of the author"
-            width={600}
-            height={375}
-            className={styles.photoFilleAuCrayon}
+            src="/images/filleAuCrayon.png"
+            alt="fillette sur un crayon"
+            width={700}
+            height={455}
           />
         </div>
         <div className={styles.containerSousTitre}>
@@ -27,14 +26,6 @@ export default function GrandTitreConcept() {
         </div>
       </div>
       <div className={styles.containerParagraphe}>
-        <div className={styles.containerImg}>
-          <Image
-            src="/images/mainBb.jpg"
-            alt="Picture of the author"
-            width={600}
-            height={800}
-          />
-        </div>
         <div className={styles.containerSousTitre}>
           <h3 className={styles.titleParagraphe}>Les précautions</h3>
           <p className={styles.paragrapheConcept}>
@@ -48,6 +39,15 @@ export default function GrandTitreConcept() {
             montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
             pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
           </p>
+        </div>
+        <div className={styles.containerImg}>
+          <Image
+            src="/images/mainBbPapa.png"
+            alt="Mains d'un pere et son bebe"
+            width={350}
+            height={500}
+            className={styles.photoBbPapa}
+          />
         </div>
         <div className={styles.containerParagraphe}>
           <div className={styles.containerImg}>

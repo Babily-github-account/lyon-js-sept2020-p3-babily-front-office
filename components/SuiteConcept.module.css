@@ -3,20 +3,19 @@
 .containerNotreConcept {
   display: flex;
   flex-direction: wrap;
-  background-color: #faf5f0;
   height: auto;
   width: 100%;
-  margin-bottom: 12%;
+  margin-bottom: 5%;
 }
 
 
 .containerNotreConceptTexte {
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 50%;
   min-width: 320px;
   height: auto;
-  padding: 1% 8%;
+  padding: 5%;
 }
 .titleConcept {
   font-family: 'Montserrat Alternates', sans-serif;
@@ -30,6 +29,7 @@
   font-size: 1.3 rem;
   line-height: 1.5rem;
   width: 100%;
+  text-align: justify;
 }
 
 .conceptImg {
@@ -64,7 +64,8 @@
     display: none;
   }
   .containerNotreConceptTexte {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: auto;
   }
 }

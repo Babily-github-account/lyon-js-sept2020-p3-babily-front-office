@@ -28,8 +28,7 @@ export default function concept() {
   };
 
   const containerSousTitle = {
-    marginBottom: '10%',
-    marginTop: '5%',
+    margin: '5% auto',
   };
 
   const introduction = {
