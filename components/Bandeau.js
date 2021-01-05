@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import Image from 'next/image';
 import styles from './Bandeau.module.css';
 
