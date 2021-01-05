@@ -30,7 +30,9 @@
     ]
   },
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0",
     "next": "10.0.3",
     "next-google-fonts": "^1.2.1",
     "next-pwa": "^5.0.0",
@@ -38,8 +40,8 @@
     "react": "17.0.1",
     "react-burger-menu": "^3.0.2",
     "react-dom": "17.0.1",
-    "react-responsive": "^8.2.0",
     "react-icons": "^4.1.0",
+    "react-responsive": "^8.2.0",
     "react-spring": "^8.0.27"
   },
   "devDependencies": {

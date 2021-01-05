@@ -71,27 +71,52 @@
   margin-left: 10px;
   min-width: 150px;
  }
+ .imgFilleCreche{
+  border-radius: 1000px;
+ }
 .imgFormeJaune {
   position:absolute;
   opacity: 0.5;
+  bottom: 300px;
  }
 .imgFormeRouge {
+  top: 250px;
   position: absolute;
   transform: rotate(90deg) scale(1.2);
   opacity: 0.5;
  }
  @media screen and (max-width: 1347px){
   .containerReservation {
-    margin-top: 60px;
+    margin-top: 100px;
   }
  }
  @media screen and (max-width: 900px){
   .containerReservation {
-    margin-top: 150px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 100px 0 100px;
   }
-  .imgFormeJaune, 
-  .imgFormeRouge, 
-  .imgFilleCreche {
+  
+  .containerImgReservation{
     display: none;
+  }
+ }
+ @media screen and (max-width: 500px){
+  .containerText{
+    transform: scale(0.8);
+    text-align: center;
+  }
+  .boxReservation{
+    display: flex;
+    flex-direction: column;
+    transform: scale(1.4);
+    max-width: 100%;
+  }
+  .btnReservation{
+    margin-top: 20px;
+  }
+  .linkDispo{
+    margin-top: 20px;
+    margin-left: 0;
   }
  }

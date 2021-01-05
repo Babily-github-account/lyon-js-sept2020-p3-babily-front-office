@@ -1,7 +1,6 @@
 import NextNprogress from 'nextjs-progressbar';
 import Head from 'next/head';
 import GoogleFonts from 'next-google-fonts';
-
 import OfflineBanner from './OfflineBanner';
 import Header from './Header';
 // import Footer from './Footer';
