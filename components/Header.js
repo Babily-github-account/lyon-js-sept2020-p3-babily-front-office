@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
-// import { slide as Menu } from 'react-burger-menu';
 import styles from './Header.module.css';
+import Navbar from './Navbar';
 
 export default function Header() {
   return (
     <>
       <header className={styles.header}>
+        <Navbar />
         <div className={styles.navHeader}>
           <Link href="/">
             <a className={styles.logoHeader}>
@@ -24,42 +25,16 @@ export default function Header() {
           </Link>
         </div>
         <div className={styles.navLogin}>
-          {/* <Link href="/">
-            <a
-              className={styles.linkSignin}
-              style={{ width: '20px', minWidth: '20px' }}
-            >
-              <span className={styles.line} />
-              <span className={styles.line} />
-              <span className={styles.line} />
-            </a>
-          </Link> */}
           <Link href="/">
             <a className={styles.linkNav}>Accueil</a>
           </Link>
           <Link href="/concept">
             <a className={styles.linkNav}>Découvrir</a>
           </Link>
-          <Link href="/espaceparents">
-            <a className={styles.linkNav}>Votre Espace</a>
-          </Link>
           <Link href="/contact">
             <a className={styles.linkNav}>Contact</a>
           </Link>
-          {/* <Menu />
-            <Link href="/">
-              <a className={styles.linkNav}>Accueil</a>
-            </Link>
-            <Link href="/decouvrir">
-              <a className={styles.linkNav}>Découvrir</a>
-            </Link>
-            <Link href="/espaceparents">
-              <a className={styles.linkNav}>Votre Espace</a>
-            </Link>
-            <Link href="/contact">
-              <a className={styles.linkNav}>Contact</a>
-            </Link>
-          </Menu> */}
+
           <Link href="/connexion">
             <a className={styles.linkLogin}>
               <Image
