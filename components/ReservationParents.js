@@ -30,7 +30,7 @@ export default function ReservationParents() {
           className={styles.imgFilleCreche}
           src="/images/fillette:home.png"
           alt="Fille en crèche"
-          layout="intrinsic"
+          // layout="intrinsic"
           width={600}
           height={600}
         />
