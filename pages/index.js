@@ -9,14 +9,19 @@ import Bandeau from '../components/Bandeau';
 import LeSaviezVous from '../components/LeSaviezVous';
 
 export default function Home() {
+  const containerBg = {
+    backgroundImage: `url(/images/background10.jpg)`,
+  };
   return (
     <Layout pageTitle="Home">
       <ViewSource pathname="pages/index.js" />
       <GoogleFonts href="https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Montserrat+Alternates:ital,wght@0,800;1,600&display=swap" />
       <ReservationParents />
-      <CestQuoiBabily />
-      <LeSaviezVous />
-      <Bandeau />
+      <div style={containerBg}>
+        <CestQuoiBabily />
+        <LeSaviezVous />
+        <Bandeau />
+      </div>
     </Layout>
   );
 }

@@ -8,6 +8,7 @@ const cestQuoiBabily = {
   margin: 'auto',
   display: 'flex',
   justifyContent: 'center',
+  backgroundColor: 'white',
 };
 
 const container = {
