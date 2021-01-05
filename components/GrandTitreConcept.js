@@ -44,19 +44,19 @@ export default function GrandTitreConcept() {
           <Image
             src="/images/mainBbPapa.png"
             alt="Mains d'un pere et son bebe"
-            width={350}
-            height={500}
+            width={250}
+            height={350}
             className={styles.photoBbPapa}
           />
         </div>
         <div className={styles.containerParagraphe}>
           <div className={styles.containerImg}>
             <Image
-              // className={containerImg}
-              src="/images/bbEntier.jpg"
-              alt="Picture of the author"
-              width={600}
-              height={800}
+              src="/images/securite.png"
+              alt="bebe qui dort"
+              width={250}
+              height={350}
+              className={styles.photoBbSecurite}
             />
           </div>
           <div className={styles.containerSousTitre}>

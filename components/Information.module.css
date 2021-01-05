@@ -7,6 +7,7 @@
   align-items: center;
   background-color: white;
   padding: 5% 0;
+  width: 100%
 }
 
 .paragrapheInfo {
@@ -27,6 +28,7 @@
   text-decoration-thickness: 1.2rem;
   color: #fa6870;
   padding-bottom: 20px;
+  margin-left: 6%;
 }
 
 .buttonInfo {
@@ -34,10 +36,12 @@
   font-size: 1rem;
   font-family: 'Krub', sans-serif;
   background-color: #3c84fb;
-  padding: 1%;
+  padding: 4%;
+  margin: 5% auto;
   border-radius: 30px;
   border: none;
-  width: auto;
+  width: 45%;
+  height: auto;
   text-align: center;
 }
 
