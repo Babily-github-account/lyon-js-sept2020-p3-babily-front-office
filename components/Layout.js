@@ -3,7 +3,7 @@ import Head from 'next/head';
 import GoogleFonts from 'next-google-fonts';
 import OfflineBanner from './OfflineBanner';
 import Header from './Header';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 export default function Layout({ children, pageTitle }) {
   return (
@@ -21,7 +21,7 @@ export default function Layout({ children, pageTitle }) {
       <OfflineBanner />
       <Header />
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
