@@ -62,5 +62,8 @@
   .conceptImg {
     display: none;
   }
-
+  .containerNotreConceptTexte {
+    width: 100%;
+    height: auto;
+  }
 }
