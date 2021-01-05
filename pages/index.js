@@ -6,6 +6,8 @@ import ReservationParents from '../components/ReservationParents';
 import ViewSource from '../components/view-source';
 import CestQuoiBabily from '../components/CestQuoiBabily';
 import LeSaviezVous from '../components/LeSaviezVous';
+import Carousel from '../components/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <ReservationParents />
       <CestQuoiBabily />
       <LeSaviezVous />
+      <Carousel />
     </Layout>
   );
 }
