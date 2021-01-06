@@ -7,10 +7,17 @@ import ViewSource from '../components/view-source';
 import CestQuoiBabily from '../components/CestQuoiBabily';
 import Bandeau from '../components/Bandeau';
 import LeSaviezVous from '../components/LeSaviezVous';
+import Cards from '../components/cards';
 
 export default function Home() {
   const containerBg = {
     backgroundImage: `url(/images/background10.jpg)`,
+  };
+  const background2 = {
+    backgroundImage: `url(/images/background2.jpg)`,
+    backgroundSize: '100%',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'bottom',
   };
   return (
     <Layout pageTitle="Home">
@@ -21,6 +28,9 @@ export default function Home() {
         <CestQuoiBabily />
         <LeSaviezVous />
         <Bandeau />
+      </div>
+      <div style={background2}>
+        <Cards />
       </div>
     </Layout>
   );

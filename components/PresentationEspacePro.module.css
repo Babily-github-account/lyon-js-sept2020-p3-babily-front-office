@@ -1,0 +1,51 @@
+.sectionPresEspacePro{
+    text-align: center;
+}
+.titlePres{
+    color: #FFBB69;
+  font-size: 42px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color:#FFBB69;
+  text-decoration-thickness: 20px;
+  line-height: 4.5rem;
+}
+.avionPapier{
+    transform: rotate(45deg);
+}
+.sectionPresBabily{
+    width: 100%;
+    display: inline-block;
+}
+.presBerceaux{
+    display: flex;
+    flex-direction: column;
+}
+.titleBerceaux{
+    text-align: center;
+    color: white;
+    background-image: url(/images/Baniere1.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 50%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    flex-shrink: 0;
+}
+.presBabily{
+    display: flex;
+    flex-direction: column;
+}
+.titleBabily{
+    text-align: center;
+    color: white;
+    background-image: url(/images/Baniere2.svg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 50%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}

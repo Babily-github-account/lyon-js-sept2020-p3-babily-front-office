@@ -16,7 +16,6 @@ export default function concept() {
     filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
   };
   const conceptStart = {
-    backgroundColor: '#faf5f0',
     width: '100%',
   };
 
@@ -28,8 +27,9 @@ export default function concept() {
   };
 
   const containerSousTitle = {
-    marginBottom: '15%',
-    marginTop: '5%',
+    margin: '5% auto',
+    backgroundImage: 'url(/images/converted/background4.webp)',
+    backgroundSize: 'cover',
   };
 
   const introduction = {
