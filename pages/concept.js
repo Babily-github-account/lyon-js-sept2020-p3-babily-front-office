@@ -29,7 +29,7 @@ export default function concept() {
 
   const containerSousTitle = {
     margin: '5% auto',
-    backgroundImage: 'url(/images/background4.jpg)',
+    backgroundImage: 'url(/images/converted/background4.webp)',
     backgroundSize: 'cover',
   };
 
