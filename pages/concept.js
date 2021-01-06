@@ -29,6 +29,8 @@ export default function concept() {
 
   const containerSousTitle = {
     margin: '5% auto',
+    backgroundImage: 'url(/images/background4.jpg)',
+    backgroundSize: 'cover',
   };
 
   const introduction = {
