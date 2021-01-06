@@ -31,19 +31,6 @@ export default function Cards() {
             Rhône)
           </h6>
         </div>
-        <div className={styles.cards}>
-          <p className={styles.textCards}>
-            “ Je fonctionne avec Babily et j’en suis très satisfaite. Les
-            repères de l’enfant restent une priorité. Très utilepour les
-            contrats de moins de 5 jours par exemple. Cela me demandait beaucoup
-            de travail.”
-          </p>
-          <h5 className={styles.cardsName}>Sarah Etienne</h5>
-          <h6 className={styles.cardsFrom}>
-            Fondatrice et Gestionnaire de La Petite crèche <br />
-            Micro-crèche privée Lyon (69 Rhône)
-          </h6>
-        </div>
       </div>
       <Link href="/espacetemoignage">
         <p className={styles.linkCards}>Voir les témoignages</p>
