@@ -87,7 +87,7 @@ export default function LeSaviezVous() {
     height: 'auto',
     top: '50%',
     bottom: '50%',
-    transform: 'translate(-55%, -5%) rotate(120deg)',
+    transform: 'translate(-55%, -15%) rotate(120deg)',
   };
   const paletteB3 = {
     margin: 'auto',
@@ -98,7 +98,7 @@ export default function LeSaviezVous() {
     height: 'auto',
     top: '50%',
     bottom: '50%',
-    transform: 'translate(-55%, 5%) rotate(40deg)',
+    transform: 'translate(-55%, -2%) rotate(40deg)',
   };
   const chiffreValeur1 = {
     position: 'relative',
@@ -127,6 +127,14 @@ export default function LeSaviezVous() {
   };
   const valeur = {
     fontSize: '1.6rem',
+  };
+  const valeurTransparente = {
+    fontSize: '1.1rem',
+    color: 'transparent',
+  };
+  const valeurTransparente2 = {
+    fontSize: '1.4rem',
+    color: 'transparent',
   };
   const texteExplicatif = {
     padding: '10% 5%',
@@ -175,6 +183,7 @@ export default function LeSaviezVous() {
               {placesEnCreche.val.interpolate((val) => Math.floor(val))}
             </animated.span>
             <span style={valeur}>%</span>
+            <p style={valeurTransparente}>x</p>
             <p style={texteExplicatif}>
               Des enfants (de 10 semaines à 3 ans) ont une place en crèche
             </p>
@@ -192,6 +201,7 @@ export default function LeSaviezVous() {
               {tauxOccupation.val.interpolate((val) => Math.floor(val))}
             </animated.span>
             <span style={valeur}>%</span>
+            <p style={valeurTransparente2}>x</p>
             <p style={texteExplicatif}>
               Le taux d'occupation réel moyen des crèches
             </p>
