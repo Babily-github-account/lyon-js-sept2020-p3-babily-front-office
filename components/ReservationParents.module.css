@@ -72,30 +72,13 @@
   min-width: 150px;
 }
 .imgFilleCreche {
-  animation-duration: 25s;
-  animation-name: move_wave;
-}
-@keyframes move_wave {
-  0% {
-    top: 0;
-    left: 0;
-  }
-  30% {
-    top: 50px;
-  }
-  68%,
-  72% {
-    left: 50px;
-  }
-  100% {
-    top: 100px;
-    left: 100%;
-  }
+  border-radius: 50%;
 }
 .imgFormeJaune {
   position: absolute;
   opacity: 0.5;
   bottom: 300px;
+  transform: rotate(90deg);
 }
 .imgFormeRouge {
   top: 250px;
@@ -128,7 +111,7 @@
     display: flex;
     flex-direction: column;
     transform: scale(1.4);
-    width: 100%;
+    max-width: 100%;
   }
   .btnReservation {
     margin-top: 20px;
