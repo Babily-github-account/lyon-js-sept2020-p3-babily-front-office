@@ -11,10 +11,6 @@ export default class MyDocument extends Document {
           <link rel="apple-touch-icon" href="/images/icon-192.png" />
           <meta name="theme-color" content="#317EFB" />
           <meta name="description" content="Put your description here." />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
         </Head>
         <body>
           <Main />
