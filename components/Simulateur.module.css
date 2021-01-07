@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
+
+.containerSimulateur {
+  width: 100%;
+  height: auto;
+  background-color: #FAF5F0;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.simulateurTexte {
+  width: 40%;
+  text-align: center;
+  padding: 3%;
+}
+.titreSimulateur {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #3c84fb;
+  text-decoration: underline;  
+  text-decoration-thickness: 1.2rem;
+}
+.simulateurInformation {
+  font-family: 'Krub', sans-serif;
+  font-size: 1.3rem;
+  margin: 15% auto;
+
+}
+.lien {
+  font-family: 'Krub', sans-serif;
+  font-size: 1.1rem;
+  color: #FA6870;
+  text-decoration: underline;
+}
