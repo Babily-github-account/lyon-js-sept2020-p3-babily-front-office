@@ -5,21 +5,19 @@ import styles from './IlsParlentDeNous.module.css';
 export default function IlsParlentDeNous() {
   return (
     <div className={styles.containerSpeak}>
-      <div className={styles.containerArticle}>
-        <h3 className={styles.titleSpeack}>Ils parlent de nous</h3>
+      <h3 className={styles.titleSpeack}>Ils parlent de nous</h3>
+      <div className={styles.imageSiteWeb}>
+        <Image
+          src="/images/lesProsDeLaPetiteEnfance.png"
+          alt="logo des pros de la petite enfance"
+          width={502}
+          height={121}
+        />
         <Link href="https://lesprosdelapetiteenfance.fr/initiatives/autres-initiatives/babily-un-service-dedie-laccueil-occasionnel">
           <a className={styles.linkSpeack} target="_blank">
             Lire l'article
           </a>
         </Link>
-      </div>
-      <div className={styles.imageSiteWeb}>
-        <Image
-          src="/images/siteweb.png"
-          alt="Picture of the author"
-          width={500}
-          height={500}
-        />
       </div>
     </div>
   );

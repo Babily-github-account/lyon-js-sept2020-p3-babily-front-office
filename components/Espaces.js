@@ -17,11 +17,13 @@ export default function Espaces() {
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor.{' '}
         </p>
-        <Link href="/espaceParents">
-          <button className={styles.linkEspace} type="button">
-            <a>Decouvrir</a>
-          </button>
-        </Link>
+        <div className={styles.espaceBouton}>
+          <Link href="/espaceParents">
+            <button className={styles.linkEspace} type="button">
+              <a>Decouvrir</a>
+            </button>
+          </Link>
+        </div>
       </div>
       <div className={styles.espaceTitle}>
         <Image
@@ -35,11 +37,13 @@ export default function Espaces() {
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor.{' '}
         </p>
-        <Link href="/espaceParents">
-          <button className={styles.linkEspace} type="button">
-            <a>Decouvrir</a>
-          </button>
-        </Link>
+        <div className={styles.espaceBouton}>
+          <Link href="/espaceParents">
+            <button className={styles.linkEspace} type="button">
+              <a>Decouvrir</a>
+            </button>
+          </Link>
+        </div>
       </div>
       <div className={styles.espaceTitle}>
         <Image
@@ -53,11 +57,13 @@ export default function Espaces() {
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor.{' '}
         </p>
-        <Link href="/espaceParents">
-          <button className={styles.linkEspace} type="button">
-            <a>Decouvrir</a>
-          </button>
-        </Link>
+        <div className={styles.espaceBouton}>
+          <Link href="/espaceParents">
+            <button className={styles.linkEspace} type="button">
+              <a>Decouvrir</a>
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -26,29 +26,32 @@ export default function ReservationParents() {
             </Link>
           </div>
         </div>
-        <Image
-          className={styles.imgFilleCreche}
-          src="/images/fillette:home.png"
-          alt="Fille en crèche"
-          // layout="responsive"
-          width={600}
-          height={600}
-        />
-        <div className={styles.imgFormeJaune}>
+        <div className={styles.containerImgReservation}>
           <Image
-            src="/images/forme2:home.png"
-            alt="Forme jaune"
-            width={300}
-            height={300}
+            className={styles.imgFilleCreche}
+            id="imgFilleCreche"
+            src="/images/fillette:home.jpg"
+            alt="Fille en crèche"
+            width={600}
+            height={500}
           />
-        </div>
-        <div className={styles.imgFormeRouge}>
-          <Image
-            src="/images/forme3:home.png"
-            alt="Forme Rouge"
-            width={100}
-            height={100}
-          />
+
+          <div className={styles.imgFormeJaune}>
+            <Image
+              src="/images/forme2:home.png"
+              alt="Forme jaune"
+              width={300}
+              height={300}
+            />
+          </div>
+          <div className={styles.imgFormeRouge}>
+            <Image
+              src="/images/forme3:home.png"
+              alt="Forme Rouge"
+              width={100}
+              height={100}
+            />
+          </div>
         </div>
       </div>
     </>
