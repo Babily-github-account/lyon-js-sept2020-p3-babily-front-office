@@ -38,7 +38,7 @@ export default function Espaces() {
           commodo ligula eget dolor.{' '}
         </p>
         <div className={styles.espaceBouton}>
-          <Link href="/espaceParents">
+          <Link href="/espacepro">
             <button className={styles.linkEspace} type="button">
               <a>Decouvrir</a>
             </button>

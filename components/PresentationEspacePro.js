@@ -20,7 +20,7 @@ export default function PresentationEspacePro() {
           className={styles.avionPapier}
           src="/images/avionPapier.png"
           alt="Avion en papier"
-          width={300}
+          width={350}
           height={200}
         />
       </section>
