@@ -93,8 +93,14 @@ export default function Simulateur() {
             <h6 className={styles.critereTitre}>
               Nombre d'heure(s) de garde par semaine
             </h6>
-            <input type="number" name="hours" className={styles.heures} />{' '}
-            <FontAwesomeIcon icon={faClock} className={styles.icones} />
+            <div className={styles.heures}>
+              <input
+                type="number"
+                name="hours"
+                className={styles.heuresInput}
+              />{' '}
+              <FontAwesomeIcon icon={faClock} className={styles.icones} />
+            </div>
           </div>
           <button type="submit" name="calculer" className={styles.calculer}>
             Calculer
