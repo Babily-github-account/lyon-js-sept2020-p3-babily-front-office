@@ -1,5 +1,5 @@
 // import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import styles from './PresentationEspacePro.module.css';
 
 export default function PresentationEspacePro() {
@@ -16,14 +16,7 @@ export default function PresentationEspacePro() {
           felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
           consequat massa quis enim.
         </p>
-        <Image
-          className={styles.avionPapier}
-          src="/images/avionPapier.png"
-          alt="Avion en papier"
-          layout="fixed"
-          width={350}
-          height={200}
-        />
+        <div className={styles.avionPapier} />
       </section>
       <section className={styles.sectionPresBabily}>
         <div className={styles.presBerceaux}>

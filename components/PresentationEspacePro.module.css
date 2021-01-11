@@ -3,11 +3,12 @@
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
+    overflow: hidden;
 }
 .titlePres{
     text-align: center;
     color: #FFBB69;
-  font-size: 42px;
+  font-size: 4em;
   font-family: 'Montserrat Alternates', sans-serif;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -22,8 +23,12 @@
     text-align: center;
 }
 .avionPapier{
+    background-image: url(/images/avionPapier.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     transform: rotate(35deg);
-    padding: 10px;
+    width: 350px;
+    height: 300px;  
 }
 .sectionPresBabily{
     width: 100%;
@@ -45,7 +50,7 @@
     padding-top: 20px;
     text-align: center;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.8em;
     background-image: url(/images/Baniere1.svg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -64,7 +69,7 @@
   font-style: italic;
   font-weight: bold;
     padding-top: 20px;
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: center;
     color: white;
     background-image: url(/images/Baniere2.svg);
@@ -116,10 +121,12 @@
     }
     .titleBerceaux{
         height: 160px;
+        font-size: 1.5em;
 
     }
     .titleBabily{
         height: 160px;
+        font-size: 1.5em;
     }
     
 }
@@ -127,14 +134,23 @@
     .sectionPresBabily{
         flex-direction: column;
     }
+    .avionPapier{
+        width: 250px;
+        height: 220px; 
+    }
     .titleBerceaux{
         height: 200px;
         margin-right: 20px;
+        margin-left: 20px;
+        font-size: 1.8em;
 
     }
     .titleBabily{
         height: 200px;
         margin-left: 20px;
+        margin-right: 20px;
+
+        font-size: 1.8em;
     }
     .textBabily{
         padding: 25px;
