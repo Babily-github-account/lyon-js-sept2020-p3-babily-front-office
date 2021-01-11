@@ -34,12 +34,15 @@ export default function PresentationEspacePro() {
             <p>
               Une <b>commercialisation complexe</b>
             </p>
+            <hr className={styles.ligneRouge} />
             <p>
               Des réservations à l’année, <b>sans garantie d’occupations</b>
             </p>
+            <hr className={styles.ligneRouge} />
             <p>
               Une gestion inévitable de <b>l’accueil occasionnel</b>
             </p>
+            <hr className={styles.ligneRouge} />
             <p>
               Une <b>charge administrative</b>, deportant les équipes de{' '}
               <b>leur mission première</b>
@@ -53,10 +56,14 @@ export default function PresentationEspacePro() {
               <b>Boostez vos clients entreprises</b> en répondant à leur besoin
               réel
             </p>
+            <hr className={styles.plusBleuHorizontal} />
+            <hr className={styles.plusBleuVertical} />
             <p>
               <b>Optimiser votre taux d’occupation</b> à l’aide de votre
               calendrier partagé
             </p>
+            <hr className={styles.plusBleuHorizontal} />
+            <hr className={styles.plusBleuVertical} />
             <p>
               <b>Recentrez votre équipe</b> sur le coeur de metier : bébé !
             </p>

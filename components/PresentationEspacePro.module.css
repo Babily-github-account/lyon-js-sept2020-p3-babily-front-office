@@ -85,6 +85,31 @@
     padding-left: 100px;
     font-size: 1.2em;
 }
+.ligneRouge{
+    border: 7px solid;
+    border-color: #FA6870;
+    border-radius: 2px;
+    height: 0px;
+    width: 100px;
+}
+.plusBleuHorizontal{
+    margin-top: 5px;
+    border: 7px solid;
+    border-color: #3C84FB;
+    width: 40px;
+    border-radius: 2px;
+}
+.plusBleuVertical{
+    margin-top: 5px;
+    top: -28px;
+    position: relative;
+    border: 7px solid;
+    border-color: #3C84FB;
+    width: 40px;
+    transform: rotate(90deg);
+    border-radius: 2px;
+}
+
 @media screen and (max-width: 1024px){
     .textPresPro{
         width: 80%;
@@ -112,7 +137,6 @@
         margin-left: 20px;
     }
     .textBabily{
-        font-size: 1.4em;
         padding: 25px;
     }
 }
