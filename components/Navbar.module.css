@@ -211,36 +211,3 @@
       padding: 0;
     }
   }
-  
-    /* h1,
-    h2 {
-      text-align: center;
-    }
-    
-    .logoMealsFactory {
-      width: 100%;
-      max-width: 250px;
-      min-width: 220px;
-      height: auto;
-      margin: auto;
-      border-radius: 10px;
-    }
-    
-    @media screen and (min-width: 768px) {
-      .logoMealsFactory {
-        max-width: 320px;
-      }
-    }
-    
-    .linkLogo {
-      margin: 0 auto;
-      padding: 0 0 0 25px;
-    }
-    
-    .blocNav {
-      display: flex;
-      background-color: #323e40;
-      height: 60px;
-      padding: 10px 0;
-    }
-    */

@@ -1,6 +1,22 @@
+/* eslint-disable spaced-comment */
+/*import React, { useState } from 'react';*/
+import {
+  faInfoCircle,
+  faClock,
+  faEuroSign,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+/*import { useSpring, animated as a } from 'react-spring';*/
 import styles from './Simulateur.module.css';
 
 export default function Simulateur() {
+  // const [flipped, set] = useState(false);
+  // const { transform, opacity } = useSpring({
+  //   opacity: flipped ? 1 : 0,
+  //   transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+  //   config: { mass: 5, tension: 500, friction: 80 },
+  // });
+
   return (
     <div className={styles.containerSimulateur}>
       <div className={styles.simulateurTexte}>
@@ -20,26 +36,70 @@ export default function Simulateur() {
         </a>
       </div>
       <div className={styles.simulateur}>
-        <div className={styles.critere}>
-          <h6 className={styles.critereTitre}>Nombres d'enfant(s) à charge</h6>
-          <div className={styles.nbEnfants}>
-            <p className={styles.chiffreEnfants}>1</p>
-            <p className={styles.chiffreEnfants}>2</p>
-            <p className={styles.chiffreEnfants}>3</p>
-            <p className={styles.chiffreEnfants}>4+</p>
+        <div className={styles.cercle1} />
+        <div className={styles.cercle2} />
+        <div className={styles.cercle3} />
+        <div className={styles.criteres}>
+          <div className={styles.critere}>
+            <h6 className={styles.critereTitre}>
+              Nombres d'enfant(s) à charge
+            </h6>
+            <div className={styles.nbEnfants}>
+              <input
+                type="button"
+                name="one"
+                value="1"
+                className={styles.chiffreEnfants}
+              />
+              <input
+                type="button"
+                name="two"
+                value="2"
+                className={styles.chiffreEnfants}
+              />
+              <input
+                type="button"
+                name="three"
+                value="3"
+                className={styles.chiffreEnfants}
+              />
+              <input
+                type="button"
+                name="four"
+                value="4+"
+                className={styles.chiffreEnfants}
+              />
+            </div>
           </div>
+
+          <div className={styles.critere}>
+            <h6 className={styles.critereTitre}>
+              Revenu net mensuel{' '}
+              <FontAwesomeIcon
+                icon={faInfoCircle}
+                className={styles.iconeInfo}
+              />
+            </h6>
+            <div className={styles.salaire}>
+              <input
+                type="number"
+                name="appointments"
+                className={styles.salaireInput}
+              />
+              <FontAwesomeIcon icon={faEuroSign} className={styles.icones} />
+            </div>
+          </div>
+          <div className={styles.critere}>
+            <h6 className={styles.critereTitre}>
+              Nombre d'heure(s) de garde par semaine
+            </h6>
+            <input type="number" name="hours" className={styles.heures} />{' '}
+            <FontAwesomeIcon icon={faClock} className={styles.icones} />
+          </div>
+          <button type="submit" name="calculer" className={styles.calculer}>
+            Calculer
+          </button>
         </div>
-        <div className={styles.critere}>
-          <h6 className={styles.critereTitre}>Revenu net mensuel</h6>
-          <input />€
-        </div>
-        <div className={styles.critere}>
-          <h6 className={styles.critereTitre}>
-            Nombre d'heure(s) de garde par semaine
-          </h6>
-          <input /> heures
-        </div>
-        <button type="submit">Calculer</button>
       </div>
     </div>
   );
