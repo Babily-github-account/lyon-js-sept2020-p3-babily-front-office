@@ -10,18 +10,9 @@
   height: auto;
   max-width: 500px;
   margin: auto;
-  overflow: hidden;  
-  text-align:center;
+  overflow: hidden;
+  text-align: center;
 }
-
-.photoBbPapa{
-  transform: rotate(-5deg);
-}
-
-.photoBbSecurite {
-  border-radius: 60px;
-}
-
 
 .containerParagraphe {
   display: flex;
@@ -34,9 +25,7 @@
 .containerSousTitre {
   width: 50%;
   margin: auto;
-  padding: 0 5%;
 }
-
 
 .titleParagraphe {
   font-size: 2rem;
@@ -56,7 +45,7 @@
   .containerSousTitre {
     width: 80%;
     margin: auto;
-    padding: 5% ;
+    padding: 5%;
   }
 }
 @media screen and (max-device-width: 999px) {
@@ -66,6 +55,6 @@
   .containerSousTitre {
     width: 65%;
     margin: auto;
-    padding: 3% ;
+    padding: 3%;
   }
 }
