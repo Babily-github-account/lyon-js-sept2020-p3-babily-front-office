@@ -38,14 +38,14 @@ export default function CestSimpleAvecBabily() {
         </button>
       </div>
       <div>
-        <p className={styles.commentaire}>
+        <div className={styles.commentaire}>
           <p className={styles.quote}>
             Je fonctionne avec Babily et j'en suis très satisfaite. Les repères
             de l'enfant restent une priorité. Très utile pour les contrats de
             moins de cinq jours par exemple. Cela me demandait beaucoup de
             travail.
           </p>
-        </p>
+        </div>
       </div>
       <div>
         <p className={styles.nom}>Sandrine Lepatre</p>
