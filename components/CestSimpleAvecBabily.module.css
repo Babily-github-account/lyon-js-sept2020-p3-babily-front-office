@@ -27,7 +27,8 @@
 .inlineForm {
   display: flex;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .form1 {
   background: #ffbb69;
@@ -52,12 +53,30 @@
 }
 .param {
   font-weight: 700;
+  display: block;
+  margin-left: -65px;
 }
 .time {
   font-weight: 700;
+  display: block;
+  margin-left: -20px;
 }
 .reserve {
   font-weight: 700;
+  display: block;
+  margin-left: -15px;
+}
+.accueil {
+  width: 250px;
+  margin-left: -50px;
+}
+.disponibilite {
+  width: 250px;
+  margin-left: -50px;
+}
+.reservation {
+  width: 250px;
+  margin-left: -50px;
 }
 .bien_etre {
   text-align: center;
@@ -74,6 +93,7 @@
   margin-bottom: 30px;
   border-radius: 25px;
   border: 0px;
+  
 }
 .btn_primary {
   color: white;
@@ -108,4 +128,23 @@
   margin-top: 50px;
   cursor: pointer;
 }
-
+@media (max-width: 500px) {
+  .form2 {
+    margin-top: 40px;
+  }
+  .form3 {
+    margin-top: 40px;
+  }
+  .btn {
+    margin-left: 110px;
+  }
+  .param {
+    margin-left: -65px;
+  }
+  .time {
+    margin-left: -20px;
+  }
+  .reserve {
+    margin-left: -15px;
+  }
+}
