@@ -4,11 +4,16 @@
     align-items: center;
     margin-top: 150px;
     overflow: hidden;
+    background-image: url(/images/background9.jpg);
+    background-size: 100% 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
 }
 .titlePres{
     text-align: center;
     color: #FFBB69;
-  font-size: 4em;
+  font-size: 363%;
   font-family: 'Montserrat Alternates', sans-serif;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -21,6 +26,7 @@
 .textPresPro{
     width: 60%;
     text-align: center;
+    font-size: 1.2em;
 }
 .avionPapier{
     background-image: url(/images/avionPapier.png);
@@ -32,14 +38,20 @@
 }
 .sectionPresBabily{
     width: 100%;
+    padding-top: 20px;
     display: flex;
     flex-wrap: row wrap;
     justify-content: center;
+    background-image: url(/images/background10.jpg);
+    background-position:left;
+    background-size: 80% 180%;
+    background-repeat: no-repeat;
 }
 .presBerceaux{
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding-bottom: 80px;
     /* height: 400px;
     width: 100%; */
 }
@@ -63,6 +75,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    
 }
 .titleBabily{
   font-family: 'Montserrat Alternates', sans-serif;
@@ -131,8 +144,12 @@
     
 }
 @media screen and (max-width: 800px){
+    .sectionPresEspacePro{
+        background:none;
+    }
     .sectionPresBabily{
         flex-direction: column;
+        background:none;
     }
     .avionPapier{
         width: 250px;
@@ -168,6 +185,21 @@
     }
     .titleBabily{
         height: 160px;
+        font-size: 1.35em;
+    }
+}
+@media screen and (max-width: 400px){
+    .titlePres{
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+    .titleBerceaux{
+        height: 140px;
+        font-size: 1.35em;
+
+    }
+    .titleBabily{
+        height: 140px;
         font-size: 1.35em;
     }
 }
