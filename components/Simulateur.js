@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
+import Link from 'next/link';
 import {
   faInfoCircle,
   faClock,
@@ -40,7 +41,7 @@ export default function Simulateur() {
         <div className={styles.cercle1} />
         <div className={styles.cercle2} />
         <div className={styles.cercle3} />
-        <div className={styles.criteres} onClick={() => set((state) => !state)}>
+        <div className={styles.criteres}>
           {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
           <a.div
             className={styles.critereRecherche}
@@ -149,10 +150,19 @@ export default function Simulateur() {
                 </p>
               </div>
             </div>
-            <button type="submit" name="calculer" className={styles.calculer}>
-              Choisir ma crèche
+            <Link href="/">
+              <a href="" rel="noreferrer" className={styles.choisirCreche}>
+                Choisir ma crèche
+              </a>
+            </Link>
+
+            <button
+              type="button"
+              className={styles.nouveauCalcul}
+              onClick={() => set((state) => !state)}
+            >
+              Nouvelle simulation
             </button>
-            <p className={styles.nouveauCalcul}>Nouvelle simulation</p>
           </a.div>
         </div>
       </div>

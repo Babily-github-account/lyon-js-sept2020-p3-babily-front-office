@@ -232,8 +232,8 @@
 /*-------------------------------RESULTAT----------------------------*/
 .criteresResultat {
   position: absolute;
-  top: 24%;
-  left: 32%;
+  top: 15%;
+  left: 20%;
 }
 
 .critereTitreResultat {
@@ -267,10 +267,31 @@
   font-size: 1.1rem;
 }
 
-
+.choisirCreche {
+  width: 15%;
+  min-width: 200px;
+  height: auto;
+  margin: auto;
+  padding: 5%;
+  background-color: #FA6870;
+  border-radius: 50px;
+  border-color: transparent;
+  font-family:'Krub', sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 .nouveauCalcul {
   color: #3C84FB;
+  border: none;
   text-decoration: underline;
-  margin: 15% auto;
+  margin: 10% auto;
   cursor: pointer;
+  font-family:'Krub', sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
 }
