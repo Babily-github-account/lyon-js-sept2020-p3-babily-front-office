@@ -1,10 +1,13 @@
+import GoogleFonts from 'next-google-fonts';
 import CestSimpleAvecBabily from '../components/CestSimpleAvecBabily';
 import Layout from '../components/Layout';
+import PresentationEspacePro from '../components/PresentationEspacePro';
 
 export default function EspacePro() {
   return (
     <Layout pageTitle="EspacePro">
-      <h1>Espace Professionnel</h1>
+      <GoogleFonts href="https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Montserrat+Alternates:ital,wght@0,800;1,600&display=swap" />
+      <PresentationEspacePro />
       <CestSimpleAvecBabily />
     </Layout>
   );
