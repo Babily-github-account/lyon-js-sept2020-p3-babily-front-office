@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.titreSimpleBabily {
+  color: #3c84fa;
+  margin-top: 100px;
+  font-family: Montserrat, sans-serif;
+  padding-left: 100px;
+}
+.separator {
+  background: #3c84fa;
+  height: 15px;
+  width: 250px;
+  margin-left: 100px;
+}
+.ch1 {
+  font-weight: 700;
+  padding: 30px 30px;
+}
+.ch2 {
+  font-weight: 700;
+  padding: 30px 30px;
+}
+.ch3 {
+  font-weight: 700;
+  padding: 30px 30px;
+}
+.inlineForm {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.form1 {
+  background: #ffbb69;
+  height: 100px;
+  width: 100px;
+  margin: 30px 100px;
+  border-radius: 50px;
+}
+.form2 {
+  background: #ffbb69;
+  height: 100px;
+  width: 100px;
+  margin: 30px 100px;
+  border-radius: 50px;
+}
+.form3 {
+  background: #ffbb69;
+  height: 100px;
+  width: 100px;
+  margin: 30px 100px;
+  border-radius: 50px;
+}
+.param {
+  font-weight: 700;
+  display: block;
+  margin-left: -65px;
+}
+.time {
+  font-weight: 700;
+  display: block;
+  margin-left: -20px;
+}
+.reserve {
+  font-weight: 700;
+  display: block;
+  margin-left: -15px;
+}
+.accueil {
+  width: 250px;
+  margin-left: -50px;
+}
+.disponibilite {
+  width: 250px;
+  margin-left: -50px;
+}
+.reservation {
+  width: 250px;
+  margin-left: -50px;
+}
+.bien_etre {
+  text-align: center;
+  margin-top: 100px;
+  color: #ffbb69;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.btn {
+  font-size: 2rem;
+  background: #3c84fa;
+  margin-left: 850px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  border: 0px;
+  
+}
+.btn_primary {
+  color: white;
+}
+.commentaire {
+  text-align: center;
+  font-weight: 700;
+  color: #ffbb69;
+  font-size: 1.1rem;
+  margin-top: 50px;
+}
+.quote::before {
+  content: '\201c';
+  color: #ffbb69;
+}
+.quote::after {
+  content: '\201d';
+  color: #ffbb69;
+}
+.nom {
+  text-align: center;
+}
+.gestion {
+  text-align: center;
+}
+.creche {
+  text-align: center;
+}
+.temoignage {
+  text-align: center;
+  color: #f36770;
+  margin-top: 50px;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .form2 {
+    margin-top: 40px;
+  }
+  .form3 {
+    margin-top: 40px;
+  }
+  .btn {
+    margin-left: 110px;
+  }
+  .param {
+    margin-left: -65px;
+  }
+  .time {
+    margin-left: -20px;
+  }
+  .reserve {
+    margin-left: -15px;
+  }
+}
