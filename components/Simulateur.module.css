@@ -87,11 +87,17 @@
   position: relative;
   background-color: #f5efea;
   padding: 3%;
-  width:600px;
+  width: 600px;
   height: 600px;
   border-radius: 50%;
   display: table-cell;
   vertical-align: middle;
+}
+.critereRecherche {
+  position: absolute;
+  will-change: transform, opacity;
+  top: 18%;
+  left: 18%;
 }
 .critere {
   margin-bottom: 7%;
@@ -184,16 +190,21 @@
   font-weight: bold;
   line-height: 3rem;
   color: white;
+  border: none;
   cursor: pointer;
 }
 .calculer:focus {
   display: none;
+}
+.calculer:hover {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*--------------------------------ICONES---------------------------*/
 .iconeInfo {
     color: #FA6870;
   margin: 0 15px;
+  cursor: help;
 }
 .icones {
   color: #FFBB69;
@@ -215,4 +226,51 @@
   .cercle3 {
     display: none;
   }
+}
+
+
+/*-------------------------------RESULTAT----------------------------*/
+.criteresResultat {
+  position: absolute;
+  top: 24%;
+  left: 32%;
+}
+
+.critereTitreResultat {
+  font-size: 1.4rem;
+  color: #FA6870;
+  margin: 2% auto;
+  padding-bottom: 16%;
+}
+.resultatEuroHeure {
+  font-family:'Krub', sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 4rem;
+  color: #FFBB69;
+  margin: 2% auto;
+}
+.resultatJour {
+  margin: 15% auto;
+}
+.resultatEuroJour {
+  font-family:'Krub', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: #FFBB69;
+  margin: 10% 0 2% 2%;
+}
+.iconesEuro2 {
+  color: #FFBB69;
+  margin: 0 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+
+.nouveauCalcul {
+  color: #3C84FB;
+  text-decoration: underline;
+  margin: 15% auto;
+  cursor: pointer;
 }
