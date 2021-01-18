@@ -177,6 +177,7 @@
   display: none;
 }
 
+
 .calculer {
   width: 15%;
   min-width: 200px;
@@ -294,4 +295,11 @@
   font-size: 1rem;
   background-color: transparent;
   outline: none;
+}
+
+.alertError {
+  color: #3C84FB;
+  font-family:'Krub', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
 }

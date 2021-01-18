@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
+
 import Link from 'next/link';
 import {
   faInfoCircle,
@@ -156,11 +157,7 @@ export default function Simulateur() {
               </a>
             </Link>
 
-            <button
-              type="button"
-              className={styles.nouveauCalcul}
-              onClick={() => set((state) => !state)}
-            >
+            <button type="button" className={styles.nouveauCalcul}>
               Nouvelle simulation
             </button>
           </a.div>
