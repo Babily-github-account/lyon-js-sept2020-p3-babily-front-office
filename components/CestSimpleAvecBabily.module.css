@@ -1,82 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
+.containerSimpleBabily{
+  width: 95%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .titreSimpleBabily {
   color: #3c84fa;
-  margin-top: 100px;
+  
+  margin-top: 50px;
   font-family: Montserrat, sans-serif;
-  padding-left: 100px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color:#3c84fa;
+  text-decoration-thickness: 20px;
+  font-size: 3em;
+  margin-left: 150px;
 }
-.separator {
+/* .separator {
   background: #3c84fa;
   height: 15px;
   width: 250px;
   margin-left: 100px;
-}
-.ch1 {
+} */
+.ch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
   font-weight: 700;
-  padding: 30px 30px;
-}
-.ch2 {
-  font-weight: 700;
-  padding: 30px 30px;
-}
-.ch3 {
-  font-weight: 700;
-  padding: 30px 30px;
+  font-size: 4em;
+  color: white;
+  background: #ffbb69;
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  margin: 20px 0;
+  /* padding: 30px 30px; */
 }
 .inlineForm {
   display: flex;
-  text-align: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  text-align: center;
+  width: 100%;
 }
-.form1 {
-  background: #ffbb69;
-  height: 100px;
-  width: 100px;
-  margin: 30px 100px;
-  border-radius: 50px;
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
-.form2 {
-  background: #ffbb69;
-  height: 100px;
-  width: 100px;
-  margin: 30px 100px;
-  border-radius: 50px;
-}
-.form3 {
-  background: #ffbb69;
-  height: 100px;
-  width: 100px;
-  margin: 30px 100px;
-  border-radius: 50px;
+.option{
+  font-size: 1.5em;
 }
 .param {
   font-weight: 700;
-  display: block;
-  margin-left: -65px;
 }
 .time {
   font-weight: 700;
-  display: block;
-  margin-left: -20px;
 }
 .reserve {
   font-weight: 700;
-  display: block;
-  margin-left: -15px;
-}
-.accueil {
-  width: 250px;
-  margin-left: -50px;
-}
-.disponibilite {
-  width: 250px;
-  margin-left: -50px;
-}
-.reservation {
-  width: 250px;
-  margin-left: -50px;
 }
 .bien_etre {
   text-align: center;
@@ -84,26 +70,36 @@
   color: #ffbb69;
   font-weight: 700;
   font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.containerContact{
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 .btn {
-  font-size: 2rem;
+  text-align: center;
+  width: 250px;
+  font-size: 1.5rem;
+  font-weight: 700;
   background: #3c84fa;
-  margin-left: 850px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  border-radius: 25px;
+  padding: 10px;
+  border-radius:35px;
   border: 0px;
-  
-}
-.btn_primary {
   color: white;
+  margin-bottom: 50px;
 }
-.commentaire {
+.quote {
   text-align: center;
   font-weight: 700;
   color: #ffbb69;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-top: 50px;
+  width: 80%;
 }
 .quote::before {
   content: '\201c';
@@ -113,13 +109,7 @@
   content: '\201d';
   color: #ffbb69;
 }
-.nom {
-  text-align: center;
-}
 .gestion {
-  text-align: center;
-}
-.creche {
   text-align: center;
 }
 .temoignage {
@@ -128,15 +118,15 @@
   margin-top: 50px;
   cursor: pointer;
 }
-@media (max-width: 500px) {
-  .form2 {
-    margin-top: 40px;
+@media screen and (max-width: 800px){
+  .titreSimpleBabily {
+    margin-left: 0;
+    text-align: center;
   }
-  .form3 {
+}
+@media screen and (max-width: 500px) {
+  .form {
     margin-top: 40px;
-  }
-  .btn {
-    margin-left: 110px;
   }
   .param {
     margin-left: -65px;
