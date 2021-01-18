@@ -10,7 +10,6 @@
   background-size: cover;
 }
 
-
 .containerNotreConceptTexte {
   display: flex;
   flex-direction: column;
@@ -41,12 +40,12 @@
   height: auto;
 }
 .palette {
-  fill: rgba(250,104,112,1);
-  transform: rotate(110deg);
+  fill: rgba(250, 104, 112, 1);
+  transform: rotate(90deg);
   position: absolute;
   width: 100%;
   height: auto;
-  top: 5%;
+  top: 15%;
   right: -5%;
 }
 .photoFilles {
@@ -58,10 +57,7 @@
   overflow: hidden;
 }
 
-
-
 @media screen and (max-device-width: 760px) {
-
   .conceptImg {
     display: none;
   }
