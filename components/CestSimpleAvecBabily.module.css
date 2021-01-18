@@ -17,12 +17,6 @@
   font-size: 3em;
   margin-left: 150px;
 }
-/* .separator {
-  background: #3c84fa;
-  height: 15px;
-  width: 250px;
-  margin-left: 100px;
-} */
 .ch {
   display: flex;
   align-items: center;
@@ -31,12 +25,11 @@
   font-weight: 700;
   font-size: 4em;
   color: white;
-  background: #ffbb69;
-  border-radius: 100px;
-  height: 200px;
-  width: 200px;
+  background: url(/images/forme2:home.png);
+  background-size: cover;
+  height: 280px;
+  width: 300px;
   margin: 20px 0;
-  /* padding: 30px 30px; */
 }
 .inlineForm {
   display: flex;
