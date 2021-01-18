@@ -1,6 +1,6 @@
 /* eslint-disable react/void-dom-elements-no-children */
 /* eslint-disable react/button-has-type */
-import Link from 'next/link';
+import Cards from './cards';
 import styles from './CestSimpleAvecBabily.module.css';
 
 export default function CestSimpleAvecBabily() {
@@ -39,22 +39,7 @@ export default function CestSimpleAvecBabily() {
       <div className={styles.containerContact}>
         <p className={styles.bien_etre}>Plus de bien être pour tous !</p>
         <button className={styles.btn}>Contactez-nous !</button>
-        <p className={styles.quote}>
-          Je fonctionne avec Babily et j'en suis très satisfaite. Les repères de
-          l'enfant restent une priorité. Très utile pour les contrats de moins
-          de cinq jours par exemple. Cela me demandait beaucoup de travail.
-        </p>
-        <div className={styles.gestion}>
-          <p>Sandrine Lepatre</p>
-          <p>Fondatrice et gestionnaire la petite bulle, Craponne(69 Rhone)</p>
-          <p>Micro-crèche PAJE</p>
-        </div>
-
-        <Link href="/temoignages">
-          <a className={styles.temoignage}>
-            Voir les témoignages de nos crèches
-          </a>
-        </Link>
+        <Cards />
       </div>
     </>
   );

@@ -120,7 +120,7 @@ export default function Simulateur() {
           </a.div>
 
           {/* ------------------------------------ CARTE RESULTAT------------------------------------------- */}
-          <a.div
+          {/* <a.div
             className={styles.criteresResultat}
             style={{
               opacity,
@@ -160,7 +160,7 @@ export default function Simulateur() {
             <button type="button" className={styles.nouveauCalcul}>
               Nouvelle simulation
             </button>
-          </a.div>
+          </a.div> */}
         </div>
       </div>
     </div>
