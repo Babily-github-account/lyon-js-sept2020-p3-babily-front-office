@@ -21,9 +21,9 @@ export default function concept() {
         </svg>
         <div className={styles.photoFilles}>
           <Image
-            src="/images/conceptCestVous.png"
+            src="/images/jouet2.png"
             alt="filles qui montrent le ciel"
-            width={800}
+            width={600}
             height={500}
           />
         </div>

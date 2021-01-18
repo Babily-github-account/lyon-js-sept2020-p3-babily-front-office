@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.containerSimpleBabily{
+  width: 95%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.titreSimpleBabily {
+  color: #3c84fa;
+  
+  margin-top: 50px;
+  font-family: Montserrat, sans-serif;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color:#3c84fa;
+  text-decoration-thickness: 20px;
+  font-size: 3em;
+  margin-left: 150px;
+}
+.ch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: white;
+  background: url(/images/forme2:home.png);
+  background-size: cover;
+  height: 280px;
+  width: 300px;
+  margin: 20px 0;
+}
+.inlineForm {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  text-align: center;
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.option{
+  font-size: 1.5em;
+}
+.param {
+  font-weight: 700;
+}
+.time {
+  font-weight: 700;
+}
+.reserve {
+  font-weight: 700;
+}
+.bien_etre {
+  text-align: center;
+  margin-top: 100px;
+  color: #ffbb69;
+  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.containerContact{
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.btn {
+  text-align: center;
+  width: 250px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: #3c84fa;
+  padding: 10px;
+  border-radius:35px;
+  border: 0px;
+  color: white;
+  margin-bottom: 50px;
+}
+.quote {
+  text-align: center;
+  font-weight: 700;
+  color: #ffbb69;
+  font-size: 1.3rem;
+  margin-top: 50px;
+  width: 80%;
+}
+.quote::before {
+  content: '\201c';
+  color: #ffbb69;
+}
+.quote::after {
+  content: '\201d';
+  color: #ffbb69;
+}
+.gestion {
+  text-align: center;
+}
+.temoignage {
+  text-align: center;
+  color: #f36770;
+  margin-top: 50px;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px){
+  .titreSimpleBabily {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form {
+    margin-top: 40px;
+  }
+  .param {
+    margin-left: -65px;
+  }
+  .time {
+    margin-left: -20px;
+  }
+  .reserve {
+    margin-left: -15px;
+  }
+}

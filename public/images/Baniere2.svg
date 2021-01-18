@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375pt" height="374.999991pt" viewBox="0 0 375 374.999991" version="1.2">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375pt" height="374.999991pt" viewBox="0 0 375 374.999991" version="1.2">
 <g id="surface1">
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(23.529053%,51.759338%,98.429871%);fill-opacity:1;" d="M 187.457031 84.375 L 84.375 84.375 L 84.375 139.527344 L 187.457031 187.457031 L 290.539062 139.527344 L 290.539062 84.375 Z M 187.457031 84.375 "/>
 </g>
-</svg>
+</svg> -->
+<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="375pt"
+            height="374.999991pt"
+            viewBox="0 85 375 374.999991"
+            version="1.2"
+          >
+            <g id="surface2">
+              <path
+                stroke="none"
+                fillRule="nonzero"
+                fill="rgb(23.529053%,51.759338%,98.429871%)"
+                fillOpacity="1"
+                d="M 187.457031 84.375 L 0 84.375 L 0 149.527344 L 187.457031 187.457031 L 390.539062 139.527344 L 390.539062 84.375 Z M 187.457031 84.375 "
+              />
+            </g>
+          </svg>
