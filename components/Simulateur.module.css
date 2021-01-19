@@ -59,8 +59,8 @@
   height: 300px;
   background-image: linear-gradient(135deg, #FA6870, #FFBB69);
   border-radius: 50%;
-  top: -7%;
-  left: 20%;
+  top: -16%;
+  left: 25%;
 }
 .cercle2 {
   position: absolute;
@@ -68,8 +68,8 @@
   height: 450px;
   background-image: linear-gradient(90deg, #FA6870,#FFBB69);
   border-radius: 50%;
-  top: 33%;
-  left: 30%;
+  top: 27%;
+  left: 42%;
 }
 .cercle3 {
   position: absolute;
@@ -78,20 +78,24 @@
   background-image: linear-gradient(to top, #FA6870, #FFBB69);
   border-radius: 50%;
   top: 34%;
-  left:7%;
+  left: 14%;
+}
+.cercle4 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-color: #f5efea;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
 /*--------------------------------ESPACE SIMULATEUR DROITE--------------------------------*/
 .criteres {
   position: relative;
-  background-color: #f5efea;
   padding: 3%;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  display: table-cell;
-  vertical-align: middle;
 }
 .critereRecherche {
   position: absolute;
@@ -100,15 +104,21 @@
   left: 18%;
 }
 .critere {
-  margin-bottom: 7%;
+  margin-bottom: 3%;
 }
 
 .critereTitre {
   font-size: 1.1rem;
+  line-height: 2.5rem;;
+  font-weight: bold;
   color: #FA6870;
   margin: 2% auto;
 }
-.chiffreEnfants {
+
+input[type="radio"].demo2 {
+  display: none;
+}
+input[type="radio"].demo2 + label {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -116,73 +126,79 @@
   background-color: white;
   border-radius: 50%;
   border-color: transparent;
+  font-family:'Krub', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 3rem;
   color: #FFBB69;
   cursor: pointer;
+  text-align: center;
 }
-.chiffreEnfants:focus {
-  display: none;
+input[type="radio"].demo2:hover + label {
+  background-color: #ffbb69;
+  color: white;
 }
-.chiffreEnfants:hover {
-  background-color: #FFBB69;
+input[type="radio"].demo2:checked + label {
+  background-color: #ffbb69;
   color: white;
 }
 
-.salaire {
-  width: 25%;
+
+.champ {
+  width: 35%;
   min-width: 250px;
   height: auto;
   margin: 0 auto;
   background-color: white;
   border-radius: 50px;
   font-size: 1.5rem;
-  font-weight: bold;
   line-height: 3rem;
 }
-.salaireInput {
+
+.champSaisie {
   border-color: transparent;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 3rem;
   width: 70%;
   margin: auto;
   cursor: pointer;
+  font-size: 1.5rem;  line-height: 3rem;
+  text-align: center;
 }
-.salaireInput:focus {
-  display: none;
+.champSaisie:focus {
+  outline: none;
 }
-.heures {
-  width: 25%;
-  min-width: 250px;
-  height: auto;
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 50px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 3rem;
+/* Remove arrows input/number on Firefox */
+.champSaisie{
+  -moz-appearance: textfield;
 }
-.heuresInput {
-  border-color: transparent;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 3rem;
-  width: 70%;
-  margin: auto;
-  cursor: pointer;
+/* Remove arrows input/number on Chrome */
+.champSaisie::-webkit-inner-spin-button,
+.champSaisie::-webkit-outer-spin-button { 
+-webkit-appearance: none;
+margin:0;
 }
-.heures:focus {
-  display: none;
+/* Remove arrows input/number on Opéra*/
+.champSaisie::-o-inner-spin-button,
+.champSaisie::-o-outer-spin-button { 
+-o-appearance: none;
+margin:0
 }
+
+
+
+.alertError {
+  color: #3C84FB;
+  font-family:'Krub', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
 
 
 .calculer {
   width: 15%;
   min-width: 200px;
   height: auto;
-  margin: 0 1% 2% 0;
+  margin: 4% auto;
   background-color: #FA6870;
   border-radius: 50px;
   border-color: transparent;
@@ -207,7 +223,12 @@
   margin: 0 15px;
   cursor: help;
 }
-.icones {
+.iconeEuro {
+  color: #FFBB69;
+  margin: 0 12px;
+  font-size: 1.5rem;
+}
+.iconeClock {
   color: #FFBB69;
   margin: 0 5px;
   font-size: 1.5rem;
@@ -215,9 +236,7 @@
 
 
 @media screen and (max-width: 640px) {
-  .criteres {
-    background-color: #FAF5F0;
-  }
+
   .cercle1 {
     display: none;
   }
@@ -232,7 +251,7 @@
 
 /*-------------------------------RESULTAT----------------------------*/
 .criteresResultat {
-  position: absolute;
+  position: relative;
   top: 15%;
   left: 20%;
 }
@@ -295,38 +314,4 @@
   font-size: 1rem;
   background-color: transparent;
   outline: none;
-}
-
-.alertError {
-  color: #3C84FB;
-  font-family:'Krub', sans-serif;
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-}
-
-input[type="radio"].demo2 {
-  display: none;
-}
-input[type="radio"].demo2 + label {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin: 0 2%;
-  background-color: white;
-  border-radius: 50%;
-  border-color: transparent;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 3rem;
-  color: #FFBB69;
-  cursor: pointer;
-  text-align: center;
-}
-input[type="radio"].demo2:hover + label {
-  background-color: #ffbb69;
-  color: white;
-}
-input[type="radio"].demo2:checked + label {
-  background-color: #ffbb69;
-  color: white;
 }

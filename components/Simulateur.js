@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 
 import Link from 'next/link';
@@ -12,16 +12,9 @@ import {
   faEuroSign,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useSpring, animated as a } from 'react-spring';
 import styles from './Simulateur.module.css';
 
 export default function Simulateur() {
-  const [flipped, set] = useState(false);
-  const { transform, opacity } = useSpring({
-    opacity: flipped ? 1 : 0,
-    transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
-    config: { mass: 5, tension: 500, friction: 80 },
-  });
   const { register, handleSubmit, errors } = useForm({
     mode: 'onTouched',
   });
@@ -39,8 +32,8 @@ export default function Simulateur() {
         <p>Sur la majorité des structures sous régime PSU*</p>
 
         <p>
-          Cette simulation utilise le mode de calcul de la prestation service
-          unique (PSU). Elle se base sur des mois comptant 4 semaines et sur des
+          Cette simulation utilise le mode de calcul de la Prestation Service
+          Unique (PSU). Elle se base sur des mois comptant 4 semaines et sur des
           journées d'accueil complètes de 10 heures. Elle est indicative, non
           contractuelle et arrondie à l'euro près.
         </p>
@@ -63,225 +56,156 @@ export default function Simulateur() {
         <div className={styles.cercle1} />
         <div className={styles.cercle2} />
         <div className={styles.cercle3} />
+        <div className={styles.cercle4} />
         <div className={styles.criteres}>
           {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
-          <a.div
-            className={styles.critereRecherche}
-            style={{ opacity: opacity.interpolate((o) => 1 - o), transform }}
-          >
+          <form className={styles.criteres} onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.critere}>
-              <h6 className={styles.critereTitre}>
+              <label htmlFor="children" className={styles.critereTitre}>
                 Nombres d'enfant(s) à charge
-              </h6>
+              </label>
               <div className={styles.nbEnfants}>
                 <input
-                  type="button"
-                  name="one"
+                  type="radio"
+                  id="one"
+                  name="children"
                   value="1"
-                  className={styles.chiffreEnfants}
+                  className={styles.demo2}
+                  ref={register({ required: true })}
                 />
+                <label htmlFor="one">1</label>
                 <input
-                  type="button"
-                  name="two"
+                  type="radio"
+                  id="two"
+                  name="children"
                   value="2"
-                  className={styles.chiffreEnfants}
+                  className={styles.demo2}
+                  ref={register({ required: true })}
                 />
+                <label htmlFor="two">2</label>
                 <input
-                  type="button"
-                  name="three"
+                  type="radio"
+                  id="three"
+                  name="children"
                   value="3"
-                  className={styles.chiffreEnfants}
+                  className={styles.demo2}
+                  ref={register({ required: true })}
                 />
+                <label htmlFor="three">3</label>
                 <input
-                  type="button"
-                  name="four"
+                  type="radio"
+                  id="four"
+                  name="children"
                   value="4+"
-                  className={styles.chiffreEnfants}
+                  className={styles.demo2}
+                  ref={register({ required: true })}
                 />
+                <label htmlFor="four">4+</label>
               </div>
+              {errors.children && (
+                <span className={styles.alertError}>
+                  Merci de sélectionner l'une des propositions.
+                </span>
+              )}
             </div>
             <div className={styles.critere}>
-              <h6 className={styles.critereTitre}>
+              <label htmlFor="appointments" className={styles.critereTitre}>
                 Revenu net mensuel{' '}
                 <FontAwesomeIcon
                   icon={faInfoCircle}
                   className={styles.iconeInfo}
                 />
-              </h6>
-              <div className={styles.salaire}>
+              </label>
+              <div className={styles.champ}>
                 <input
                   type="number"
+                  id="appointments"
                   name="appointments"
-                  className={styles.salaireInput}
+                  ref={register({
+                    required: 'Merci de compléter ce champ',
+                    min: 0,
+                  })}
+                  className={styles.champSaisie}
                 />
-                <FontAwesomeIcon icon={faEuroSign} className={styles.icones} />
+                <FontAwesomeIcon
+                  icon={faEuroSign}
+                  className={styles.iconeEuro}
+                />
               </div>
+              {errors.appointments && (
+                <span className={styles.alertError}>
+                  Le revenu doit être renseigné et supérieur à 0.
+                </span>
+              )}
             </div>
             <div className={styles.critere}>
-              <h6 className={styles.critereTitre}>
+              <label htmlFor="hours" className={styles.critereTitre}>
                 Nombre d'heure(s) de garde par semaine
-              </h6>
-              <div className={styles.heures}>
+              </label>
+              <div className={styles.champ}>
                 <input
                   type="number"
+                  id="hours"
                   name="hours"
-                  className={styles.heuresInput}
+                  ref={register({
+                    required: 'Merci de compléter ce champ',
+                    min: 1,
+                    max: 99,
+                  })}
+                  className={styles.champSaisie}
                 />{' '}
-                <FontAwesomeIcon icon={faClock} className={styles.icones} />
+                <FontAwesomeIcon icon={faClock} className={styles.iconeClock} />
               </div>
+              {errors.hours && (
+                <span className={styles.alertError}>
+                  Le nombre d'heures doit être renseigné et compris entre 1 et
+                  99 heures.
+                </span>
+              )}
             </div>
             <button type="submit" name="calculer" className={styles.calculer}>
               Calculer
             </button>
-          </a.div>
-
-          {/* ------------------------------------ CARTE RESULTAT------------------------------------------- */}
-          <a.div
-            className={styles.criteresResultat}
-            style={{
-              opacity,
-              transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
-            }}
-          >
-            <div className={styles.critere}>
-              <h5 className={styles.critereTitreResultat}>
-                Cela vous coûterait
-              </h5>
-              <p className={styles.critereTitre}>
-                <span className={styles.resultatEuroHeure}>0.90</span>
-                <FontAwesomeIcon
-                  icon={faEuroSign}
-                  className={styles.icones}
-                />{' '}
-                /heure
-              </p>
-              <div className={styles.resultatJour}>
-                <p className={styles.critereTitre}>
-                  <span className={styles.critereTitreResultat}>soit </span>
-                  <span className={styles.resultatEuroJour}> 8</span>
-                  <FontAwesomeIcon
-                    icon={faEuroSign}
-                    className={styles.iconesEuro2}
-                  />{' '}
-                  /jour
-                </p>
-              </div>
-            </div>
-            <Link href="/">
-              <a href="" rel="noreferrer" className={styles.choisirCreche}>
-                Choisir ma crèche
-              </a>
-            </Link>
-
-            <button
-              type="button"
-              className={styles.nouveauCalcul}
-              onClick={() => set((state) => !state)}
-            >
-              Nouvelle simulation
-            </button>
-          </a.div>
+          </form>
         </div>
       </div>
-      {/* ------------------------------------ ESSAI FORMULAIRE ------------------------------------------- */}
-      <form className={styles.criteres} onSubmit={handleSubmit(onSubmit)}>
-        <div className={styles.critere}>
-          <h6 className={styles.critereTitre}>Nombres d'enfant(s) à charge</h6>
-          <div className={styles.nbEnfants}>
-            <input
-              type="radio"
-              id="one"
-              name="children"
-              value="1"
-              className={styles.demo2}
-              ref={register({ required: true })}
-            />
-            <label htmlFor="one">1</label>
-            <input
-              type="radio"
-              id="two"
-              name="children"
-              value="2"
-              className={styles.demo2}
-              ref={register({ required: true })}
-            />
-            <label htmlFor="two">2</label>
-            <input
-              type="radio"
-              id="three"
-              name="children"
-              value="3"
-              className={styles.demo2}
-              ref={register({ required: true })}
-            />
-            <label htmlFor="three">3</label>
-            <input
-              type="radio"
-              id="four"
-              name="children"
-              value="4+"
-              className={styles.demo2}
-              ref={register({ required: true })}
-            />
-            <label htmlFor="four">4+</label>
+      <div>
+        <h2>Resultat:</h2>
+        {/* ------------------------------------ CARTE RESULTAT------------------------------------------- */}
+        <div className={styles.criteresResultat}>
+          <div className={styles.critere}>
+            <h5 className={styles.critereTitreResultat}>Cela vous coûterait</h5>
+            <p className={styles.critereTitre}>
+              <span className={styles.resultatEuroHeure}>0.90</span>
+              <FontAwesomeIcon
+                icon={faEuroSign}
+                className={styles.icones}
+              />{' '}
+              /heure
+            </p>
+            <div className={styles.resultatJour}>
+              <p className={styles.critereTitre}>
+                <span className={styles.critereTitreResultat}>soit </span>
+                <span className={styles.resultatEuroJour}> 8</span>
+                <FontAwesomeIcon
+                  icon={faEuroSign}
+                  className={styles.iconesEuro2}
+                />{' '}
+                /jour
+              </p>
+            </div>
           </div>
-          {errors.children && (
-            <span className={styles.alertError}>
-              Merci de sélectionner l'une des propositions.
-            </span>
-          )}
-        </div>
-        <div className={styles.critere}>
-          <label htmlFor="appointments" className={styles.critereTitre}>
-            Revenu net mensuel{' '}
-            <FontAwesomeIcon icon={faInfoCircle} className={styles.iconeInfo} />
-          </label>
-          <div className={styles.salaire}>
-            <input
-              type="number"
-              id="appointments"
-              name="appointments"
-              ref={register({
-                required: 'Merci de compléter ce champ',
-                min: 0,
-              })}
-            />
-            <FontAwesomeIcon icon={faEuroSign} className={styles.icones} />
-          </div>
-          {errors.appointments && (
-            <span className={styles.alertError}>
-              Le revenu doit être renseigné et supérieur à 0.
-            </span>
-          )}
-        </div>
-        <div className={styles.critere}>
-          <abel htmlFor="hours" className={styles.critereTitre}>
-            Nombre d'heure(s) de garde par semaine
-          </abel>
-          <div className={styles.heures}>
-            <input
-              type="number"
-              id="hours"
-              name="hours"
-              ref={register({
-                required: 'Merci de compléter ce champ',
-                min: 1,
-                max: 99,
-              })}
-            />{' '}
-            <FontAwesomeIcon icon={faClock} className={styles.icones} />
-          </div>
-          {errors.hours && (
-            <span className={styles.alertError}>
-              Le nombre d'heures doit être renseigné et compris entre 1 et 99
-              heures.
-            </span>
-          )}
-          <button type="submit" name="calculer" className={styles.calculer}>
-            Calculer
+          <Link href="/">
+            <a href="" rel="noreferrer" className={styles.choisirCreche}>
+              Choisir ma crèche
+            </a>
+          </Link>
+
+          <button type="button" className={styles.nouveauCalcul}>
+            Nouvelle simulation
           </button>
         </div>
-      </form>
+      </div>
     </div>
   );
 }
