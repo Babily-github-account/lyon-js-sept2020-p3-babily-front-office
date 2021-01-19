@@ -6,7 +6,6 @@ import styles from './CestSimpleAvecBabily.module.css';
 
 export default function CestSimpleAvecBabily(props) {
   const espace = props;
-  console.log(espace);
   return (
     <>
       <div className={styles.containerSimpleBabily}>
