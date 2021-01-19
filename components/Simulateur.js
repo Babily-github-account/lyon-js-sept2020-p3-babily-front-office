@@ -196,7 +196,6 @@ export default function Simulateur() {
               className={styles.demo2}
               ref={register({ required: true })}
             />
-            // eslint-disable-next-line jsx-a11y/label-has-associated-control
             <label htmlFor="one">1</label>
             <input
               type="radio"
