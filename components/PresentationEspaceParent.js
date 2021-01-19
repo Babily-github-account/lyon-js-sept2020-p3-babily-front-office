@@ -4,6 +4,7 @@ import styles from './PresentationEspacePro.module.css';
 import CestSimpleAvecBabily from './CestSimpleAvecBabily';
 import Simulateur from './Simulateur';
 import Cards from './cards';
+import Contact from './Contact';
 
 export default function PresentationEspaceParent() {
   return (
@@ -60,6 +61,8 @@ export default function PresentationEspaceParent() {
       </section>
       <CestSimpleAvecBabily pageParent />
       <Simulateur />
+      <Contact />
+
       <div className={styles.containerContact}>
         <Cards />
       </div>
