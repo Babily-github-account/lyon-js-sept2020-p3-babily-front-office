@@ -1,6 +1,8 @@
 // import Link from 'next/link';
 // import Image from 'next/image';
 import styles from './PresentationEspacePro.module.css';
+import CestSimpleAvecBabily from './CestSimpleAvecBabily';
+import Cards from './cards';
 
 export default function PresentationEspacePro() {
   return (
@@ -63,6 +65,15 @@ export default function PresentationEspacePro() {
           </div>
         </div>
       </section>
+
+      <CestSimpleAvecBabily pagePro />
+      <div className={styles.containerContact}>
+        <p className={styles.bien_etre}>Plus de bien être pour tous !</p>
+        <button type="button" className={styles.btn}>
+          Contactez-nous !
+        </button>
+        <Cards />
+      </div>
     </>
   );
 }
