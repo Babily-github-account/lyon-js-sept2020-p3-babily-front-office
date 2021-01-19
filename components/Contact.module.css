@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
 
-.formContainer {
+.contactContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -19,4 +19,9 @@
   width: 15%;
   font-size: 30px;
   font-style: italic;
+}
+
+.iconsContact:hover {
+  cursor: pointer;
+  opacity: 50%;
 }

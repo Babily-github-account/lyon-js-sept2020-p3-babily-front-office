@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
-import styles from './Form.module.css';
+import styles from './Contact.module.css';
 
-const Form = () => {
+const Contact = () => {
   return (
     <div>
       <h1 className={styles.titleContact}>Contactez-nous</h1>
-      <div className={styles.formContainer}>
+      <div className={styles.contactContainer}>
         <div className={styles.iconsContact}>
           <a>
             <Image
@@ -55,4 +55,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Contact;
