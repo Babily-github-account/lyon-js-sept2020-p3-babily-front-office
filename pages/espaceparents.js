@@ -1,13 +1,12 @@
+import GoogleFonts from 'next-google-fonts';
 import Layout from '../components/Layout';
-import Simulateur from '../components/Simulateur';
-import Contact from '../components/Contact';
+import PresentationEspaceParent from '../components/PresentationEspaceParent';
 
 export default function EspaceParents() {
   return (
     <Layout pageTitle="EspaceParents">
-      <h1>Espace Parents</h1>
-      <Simulateur />
-      <Contact />
+      <GoogleFonts href="https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Montserrat+Alternates:ital,wght@0,800;1,600&display=swap" />
+      <PresentationEspaceParent />
     </Layout>
   );
 }
