@@ -303,3 +303,30 @@
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
+
+input[type="radio"].demo2 {
+  display: none;
+}
+input[type="radio"].demo2 + label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 2%;
+  background-color: white;
+  border-radius: 50%;
+  border-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: #FFBB69;
+  cursor: pointer;
+  text-align: center;
+}
+input[type="radio"].demo2:hover + label {
+  background-color: #ffbb69;
+  color: white;
+}
+input[type="radio"].demo2:checked + label {
+  background-color: #ffbb69;
+  color: white;
+}
