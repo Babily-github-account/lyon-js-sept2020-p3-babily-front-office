@@ -5,7 +5,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-
+import { useTransition } from 'react-spring';
 import Link from 'next/link';
 import {
   faInfoCircle,
@@ -13,6 +13,7 @@ import {
   faEuroSign,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Modal from './Modal';
 import styles from './Simulateur.module.css';
 
 export default function Simulateur() {
@@ -34,6 +35,13 @@ export default function Simulateur() {
     setResultatSimulateur(0);
   };
 
+  const [modalVisible, setModalVisible] = useState(false);
+  const transitions = useTransition(modalVisible, null, {
+    from: { opacity: 0, transform: 'translateY(-40px)' },
+    enter: { opacity: 1, transform: 'translateY(0px)' },
+    leave: { opacity: 0, transform: 'translateY(-40px)' },
+  });
+
   return (
     <div className={styles.containerSimulateur}>
       <div className={styles.simulateurTexte}>
@@ -50,14 +58,8 @@ export default function Simulateur() {
         <p className={styles.etoile}>
           Cette simulation utilise le mode de calcul de la Prestation Service
           Unique (PSU). Elle se base sur des mois comptant 4 semaines et sur des
-          journées d'accueil complètes de 10 heures. Elle est indicative, non
-          contractuelle et arrondie à l'euro près.
-        </p>
-
-        <p className={styles.etoile}>
-          (i) : Pour connaître vos revenus annuels net à n-2, vous retrouverez
-          cette information à la case 1AJ et/ou 1BJ de votre déclaration
-          d'imposition n-1 des revenus n-2
+          journées d'accueil complètes de 10 heures. Elle est indicative et non
+          contractuelle.
         </p>
         <a
           href="https://www.caf.fr/allocataires/droits-et-prestations/connaitre-vos-droits-selon-votre-situation/je-fais-garder-mon-enfant-dans-une-creche-ou-en-microcreche-la-caf-va-t-elle-m-aider#:~:text=Le%20montant%20de%20cette%20aide,pas%2085%20%25%20du%20montant%20total."
@@ -68,16 +70,16 @@ export default function Simulateur() {
           Plus d'informations
         </a>
       </div>
-      {resultatSimulateur <= 0 ? (
-        <>
-          <div className={styles.simulateur}>
-            <div className={styles.cercle1} />
-            <div className={styles.cercle2} />
-            <div className={styles.cercle3} />
-            <div className={styles.cercle4} />
-            <div className={styles.criteres}>
-              {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
 
+      <div className={styles.simulateur}>
+        <div className={styles.cercle1} />
+        <div className={styles.cercle2} />
+        <div className={styles.cercle3} />
+        <div className={styles.cercle4} />
+        <div className={styles.criteres}>
+          {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
+          {resultatSimulateur <= 0 ? (
+            <>
               <form
                 className={styles.criteres}
                 onSubmit={handleSubmit(onSubmit)}
@@ -136,7 +138,18 @@ export default function Simulateur() {
                     <FontAwesomeIcon
                       icon={faInfoCircle}
                       className={styles.iconeInfo}
+                      onClick={() => setModalVisible(true)}
                     />
+                    {transitions.map(
+                      ({ item, key, props: style }) =>
+                        item && (
+                          <Modal
+                            style={style}
+                            closeModal={() => setModalVisible(false)}
+                            key={key}
+                          />
+                        )
+                    )}
                   </label>
                   <div className={styles.champ}>
                     <input
@@ -196,60 +209,65 @@ export default function Simulateur() {
                   Calculer
                 </button>
               </form>
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div>
-            <h2>Resultat taux d'effort:</h2>
-            {/* ------------------------------------ CARTE RESULTAT-------------------------------------------  */}
-            <div className={styles.criteresResultat}>
-              <div className={styles.critere}>
-                <h5 className={styles.critereTitreResultat}>
-                  Cela vous coûterait
-                </h5>
-                <p className={styles.critereTitre}>
-                  <span className={styles.resultatEuroHeure}>
-                    {resultatSimulateur.toFixed(2)}
-                  </span>
-                  <FontAwesomeIcon
-                    icon={faEuroSign}
-                    className={styles.icones}
-                  />{' '}
-                  /heure
-                </p>
-                <div className={styles.resultatJour}>
-                  <p className={styles.critereTitre}>
-                    <span className={styles.critereTitreResultat}>soit </span>
-                    <span className={styles.resultatEuroJour}>
-                      {(resultatSimulateur / 20).toFixed(2)}
-                    </span>
-                    <FontAwesomeIcon
-                      icon={faEuroSign}
-                      className={styles.iconesEuro2}
-                    />{' '}
-                    /jour
-                  </p>
+            </>
+          ) : (
+            <>
+              <div>
+                {/* ------------------------------------ CARTE RESULTAT-------------------------------------------  */}
+                <div className={styles.criteresResultat}>
+                  <div className={styles.critere}>
+                    <h5 className={styles.critereTitreResultat}>
+                      Cela vous coûterait
+                    </h5>
+                    <p className={styles.critereTitre}>
+                      <span className={styles.resultatEuroHeure}>
+                        {resultatSimulateur.toFixed(2)}
+                      </span>
+                      <FontAwesomeIcon
+                        icon={faEuroSign}
+                        className={styles.icones}
+                      />{' '}
+                      /heure
+                    </p>
+                    <div className={styles.resultatJour}>
+                      <p className={styles.critereTitre}>
+                        <span className={styles.critereTitreResultat}>
+                          soit{' '}
+                        </span>
+                        <span className={styles.resultatEuroJour}>
+                          {(resultatSimulateur / 20).toFixed(2)}
+                        </span>
+                        <FontAwesomeIcon
+                          icon={faEuroSign}
+                          className={styles.iconesEuro2}
+                        />{' '}
+                        /jour
+                      </p>
+                    </div>
+                  </div>
+                  <Link href="/">
+                    <a
+                      href=""
+                      rel="noreferrer"
+                      className={styles.choisirCreche}
+                    >
+                      Choisir ma crèche
+                    </a>
+                  </Link>
+
+                  <button
+                    onClick={newSimulation}
+                    type="button"
+                    className={styles.nouveauCalcul}
+                  >
+                    Nouvelle simulation
+                  </button>
                 </div>
               </div>
-              <Link href="/">
-                <a href="" rel="noreferrer" className={styles.choisirCreche}>
-                  Choisir ma crèche
-                </a>
-              </Link>
-
-              <button
-                onClick={newSimulation}
-                type="button"
-                className={styles.nouveauCalcul}
-              >
-                Nouvelle simulation
-              </button>
-            </div>
-          </div>
-        </>
-      )}
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

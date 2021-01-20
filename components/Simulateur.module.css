@@ -54,6 +54,7 @@
   font-size: 0.8rem;
   max-width: 80%;
   margin: auto;
+  padding-bottom: 5%;
 }
 
 
@@ -121,29 +122,29 @@
 @media screen and (max-width: 1400px) {
 
   .cercle1 {
-    width: 220px;
-    height: 220px;
-    top: 15%;
+    width: 230px;
+    height: 230px;
+    top: 13%;
     left: 40%;
     transform: translate(-50%, -50%);
   }
   .cercle2 {
   width: 400px;
   height: 400px;
-  top: 57%;
-  left: 65%;
+  top: 62%;
+  left: 67%;
   transform: translate(-50%, -50%);
   }
   .cercle3 {
   width: 300px;
   height: 300px;
   top: 58%;
-  left: 25%;
+  left: 23%;
   transform: translate(-50%, -50%);
   }
   .cercle4 {
-    width: 490px;
-    height: 490px;
+    width: 550px;
+    height: 550px;
   }
 
 }
@@ -296,8 +297,8 @@ margin:0
 /*-------------------------------RESULTAT----------------------------*/
 .criteresResultat {
   position: relative;
-  top: 15%;
-  left: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .critereTitreResultat {
