@@ -70,16 +70,16 @@ export default function Simulateur() {
           Plus d'informations
         </a>
       </div>
-      {resultatSimulateur <= 0 ? (
-        <>
-          <div className={styles.simulateur}>
-            <div className={styles.cercle1} />
-            <div className={styles.cercle2} />
-            <div className={styles.cercle3} />
-            <div className={styles.cercle4} />
-            <div className={styles.criteres}>
-              {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
 
+      <div className={styles.simulateur}>
+        <div className={styles.cercle1} />
+        <div className={styles.cercle2} />
+        <div className={styles.cercle3} />
+        <div className={styles.cercle4} />
+        <div className={styles.criteres}>
+          {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
+          {resultatSimulateur <= 0 ? (
+            <>
               <form
                 className={styles.criteres}
                 onSubmit={handleSubmit(onSubmit)}
@@ -209,59 +209,65 @@ export default function Simulateur() {
                   Calculer
                 </button>
               </form>
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div>
-            {/* ------------------------------------ CARTE RESULTAT-------------------------------------------  */}
-            <div className={styles.criteresResultat}>
-              <div className={styles.critere}>
-                <h5 className={styles.critereTitreResultat}>
-                  Cela vous coûterait
-                </h5>
-                <p className={styles.critereTitre}>
-                  <span className={styles.resultatEuroHeure}>
-                    {resultatSimulateur.toFixed(2)}
-                  </span>
-                  <FontAwesomeIcon
-                    icon={faEuroSign}
-                    className={styles.icones}
-                  />{' '}
-                  /heure
-                </p>
-                <div className={styles.resultatJour}>
-                  <p className={styles.critereTitre}>
-                    <span className={styles.critereTitreResultat}>soit </span>
-                    <span className={styles.resultatEuroJour}>
-                      {(resultatSimulateur / 20).toFixed(2)}
-                    </span>
-                    <FontAwesomeIcon
-                      icon={faEuroSign}
-                      className={styles.iconesEuro2}
-                    />{' '}
-                    /jour
-                  </p>
+            </>
+          ) : (
+            <>
+              <div>
+                {/* ------------------------------------ CARTE RESULTAT-------------------------------------------  */}
+                <div className={styles.criteresResultat}>
+                  <div className={styles.critere}>
+                    <h5 className={styles.critereTitreResultat}>
+                      Cela vous coûterait
+                    </h5>
+                    <p className={styles.critereTitre}>
+                      <span className={styles.resultatEuroHeure}>
+                        {resultatSimulateur.toFixed(2)}
+                      </span>
+                      <FontAwesomeIcon
+                        icon={faEuroSign}
+                        className={styles.icones}
+                      />{' '}
+                      /heure
+                    </p>
+                    <div className={styles.resultatJour}>
+                      <p className={styles.critereTitre}>
+                        <span className={styles.critereTitreResultat}>
+                          soit{' '}
+                        </span>
+                        <span className={styles.resultatEuroJour}>
+                          {(resultatSimulateur / 20).toFixed(2)}
+                        </span>
+                        <FontAwesomeIcon
+                          icon={faEuroSign}
+                          className={styles.iconesEuro2}
+                        />{' '}
+                        /jour
+                      </p>
+                    </div>
+                  </div>
+                  <Link href="/">
+                    <a
+                      href=""
+                      rel="noreferrer"
+                      className={styles.choisirCreche}
+                    >
+                      Choisir ma crèche
+                    </a>
+                  </Link>
+
+                  <button
+                    onClick={newSimulation}
+                    type="button"
+                    className={styles.nouveauCalcul}
+                  >
+                    Nouvelle simulation
+                  </button>
                 </div>
               </div>
-              <Link href="/">
-                <a href="" rel="noreferrer" className={styles.choisirCreche}>
-                  Choisir ma crèche
-                </a>
-              </Link>
-
-              <button
-                onClick={newSimulation}
-                type="button"
-                className={styles.nouveauCalcul}
-              >
-                Nouvelle simulation
-              </button>
-            </div>
-          </div>
-        </>
-      )}
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
