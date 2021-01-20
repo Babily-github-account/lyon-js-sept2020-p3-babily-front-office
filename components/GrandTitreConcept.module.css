@@ -2,7 +2,8 @@
 
 .containerBackground {
   background-image: url(/images/background3.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .containerImg {
@@ -20,10 +21,11 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 5%;
 }
 
 .containerSousTitre {
-  width: 50%;
+  width: 37%;
   margin: auto;
 }
 
@@ -41,24 +43,31 @@
   text-align: justify;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 600px) {
   .containerSousTitre {
-    width: 80%;
+    width: 86%;
     margin: auto;
     padding: 5%;
   }
+  .titleParagraphe {
+    font-size: 20px;
+  }
 
+  .paragrapheConcept {
+    font-size: 12px;
+  }
   .containerImg {
     display: none;
   }
 }
-@media screen and (max-width: 999px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .containerImg {
     display: none;
   }
   .containerSousTitre {
-    width: 65%;
+    width: 86%;
     margin: auto;
-    padding: 3%;
+
+    padding-bottom: 0%;
   }
 }
