@@ -22,6 +22,10 @@
   max-width: 600px;
   margin-top: 80px;
 }
+
+.spanRapide {
+  font-weight: bold;
+}
 .titleHome {
   color: #3c84fb;
   font-size: 42px;
@@ -32,6 +36,7 @@
   text-decoration-thickness: 20px;
   line-height: 4.5rem;
   min-width: 400px;
+  z-index: 1;
 }
 .textHome {
   font-size: 20px;
@@ -56,6 +61,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   border-radius: 14px;
+  font-weight: bold;
 }
 .btnReservation:hover {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -76,48 +82,166 @@
 }
 .imgFormeJaune {
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.4;
   bottom: 300px;
   transform: rotate(90deg);
+  left: 20px;
+  top: 20px;
+  z-index: 0;
+  animation-name: rotate;
+  animation-duration: 60s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg);
+  }
+  10% {
+    transform: rotate(85deg);
+  }
+  20% {
+    transform: rotate(80deg);
+  }
+  30% {
+    transform: rotate(83deg);
+  }
+
+  40% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(95deg);
+  }
+
+  60% {
+    transform: rotate(100deg);
+  }
+
+  70% {
+    transform: rotate(110deg);
+  }
+
+  80% {
+    transform: rotate(100deg);
+  }
+
+  90% {
+    transform: rotate(95deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
 }
 .imgFormeRouge {
-  top: 250px;
+  bottom: 250px;
   position: absolute;
   transform: rotate(90deg) scale(1.2);
   opacity: 0.5;
+  left: 40%;
+  animation-name: rotate;
+  animation-duration: 50s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
 }
-@media screen and (max-width: 1347px) {
-  .containerReservation {
-    margin-top: 100px;
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg);
   }
-}
-@media screen and (max-width: 900px) {
-  .containerReservation {
-    width: 100%;
-    margin-top: 50px;
-    padding: 0 100px 0 100px;
+  10% {
+    transform: rotate(85deg);
+  }
+  20% {
+    transform: rotate(80deg);
+  }
+  30% {
+    transform: rotate(83deg);
   }
 
-  .containerImgReservation {
-    display: none;
+  40% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(95deg);
+  }
+
+  60% {
+    transform: rotate(100deg);
+  }
+
+  70% {
+    transform: rotate(110deg);
+  }
+
+  80% {
+    transform: rotate(100deg);
+  }
+
+  90% {
+    transform: rotate(95deg);
+  }
+  100% {
+    transform: rotate(90deg);
   }
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 600px) {
+  .imgFilleCreche {
+    display: none;
+  }
+  .imgFormeJaune {
+    width: 20%;
+    left: -40%;
+    animation-duration: 110s;
+  }
+  .imgFormeRouge {
+    display: none;
+  }
+
   .containerText {
-    transform: scale(0.8);
+    margin-top: 0;
+    align-items: center;
+  }
+  .titleHome {
+    font-size: 170%;
+    text-decoration-thickness: 55%;
     text-align: center;
+    z-index: 0;
+  }
+
+  .textHome {
+    display: none;
   }
   .boxReservation {
     display: flex;
     flex-direction: column;
-    transform: scale(1.4);
-    max-width: 100%;
+    justify-content: center;
   }
   .btnReservation {
-    margin-top: 20px;
+    margin-top: 10%;
   }
   .linkDispo {
-    margin-top: 20px;
+    font-size: 10px;
+    margin-top: 10%;
+    text-align: center;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .titleHome {
+    z-index: 0;
+  }
+  .imgFormeJaune {
+    display: none;
+  }
+
+  .imgFormeRouge {
+    display: none;
+  }
+  .imgFilleCreche {
+    display: none;
   }
 }

@@ -8,7 +8,7 @@ import LesChiffresBabilyConcept from '../components/LesChiffresBabilyConcept';
 
 export default function concept() {
   const containerHead = {
-    backgroundImage: `url(/images/avion.jpg)`,
+    backgroundImage: `url(/images/avion.png)`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     paddingTop: '12%',

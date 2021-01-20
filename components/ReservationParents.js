@@ -7,10 +7,16 @@ export default function ReservationParents() {
     <>
       <div className={styles.containerReservation}>
         <div className={styles.containerText}>
-          <h1 className={styles.titleHome}>Et si c'était juste une heure?</h1>
+          <h1 className={styles.titleHome}>
+            Et si c'était juste <br />
+            une heure?
+          </h1>
           <p className={styles.textHome}>
             Trouvez et reservez{' '}
-            <span style={{ color: '#FA6870' }}>rapidement</span> <br />
+            <span className={styles.spanRapide} style={{ color: '#FA6870' }}>
+              rapidement
+            </span>{' '}
+            <br />
             votre place en crèche !
           </p>
           <div className={styles.boxReservation}>

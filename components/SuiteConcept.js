@@ -7,12 +7,15 @@ export default function concept() {
       <div className={styles.containerNotreConceptTexte}>
         <h3 className={styles.titleConcept}>Notre concept, c'est vous</h3>
         <p className={styles.paragrapheConcept}>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus.
+          Un calendrier partagé, accessible publiquement et respectueux des
+          exigences de chaque crèche !
           <br />
-          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-          Nulla consequat massa quis enim.
+          Doté d'un système d'alerte{' '}
+          <span className={styles.spanConcept}>
+            intelligent, juste et instantané
+          </span>
+          , il permet aux familles de connaître et de reserver les
+          disponiblités.
         </p>
       </div>
       <div className={styles.conceptImg}>
@@ -21,9 +24,9 @@ export default function concept() {
         </svg>
         <div className={styles.photoFilles}>
           <Image
-            src="/images/conceptCestVous.png"
+            src="/images/jouet2.png"
             alt="filles qui montrent le ciel"
-            width={800}
+            width={600}
             height={500}
           />
         </div>

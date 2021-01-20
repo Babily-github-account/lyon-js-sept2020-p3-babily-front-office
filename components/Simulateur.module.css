@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
+
+.containerSimulateur {
+  width: 100%;
+  height: auto;
+  background-color: #FAF5F0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  margin: auto;
+}
+
+/*---------------------PARTIE TEXTE GAUCHE SIMULATEUR-----------------------*/
+.simulateurTexte {
+  width: 40%;
+  min-width: 360px;
+  text-align: center;
+  padding: 3%;
+  margin: 10% auto;
+}
+.titreSimulateur {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #3c84fb;
+  text-decoration: underline;  
+  text-decoration-thickness: 1.2rem;
+}
+.simulateurInformation {
+  font-family: 'Krub', sans-serif;
+  font-size: 1.3rem;
+  margin: 15% auto;
+
+}
+.lienPlusDinfos {
+  font-family: 'Krub', sans-serif;
+  font-size: 1.1rem;
+  color: #FA6870;
+  text-decoration: underline;
+}
+
+.simulateur {
+  position: relative;
+  width: 60%;
+  min-width: 550px;
+  height: 60%;
+  margin: auto;
+  padding: 1% 7%;
+  text-align: center;
+  font-family:'Krub', sans-serif;
+}
+
+
+/*---------------------CERCLES DERRIERE SIMULATEUR DROITE-----------------------*/
+.cercle1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(135deg, #FA6870, #FFBB69);
+  border-radius: 50%;
+  top: -7%;
+  left: 20%;
+}
+.cercle2 {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background-image: linear-gradient(90deg, #FA6870,#FFBB69);
+  border-radius: 50%;
+  top: 33%;
+  left: 30%;
+}
+.cercle3 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-image: linear-gradient(to top, #FA6870, #FFBB69);
+  border-radius: 50%;
+  top: 34%;
+  left:7%;
+}
+
+
+/*--------------------------------ESPACE SIMULATEUR DROITE--------------------------------*/
+.criteres {
+  position: relative;
+  background-color: #f5efea;
+  padding: 3%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.critereRecherche {
+  position: absolute;
+  will-change: transform, opacity;
+  top: 18%;
+  left: 18%;
+}
+.critere {
+  margin-bottom: 7%;
+}
+
+.critereTitre {
+  font-size: 1.1rem;
+  color: #FA6870;
+  margin: 2% auto;
+}
+.chiffreEnfants {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 2%;
+  background-color: white;
+  border-radius: 50%;
+  border-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: #FFBB69;
+  cursor: pointer;
+}
+.chiffreEnfants:focus {
+  display: none;
+}
+.chiffreEnfants:hover {
+  background-color: #FFBB69;
+  color: white;
+}
+
+.salaire {
+  width: 25%;
+  min-width: 250px;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+.salaireInput {
+  border-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  width: 70%;
+  margin: auto;
+  cursor: pointer;
+}
+.salaireInput:focus {
+  display: none;
+}
+.heures {
+  width: 25%;
+  min-width: 250px;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+.heuresInput {
+  border-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  width: 70%;
+  margin: auto;
+  cursor: pointer;
+}
+.heures:focus {
+  display: none;
+}
+
+
+.calculer {
+  width: 15%;
+  min-width: 200px;
+  height: auto;
+  margin: 0 1% 2% 0;
+  background-color: #FA6870;
+  border-radius: 50px;
+  border-color: transparent;
+  font-family:'Krub', sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.calculer:focus {
+  display: none;
+}
+.calculer:hover {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*--------------------------------ICONES---------------------------*/
+.iconeInfo {
+    color: #FA6870;
+  margin: 0 15px;
+  cursor: help;
+}
+.icones {
+  color: #FFBB69;
+  margin: 0 5px;
+  font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 640px) {
+  .criteres {
+    background-color: #FAF5F0;
+  }
+  .cercle1 {
+    display: none;
+  }
+  .cercle2 {
+    display: none;
+  }
+  .cercle3 {
+    display: none;
+  }
+}
+
+
+/*-------------------------------RESULTAT----------------------------*/
+.criteresResultat {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+
+.critereTitreResultat {
+  font-size: 1.4rem;
+  color: #FA6870;
+  margin: 2% auto;
+  padding-bottom: 16%;
+}
+.resultatEuroHeure {
+  font-family:'Krub', sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 4rem;
+  color: #FFBB69;
+  margin: 2% auto;
+}
+.resultatJour {
+  margin: 15% auto;
+}
+.resultatEuroJour {
+  font-family:'Krub', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: #FFBB69;
+  margin: 10% 0 2% 2%;
+}
+.iconesEuro2 {
+  color: #FFBB69;
+  margin: 0 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.choisirCreche {
+  width: 15%;
+  min-width: 200px;
+  height: auto;
+  margin: auto;
+  padding: 5%;
+  background-color: #FA6870;
+  border-radius: 50px;
+  border-color: transparent;
+  font-family:'Krub', sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.nouveauCalcul {
+  color: #3C84FB;
+  border: none;
+  text-decoration: underline;
+  margin: 10% auto;
+  cursor: pointer;
+  font-family:'Krub', sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+}
+
+.alertError {
+  color: #3C84FB;
+  font-family:'Krub', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
