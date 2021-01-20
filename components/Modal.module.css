@@ -1,0 +1,26 @@
+.modal {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  top: 25%;
+  left: 5%;
+  transform: translate(50%, 50%);
+  background-image: linear-gradient(to top, #FA6870,#FA6870, #FFBB69);
+  border-radius: 10%;
+}
+.closeButton {
+  font-family:'Krub', sans-serif;
+  padding: 1%;
+  border: transparent;
+  background-color: white;
+  border-radius: 10%;
+  color: #fa6870;
+  font-weight: bold;
+}
+.modalContent {
+  margin: 1%;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: black;
+}
