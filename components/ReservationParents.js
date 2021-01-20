@@ -38,8 +38,8 @@ export default function ReservationParents() {
             id="imgFilleCreche"
             src="/images/fillette:home.jpg"
             alt="Fille en crèche"
-            width={600}
-            height={500}
+            width={490}
+            height={450}
           />
 
           <div className={styles.imgFormeJaune}>
