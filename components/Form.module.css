@@ -1,35 +1,39 @@
 .formContact {
-  width: 60%;
+  width: 40%;
   display: block;
 }
 
 .formLeftColumn {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
 }
 
 .formRightColumn {
   /* display: flex;
   flex-direction: row; */
-  width: 45%;
+  width: 50%;
 }
 
 .leftInput {
-  width: 100%;
+  width: 95%;
   height: 45px;
-  margin: 10px;
   border-radius: 5px;
   border: none;
   float: left;
+  margin: 10px;
+}
+select.leftInput {
+  cursor: pointer;
 }
 
 .rightInput {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 92%;
   border-radius: 5px;
   border: none;
   float: right;
+  margin: 5px;
 }
 
 .formTitle {
@@ -46,10 +50,35 @@
   text-align: center;
   display: flex;
   width: 100%;
-  padding: 10px;
-  margin: 10px;
   background-color: #ffbb69;
   border: none;
   border-radius: 5px;
   height: 45px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .formContact {
+    width: 90%;
+  }
+
+  .formRightColumn {
+    margin: 10px;
+  }
+
+  .formTitle {
+    margin: 10px;
+  }
+
+  .inputSubmit {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .formContact {
+    width: 60%;
+    margin: 40px;
+  }
 }

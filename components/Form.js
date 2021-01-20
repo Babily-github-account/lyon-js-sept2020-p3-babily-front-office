@@ -1,7 +1,23 @@
 import { useForm } from 'react-hook-form';
 import styles from './Form.module.css';
 
-const Form = () => {
+const Form = (props) => {
+  const sujetForm = props;
+  const titleSujet = (sujet) => {
+    switch (sujet) {
+      case 'Email':
+        return 'Envoyer un mail à Babily';
+      case 'Coffee':
+        return 'Prendre un café avec Babily';
+      case 'RDV':
+        return 'Prendre un rendez-vous avec un agent de Babily';
+      case 'Visio':
+        return 'Planifier un meeting en Visio';
+      default:
+        return 'Envoyer un mail à Babily';
+    }
+  };
+
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
@@ -9,7 +25,7 @@ const Form = () => {
   return (
     <>
       <form className={styles.formContact} onSubmit={handleSubmit(onSubmit)}>
-        <h1 className={styles.formTitle}>Envoyez un email à Babily</h1>
+        <h1 className={styles.formTitle}>{titleSujet(sujetForm.sujet)}</h1>
         <div style={{ display: 'flex', flexDirection: 'row' }}>
           <div className={styles.formLeftColumn}>
             <input
@@ -25,9 +41,8 @@ const Form = () => {
               ref={register}
             />
             <select className={styles.leftInput} name="gender" ref={register}>
-              <option value="femme">female</option>
-              <option value="homme">male</option>
-              <option value="other">other</option>
+              <option value="femme">Femmme</option>
+              <option value="homme">Homme</option>
             </select>
           </div>
           <div className={styles.formRightColumn}>

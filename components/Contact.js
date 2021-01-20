@@ -7,27 +7,11 @@ import Form from './Form';
 
 const Contact = () => {
   const [isForm, setIsForm] = useState(false);
+  const [sujet, setSujet] = useState('');
+  const [titleSujet, setTitleSujet] = useState('');
 
-  const handleTextOnMouse = (e, n, text) => {
-    const pContact = document.createElement('p');
-    pContact.innerHTML += text;
-    pContact.setAttribute('id', `p${text}`);
-    pContact.style.position = 'absolute';
-    pContact.style.color = '#FA6870';
-    pContact.style.opacity = '1';
-    pContact.style.zIndex = '2';
-    pContact.style.bottom = '40px';
-    pContact.style.left = '42px';
-    pContact.style.fontSize = '1.5em';
-    pContact.style.fontWeight = 'bold';
-    pContact.style.pointerEvents = 'none';
-    e.relatedTarget.childNodes[n].append(pContact);
-  };
-  const handleTextMouseLeave = (text) => {
-    const element = document.querySelector(`#p${text}`);
-    if (element) {
-      element.parentNode.removeChild(element);
-    }
+  const handleTextMouse = (text) => {
+    setTitleSujet(text);
   };
   return (
     <div className={styles.contactFormContainer}>
@@ -37,9 +21,12 @@ const Contact = () => {
           <div className={styles.contactContainer}>
             <div
               className={styles.iconsContact}
-              onMouseEnter={(e) => handleTextOnMouse(e, 0, 'Email')}
-              onMouseLeave={() => handleTextMouseLeave('Email')}
-              onClick={() => setIsForm(!isForm)}
+              onMouseEnter={() => handleTextMouse('Email')}
+              onMouseLeave={() => handleTextMouse('')}
+              onClick={() => {
+                setSujet('Email');
+                setIsForm(!isForm);
+              }}
             >
               <Image
                 src="/images/paperPlane.png"
@@ -47,13 +34,19 @@ const Contact = () => {
                 width={150}
                 height={150}
               />
+              {titleSujet === 'Email' ? (
+                <p className={styles.pContact}>{titleSujet}</p>
+              ) : null}
             </div>
 
             <div
               className={styles.iconsContact}
-              onMouseEnter={(e) => handleTextOnMouse(e, 1, 'Coffee')}
-              onMouseLeave={() => handleTextMouseLeave('Coffee')}
-              onClick={() => setIsForm(!isForm)}
+              onMouseEnter={() => handleTextMouse('Coffee')}
+              onMouseLeave={() => handleTextMouse('')}
+              onClick={() => {
+                setSujet('Coffee');
+                setIsForm(!isForm);
+              }}
             >
               <Image
                 src="/images/coffee.png"
@@ -61,13 +54,19 @@ const Contact = () => {
                 width={150}
                 height={150}
               />
+              {titleSujet === 'Coffee' ? (
+                <p className={styles.pContact}>{titleSujet}</p>
+              ) : null}
             </div>
 
             <div
               className={styles.iconsContact}
-              onMouseEnter={(e) => handleTextOnMouse(e, 2, 'RDV')}
-              onMouseLeave={() => handleTextMouseLeave('RDV')}
-              onClick={() => setIsForm(!isForm)}
+              onMouseEnter={() => handleTextMouse('RDV')}
+              onMouseLeave={() => handleTextMouse('')}
+              onClick={() => {
+                setSujet('RDV');
+                setIsForm(!isForm);
+              }}
             >
               <Image
                 src="/images/hands.png"
@@ -75,13 +74,19 @@ const Contact = () => {
                 width={150}
                 height={150}
               />
+              {titleSujet === 'RDV' ? (
+                <p className={styles.pContact}>{titleSujet}</p>
+              ) : null}
             </div>
 
             <div
               className={styles.iconsContact}
-              onMouseEnter={(e) => handleTextOnMouse(e, 3, 'Visio')}
-              onMouseLeave={() => handleTextMouseLeave('Visio')}
-              onClick={() => setIsForm(!isForm)}
+              onMouseEnter={() => handleTextMouse('Visio')}
+              onMouseLeave={() => handleTextMouse('')}
+              onClick={() => {
+                setSujet('Visio');
+                setIsForm(!isForm);
+              }}
             >
               <Image
                 src="/images/facetime.png"
@@ -89,15 +94,24 @@ const Contact = () => {
                 width={150}
                 height={150}
               />
+              {titleSujet === 'Visio' ? (
+                <p className={styles.pContact}>{titleSujet}</p>
+              ) : null}
             </div>
           </div>
         </div>
       ) : (
         <div className={styles.containerForm}>
-          <span className={styles.closeForm} onClick={() => setIsForm(!isForm)}>
+          <span
+            className={styles.closeForm}
+            onClick={() => {
+              setIsForm(!isForm);
+              handleTextMouse('');
+            }}
+          >
             X Annuler
           </span>
-          <Form isForm />
+          <Form sujet={sujet} />
         </div>
       )}
     </div>
