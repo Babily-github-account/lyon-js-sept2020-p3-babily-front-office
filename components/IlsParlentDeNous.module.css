@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&family=Montserrat+Alternates:wght@700&display=swap');
 
 .containerSpeak {
   margin-top: 2%;
@@ -14,7 +14,6 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
 
 .titleSpeack {
   width: 100%;
@@ -43,4 +42,10 @@
   align-items: center;
   justify-content: center;
   margin: 5%;
+}
+@media screen and (max-width: 600px) {
+  .titleSpeack {
+    font-size: 20px;
+    text-decoration-thickness: 9px;
+  }
 }
