@@ -51,6 +51,10 @@
   font-family:'Krub', sans-serif;
 }
 
+.etoile {
+  font-size: 0.8rem;;
+}
+
 
 /*---------------------CERCLES DERRIERE SIMULATEUR DROITE-----------------------*/
 .cercle1 {

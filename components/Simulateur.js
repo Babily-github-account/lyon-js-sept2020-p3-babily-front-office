@@ -29,17 +29,19 @@ export default function Simulateur() {
         <p className={styles.simulateurInformation}>
           Tarif émis à titre indicatif
         </p>
-        <p>Sur la majorité des structures sous régime PSU*</p>
+        <p className={styles.etoile}>
+          Sur la majorité des structures sous régime PSU*
+        </p>
 
-        <p>
+        <p className={styles.etoile}>
           Cette simulation utilise le mode de calcul de la Prestation Service
           Unique (PSU). Elle se base sur des mois comptant 4 semaines et sur des
           journées d'accueil complètes de 10 heures. Elle est indicative, non
           contractuelle et arrondie à l'euro près.
         </p>
 
-        <p>
-          (1) : Pour connaître vos revenus annuels net à n-2, vous retrouverez
+        <p className={styles.etoile}>
+          (i) : Pour connaître vos revenus annuels net à n-2, vous retrouverez
           cette information à la case 1AJ et/ou 1BJ de votre déclaration
           d'imposition n-1 des revenus n-2
         </p>
@@ -110,7 +112,7 @@ export default function Simulateur() {
             </div>
             <div className={styles.critere}>
               <label htmlFor="appointments" className={styles.critereTitre}>
-                Revenu net mensuel{' '}
+                Revenu net annuel{' '}
                 <FontAwesomeIcon
                   icon={faInfoCircle}
                   className={styles.iconeInfo}
@@ -170,7 +172,7 @@ export default function Simulateur() {
         </div>
       </div>
       <div>
-        <h2>Resultat:</h2>
+        <h2>Resultat taux d'effort:</h2>
         {/* ------------------------------------ CARTE RESULTAT------------------------------------------- */}
         <div className={styles.criteresResultat}>
           <div className={styles.critere}>
