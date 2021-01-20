@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&family=Montserrat+Alternates:wght@700&display=swap');
+
 .header {
   height: 100px;
   padding-left: 40px;
@@ -31,6 +33,7 @@
   cursor: pointer;
 }
 .linkPro {
+  font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   min-width: 240px;
   color: #d07910;
@@ -59,6 +62,7 @@
   box-sizing: content-box;
 }
 .linkNav {
+  font-family: 'Krub', sans-serif;
   box-sizing: content-box;
   display: flex;
   align-items: center;
@@ -94,6 +98,7 @@
   color: #4d84f3;
 }
 .linkSignin {
+  font-size: 14px;
   box-sizing: content-box;
   display: flex;
   align-items: center;
@@ -104,7 +109,9 @@
   padding: 10px;
   height: 30px;
   min-width: 100px;
-  font-size: 14px;
+  font-family: 'Krub', sans-serif;
+  font-weight: bold;
+
   color: white;
   background-color: #4d84f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -152,40 +159,4 @@
   .linkLogin {
     min-width: 30px;
   }
-  /* .linkLogin span{
-    display: none;
-  } */
-  /* .linkPro{
-    padding: 8px 20px 8px 20px;
-    min-width: 120px;
-    margin-left: 5px;
-    margin-top: 0;
-    margin-bottom: 10px;
-  } */
 }
-
-/* .headerContainer {
-  background-color: rgb(54, 54, 54);
-  color: white;
-}
-
-.menu {
-  margin: 0;
-  padding: 15px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.menuItem {
-  list-style-type: none;
-  margin-left: 15px;
-}
-
-.link {
-  display: flex;
-  height: 40px;
-  align-items: center;
-}
-.link:hover {
-  color: wheat;
-} */
