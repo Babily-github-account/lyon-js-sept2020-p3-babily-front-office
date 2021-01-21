@@ -80,7 +80,7 @@
 .imgFilleCreche {
   border-radius: 105% 81% 98% 61%;
   animation-name: rotatetoo;
-  animation-duration: 30s;
+  animation-duration: 20s;
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
 }
