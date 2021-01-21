@@ -54,13 +54,14 @@
   top: 20%;
   right: 20%;
 }
-.photoFilles {
-  position: relative;
-  width: 55%;
+.palette1 {
+  fill: rgba(52, 124, 206, 0.527);
+  transform: rotate(70deg);
+  position: absolute;
+  width: 10%;
   height: auto;
-  padding-top: 30%;
-  margin-left: 18%;
-  overflow: hidden;
+  top: 90%;
+  right: 20%;
 }
 
 @media screen and (max-width: 600px) {
