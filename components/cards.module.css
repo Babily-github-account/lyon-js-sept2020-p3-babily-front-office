@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
 
 .cards {
+  background-color: #faf5f0;
   border: 5px solid white;
   width: 30%;
   min-width: 550px;
@@ -25,7 +26,6 @@
   font-family: 'Montserrat Alternates', sans-serif;
   color: #ffbb69;
   padding: 0 20px 40px 20px;
-
   line-height: 1.5;
 }
 
@@ -43,6 +43,25 @@
 
 @media screen and (max-width: 600px) {
   .cards {
-    min-width: 100%;
+    min-width: 80%;
+  }
+  .cardsName,
+  .cardsFrom {
+    font-size: 50%;
+  }
+
+  .textCards {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .containerCards {
+    padding: 0;
+  }
+  .linkCards {
+    font-size: 10px;
+    padding-top: 2%;
+    padding-bottom: 20%;
   }
 }

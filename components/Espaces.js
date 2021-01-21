@@ -15,7 +15,7 @@ export default function Espaces() {
         <h4 className={styles.titleName}>Pour les parents</h4>
         <p className={styles.lorem}>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor.{' '}
+          commodo ligula eget dolor.
         </p>
         <div className={styles.espaceBouton}>
           <Link href="/espaceparents">
@@ -50,7 +50,7 @@ export default function Espaces() {
           src="/images/rectangle.png"
           alt="Picture of the author"
           width={50}
-          height={40}
+          height={50}
         />
         <h4 className={styles.titleName}>Pour les employeurs</h4>
         <p className={styles.lorem}>
