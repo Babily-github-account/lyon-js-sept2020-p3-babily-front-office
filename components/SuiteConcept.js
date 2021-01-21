@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './SuiteConcept.module.css';
 
 export default function concept() {
