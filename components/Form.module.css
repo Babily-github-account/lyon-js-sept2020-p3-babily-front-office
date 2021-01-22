@@ -1,5 +1,5 @@
 .formContact {
-  width: 40%;
+  width: 80%;
   display: block;
 }
 
@@ -34,6 +34,7 @@ select.leftInput {
   border: none;
   float: right;
   margin: 5px;
+  resize: none;
 }
 
 .formTitle {
@@ -47,9 +48,12 @@ select.leftInput {
 }
 
 .inputSubmit {
+  float: center;
   text-align: center;
-  display: flex;
-  width: 100%;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 45%;
   background-color: #ffbb69;
   border: none;
   border-radius: 5px;

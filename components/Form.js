@@ -26,7 +26,9 @@ const Form = (props) => {
     <>
       <form className={styles.formContact} onSubmit={handleSubmit(onSubmit)}>
         <h1 className={styles.formTitle}>{titleSujet(sujetForm.sujet)}</h1>
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div
+          style={{ display: 'flex', flexDirection: 'row', fontSize: '1.2em' }}
+        >
           <div className={styles.formLeftColumn}>
             <input
               className={styles.leftInput}
@@ -41,7 +43,7 @@ const Form = (props) => {
               ref={register}
             />
             <select className={styles.leftInput} name="gender" ref={register}>
-              <option value="femme">Femmme</option>
+              <option value="femme">Femme</option>
               <option value="homme">Homme</option>
             </select>
           </div>
