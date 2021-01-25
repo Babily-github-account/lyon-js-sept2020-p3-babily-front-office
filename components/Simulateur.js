@@ -5,7 +5,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useTransition } from 'react-spring';
+import { useTransition, useSpring, animated as a } from 'react-spring';
 import Link from 'next/link';
 import {
   faInfoCircle,
@@ -34,6 +34,13 @@ export default function Simulateur() {
   const newSimulation = () => {
     setResultatSimulateur(0);
   };
+
+  const [flipped, set] = useState(false);
+  const { transform } = useSpring({
+    transform: `perspective(600px) rotateX(${flipped ? 360 : 0}deg)`,
+    config: { mass: 5, tension: 500, friction: 80 },
+  });
+  console.log(set);
 
   const [modalVisible, setModalVisible] = useState(false);
   const transitions = useTransition(modalVisible, null, {
@@ -76,10 +83,17 @@ export default function Simulateur() {
         <div className={styles.cercle2} />
         <div className={styles.cercle3} />
         <div className={styles.cercle4} />
-        <div className={styles.criteres}>
+        <div
+          className={styles.criteres}
+          onSubmit={() => set((state) => !state)}
+        >
           {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
           {resultatSimulateur <= 0 ? (
-            <>
+            <a.div
+              style={{
+                transform,
+              }}
+            >
               <form
                 className={styles.criteres}
                 onSubmit={handleSubmit(onSubmit)}
@@ -205,66 +219,63 @@ export default function Simulateur() {
                   type="submit"
                   name="calculer"
                   className={styles.calculer}
+                  onSubmit={() => set((state) => !state)}
                 >
                   Calculer
                 </button>
               </form>
-            </>
+            </a.div>
           ) : (
-            <>
-              <div>
-                {/* ------------------------------------ CARTE RESULTAT-------------------------------------------  */}
-                <div className={styles.criteresResultat}>
-                  <div className={styles.critere}>
-                    <h5 className={styles.critereTitreResultat}>
-                      Cela vous coûterait
-                    </h5>
+            <a.div
+              style={{
+                transform: transform.interpolate((t) => `${t} rotateX(360deg)`),
+              }}
+            >
+              {/* ------------------------------------ CARTE RESULTAT-------------------------------------------  */}
+              <div className={styles.criteresResultat}>
+                <div className={styles.critere}>
+                  <h5 className={styles.critereTitreResultat}>
+                    Cela vous coûterait
+                  </h5>
+                  <p className={styles.critereTitre}>
+                    <span className={styles.resultatEuroHeure}>
+                      {resultatSimulateur.toFixed(2)}
+                    </span>
+                    <FontAwesomeIcon
+                      icon={faEuroSign}
+                      className={styles.icones}
+                    />{' '}
+                    /heure
+                  </p>
+                  <div className={styles.resultatJour}>
                     <p className={styles.critereTitre}>
-                      <span className={styles.resultatEuroHeure}>
-                        {resultatSimulateur.toFixed(2)}
+                      <span className={styles.critereTitreResultat}>soit </span>
+                      <span className={styles.resultatEuroJour}>
+                        {(resultatSimulateur / 20).toFixed(2)}
                       </span>
                       <FontAwesomeIcon
                         icon={faEuroSign}
-                        className={styles.icones}
+                        className={styles.iconesEuro2}
                       />{' '}
-                      /heure
+                      /jour
                     </p>
-                    <div className={styles.resultatJour}>
-                      <p className={styles.critereTitre}>
-                        <span className={styles.critereTitreResultat}>
-                          soit{' '}
-                        </span>
-                        <span className={styles.resultatEuroJour}>
-                          {(resultatSimulateur / 20).toFixed(2)}
-                        </span>
-                        <FontAwesomeIcon
-                          icon={faEuroSign}
-                          className={styles.iconesEuro2}
-                        />{' '}
-                        /jour
-                      </p>
-                    </div>
                   </div>
-                  <Link href="/">
-                    <a
-                      href=""
-                      rel="noreferrer"
-                      className={styles.choisirCreche}
-                    >
-                      Choisir ma crèche
-                    </a>
-                  </Link>
-
-                  <button
-                    onClick={newSimulation}
-                    type="button"
-                    className={styles.nouveauCalcul}
-                  >
-                    Nouvelle simulation
-                  </button>
                 </div>
+                <Link href="/">
+                  <a href="" rel="noreferrer" className={styles.choisirCreche}>
+                    Choisir ma crèche
+                  </a>
+                </Link>
+
+                <button
+                  onClick={(() => set((state) => !state), newSimulation)}
+                  type="button"
+                  className={styles.nouveauCalcul}
+                >
+                  Nouvelle simulation
+                </button>
               </div>
-            </>
+            </a.div>
           )}
         </div>
       </div>
