@@ -26,7 +26,7 @@
   pointer-events: none;
 }
 .titleContact {
-  margin-top: 120px;
+  margin-top: 150px;
   margin-left: 120px;
   color: #fa6870;
   border-top: 10px solid #fa6870;
@@ -68,10 +68,11 @@
 @media screen and (max-width: 750px) {
   .titleContact {
     margin: 50px;
+    margin-top: 150px;
     width: 40%;
   }
   .iconsContact {
-    margin: 10px;
+    margin: 20px;
   }
 
   .closeForm {
