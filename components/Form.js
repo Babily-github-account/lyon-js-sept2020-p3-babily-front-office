@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form';
+import ReCAPTCHA from 'react-google-recaptcha';
 import styles from './Form.module.css';
 
 const Form = (props) => {
@@ -16,6 +17,9 @@ const Form = (props) => {
       default:
         return 'Envoyer un mail à Babily';
     }
+  };
+  const onChange = (value) => {
+    console.log('Captcha value:', value);
   };
 
   const { register, handleSubmit } = useForm();
@@ -41,9 +45,14 @@ const Form = (props) => {
               ref={register}
             />
             <select className={styles.leftInput} name="gender" ref={register}>
-              <option value="femme">Femmme</option>
+              <option value="femme">Femme</option>
               <option value="homme">Homme</option>
             </select>
+            <ReCAPTCHA
+              sitekey="6Lfu0TsaAAAAAFSUb-pYbEBnh0HRne38JuOp6wj-"
+              onChange={onChange}
+            />
+            ,
           </div>
           <div className={styles.formRightColumn}>
             <textarea
