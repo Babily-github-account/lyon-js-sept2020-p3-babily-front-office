@@ -4,13 +4,11 @@ import styles from './PresentationEspacePro.module.css';
 import CestSimpleAvecBabily from './CestSimpleAvecBabily';
 import Cards from './cards';
 
-export default function PresentationEspacePro() {
+export default function PresentationEspaceEntreprise() {
   return (
     <>
       <section className={styles.sectionPresEspacePro}>
-        <h1 className={styles.titlePres}>
-          Vous êtes un professionnel de la petite enfance
-        </h1>
+        <h1 className={styles.titlePres}>Vous êtes une entreprise</h1>
         <p className={styles.textPresPro}>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
@@ -27,20 +25,14 @@ export default function PresentationEspacePro() {
           </div>
           <div className={styles.textBabily}>
             <p>
-              Une <b>commercialisation complexe</b>
+              Un <b>investissement conséquent</b> pour un avantage{' '}
+              <b>réservé à un nombre restreint</b>
+              de collaborateurs-parents
             </p>
             <hr className={styles.ligneRouge} />
             <p>
-              Des réservations à l’année, <b>sans garantie d’occupations</b>
-            </p>
-            <hr className={styles.ligneRouge} />
-            <p>
-              Une gestion inévitable de <b>l’accueil occasionnel</b>
-            </p>
-            <hr className={styles.ligneRouge} />
-            <p>
-              Une <b>charge administrative</b>, deportant les équipes de{' '}
-              <b>leur mission première</b>
+              Des <b>places achetées garanties</b>, mais <b>non occupées</b> à
+              pleins temps (congés, maladie, ...)
             </p>
           </div>
         </div>
@@ -48,25 +40,24 @@ export default function PresentationEspacePro() {
           <div className={styles.titleBabily}>Aujourd'hui avec Babily :</div>
           <div className={styles.textBabily}>
             <p>
-              <b>Boostez vos clients entreprises</b> en répondant à leur besoin
-              réel
+              <b>BOptimisez votre investissement !</b>
+              <br /> Payez ce dont vos collaborateurs ont besoin
             </p>
             <hr className={styles.plusBleuHorizontal} />
             <hr className={styles.plusBleuVertical} />
             <p>
-              <b>Optimiser votre taux d’occupation</b> à l’aide de votre
-              calendrier partagé
+              Proposez-leur <b>un avantage ajusté à leurs besoins</b>
+              (emploi du temps, habitudes de vie, ...)
             </p>
             <hr className={styles.plusBleuHorizontal} />
             <hr className={styles.plusBleuVertical} />
             <p>
-              <b>Recentrez votre équipe</b> sur le coeur de metier : bébé !
+              <b>Démocratisez ce privilège</b>, fidélisez le plus grand nombre
             </p>
           </div>
         </div>
       </section>
-
-      <CestSimpleAvecBabily pagePro />
+      <CestSimpleAvecBabily pageEntreprise />
       <div className={styles.containerContact}>
         <p className={styles.bien_etre}>Plus de bien être pour tous !</p>
         <button type="button" className={styles.btn}>

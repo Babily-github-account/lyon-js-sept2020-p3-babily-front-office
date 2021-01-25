@@ -60,7 +60,7 @@ function Navbar() {
                     width={25}
                     height={25}
                   />
-                  <p>Connexion</p>
+                  <p className={styles.linkConnexion}>Connexion</p>
                 </a>
               </Link>
             </li>

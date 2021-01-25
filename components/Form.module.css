@@ -1,0 +1,88 @@
+.formContact {
+  width: 80%;
+  display: block;
+}
+
+.formLeftColumn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.formRightColumn {
+  /* display: flex;
+  flex-direction: row; */
+  width: 50%;
+}
+
+.leftInput {
+  width: 95%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  float: left;
+  margin: 10px;
+}
+select.leftInput {
+  cursor: pointer;
+}
+
+.rightInput {
+  width: 95%;
+  height: 92%;
+  border-radius: 5px;
+  border: none;
+  float: right;
+  margin: 5px;
+  resize: none;
+}
+
+.formTitle {
+  padding-top: 10px;
+  border-top: 10px solid #fa6870;
+  color: #fa6870;
+  width: 50%;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.inputSubmit {
+  float: center;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 45%;
+  background-color: #ffbb69;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .formContact {
+    width: 90%;
+  }
+
+  .formRightColumn {
+    margin: 10px;
+  }
+
+  .formTitle {
+    margin: 10px;
+  }
+
+  .inputSubmit {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .formContact {
+    width: 60%;
+    margin: 40px;
+  }
+}

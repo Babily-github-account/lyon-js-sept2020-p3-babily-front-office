@@ -19,6 +19,7 @@ export default function Home() {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'bottom',
   };
+
   return (
     <Layout pageTitle="Home">
       <ViewSource pathname="pages/index.js" />

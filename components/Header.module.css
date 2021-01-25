@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&family=Montserrat+Alternates:wght@700&display=swap');
+
 .header {
   height: 100px;
   padding-left: 40px;
@@ -6,19 +8,19 @@
   display: flex;
   justify-content: space-between;
   position: fixed;
-  background-color: #F9F5F1;
+  background-color: #f9f5f1;
   z-index: 1;
   top: 0;
   transition: top 0.5s;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.navHeader{
+.navHeader {
   float: left;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
 }
-.line{
+.line {
   display: flex;
   flex-direction: column;
   width: 33px;
@@ -31,9 +33,10 @@
   cursor: pointer;
 }
 .linkPro {
+  font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   min-width: 240px;
-  color: #D07910;
+  color: #d07910;
   box-sizing: content-box;
   display: flex;
   align-items: center;
@@ -46,9 +49,9 @@
   padding: 5px 20px 5px 20px;
   height: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #FFDCB1;
+  background-color: #ffdcb1;
 }
-.linkPro:hover{
+.linkPro:hover {
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 .navLogin {
@@ -58,7 +61,8 @@
   margin-top: 10px;
   box-sizing: content-box;
 }
-.linkNav{
+.linkNav {
+  font-family: 'Krub', sans-serif;
   box-sizing: content-box;
   display: flex;
   align-items: center;
@@ -71,13 +75,13 @@
   color: black;
   min-width: 100px;
 }
-.linkNav:hover{
+.linkNav:hover {
   color: #4d84f3;
 }
-.navOnMobileWindow{
+.navOnMobileWindow {
   display: none;
 }
-.linkLogin{
+.linkLogin {
   box-sizing: content-box;
   display: flex;
   align-items: center;
@@ -90,10 +94,11 @@
   color: black;
   min-width: 100px;
 }
-.linkLogin:hover{
+.linkLogin:hover {
   color: #4d84f3;
 }
 .linkSignin {
+  font-size: 14px;
   box-sizing: content-box;
   display: flex;
   align-items: center;
@@ -104,87 +109,54 @@
   padding: 10px;
   height: 30px;
   min-width: 100px;
-  font-size: 14px;
+  font-family: 'Krub', sans-serif;
+  font-weight: bold;
+
   color: white;
   background-color: #4d84f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.linkSignin:hover{
+.linkSignin:hover {
   box-shadow: inset -2px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media screen and (max-width: 1363px){
+@media screen and (max-width: 1363px) {
   .navHeader {
     min-height: 100px;
     display: flex;
-  justify-content: center;
+    justify-content: center;
   }
   .logoHeader {
     text-align: center;
     min-height: 80px;
     min-width: 180px;
   }
-  .navLogin, .linkPro{
+  .navLogin,
+  .linkPro {
     display: none;
   }
-  .navOnMobileWindow{
+  .navOnMobileWindow {
     display: block;
   }
- }
- /* @media screen and (max-width: 1249px){
+}
+/* @media screen and (max-width: 1249px){
   .logoHeader{
     width: 120px;
   } 
   } */
- @media screen and (max-width: 900px){
-   .header{
+@media screen and (max-width: 900px) {
+  .header {
     padding-left: 10px;
     padding-right: 10px;
-   }
-   .navHeader{
-     display: flex;
-     flex-direction: column;
-   }
-   .logoHeader{
-     margin-left: 10px;
-     margin-right: 40px;
-   }
-  .linkLogin{
+  }
+  .navHeader {
+    display: flex;
+    flex-direction: column;
+  }
+  .logoHeader {
+    margin-left: 10px;
+    margin-right: 40px;
+  }
+  .linkLogin {
     min-width: 30px;
   }
-  /* .linkLogin span{
-    display: none;
-  } */
-  /* .linkPro{
-    padding: 8px 20px 8px 20px;
-    min-width: 120px;
-    margin-left: 5px;
-    margin-top: 0;
-    margin-bottom: 10px;
-  } */
- }
- 
-/* .headerContainer {
-  background-color: rgb(54, 54, 54);
-  color: white;
 }
-
-.menu {
-  margin: 0;
-  padding: 15px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.menuItem {
-  list-style-type: none;
-  margin-left: 15px;
-}
-
-.link {
-  display: flex;
-  height: 40px;
-  align-items: center;
-}
-.link:hover {
-  color: wheat;
-} */
