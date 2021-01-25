@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
 
 .contactFormContainer {
-  min-height: 400px;
+  margin-top: 100px;
 }
 .contactContainer {
   display: flex;
@@ -26,8 +26,8 @@
   pointer-events: none;
 }
 .titleContact {
-  margin-left: 120px;
   margin-top: 120px;
+  margin-left: 120px;
   color: #fa6870;
   border-top: 10px solid #fa6870;
   font-family: '';
@@ -81,7 +81,7 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .titleContact {
-    margin: 100px;
+    /* margin: 100px; */
     width: 20%;
   }
 

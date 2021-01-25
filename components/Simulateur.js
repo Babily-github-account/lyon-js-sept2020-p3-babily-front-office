@@ -22,7 +22,6 @@ export default function Simulateur() {
     mode: 'onTouched',
   });
   const onSubmit = (data) => {
-    console.log(data);
     const nbrChildren = parseInt(data.children);
     const revenuNetMensuel = parseInt(data.appointments);
     const nbrHeures = parseInt(data.hours);

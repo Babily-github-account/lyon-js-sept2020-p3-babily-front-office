@@ -41,7 +41,7 @@ select.leftInput {
   padding-top: 10px;
   border-top: 10px solid #fa6870;
   color: #fa6870;
-  width: 50%;
+  width: fit-content;
   font-family: 'Montserrat Alternates', sans-serif;
   font-style: italic;
   font-size: 25px;
@@ -73,6 +73,7 @@ select.leftInput {
 
   .formTitle {
     margin: 10px;
+    width: 60%;
   }
 
   .inputSubmit {
