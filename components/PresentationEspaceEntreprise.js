@@ -1,4 +1,4 @@
-// import Link from 'next/link';
+import Link from 'next/link';
 // import Image from 'next/image';
 import styles from './PresentationEspacePro.module.css';
 import CestSimpleAvecBabily from './CestSimpleAvecBabily';
@@ -60,9 +60,9 @@ export default function PresentationEspaceEntreprise() {
       <CestSimpleAvecBabily pageEntreprise />
       <div className={styles.containerContact}>
         <p className={styles.bien_etre}>Plus de bien être pour tous !</p>
-        <button type="button" className={styles.btn}>
-          Contactez-nous !
-        </button>
+        <Link href="/contact">
+          <a className={styles.btn}>Contactez-nous !</a>
+        </Link>
         <Cards />
       </div>
     </>
