@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
 
 .contactFormContainer {
-  min-height: 400px;
+  margin-top: 100px;
 }
 .contactContainer {
   display: flex;
@@ -26,13 +26,13 @@
   pointer-events: none;
 }
 .titleContact {
+  margin-top: 150px;
   margin-left: 120px;
-  margin-top: 120px;
   color: #fa6870;
   border-top: 10px solid #fa6870;
   font-family: '';
   font-family: 'Montserrat Alternates', sans-serif;
-  width: 15%;
+  width: 260px;
   font-size: 30px;
   font-style: italic;
 }
@@ -68,10 +68,11 @@
 @media screen and (max-width: 750px) {
   .titleContact {
     margin: 50px;
-    width: 40%;
+    margin-top: 150px;
+    width: 260px;
   }
   .iconsContact {
-    margin: 10px;
+    margin: 20px;
   }
 
   .closeForm {
@@ -81,8 +82,8 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .titleContact {
-    margin: 100px;
-    width: 20%;
+    /* margin: 100px; */
+    width: 260px;
   }
 
   .iconsContact {
