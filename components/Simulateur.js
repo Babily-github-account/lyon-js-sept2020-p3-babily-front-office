@@ -25,7 +25,7 @@ export default function Simulateur() {
     const nbrChildren = parseInt(data.children);
     const revenuNetMensuel = parseInt(data.appointments);
     const nbrHeures = parseInt(data.hours);
-    // Formule à demander a Nico le gentil
+    // Formule à demander a Nico
     const resultat = (nbrChildren * revenuNetMensuel) / nbrHeures;
     setResultatSimulateur(resultat);
   };
