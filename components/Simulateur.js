@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 /* eslint-disable no-param-reassign */
 /* eslint-disable radix */
 /* eslint-disable jsx-a11y/label-has-associated-control */
@@ -26,39 +27,39 @@ export default function Simulateur() {
 
   const onSubmit = (data) => {
     const nbrChildren = parseInt(data.children);
-    const revenuNetMensuel = parseInt(data.appointments); // A DIVISER PAR 12 POUR OBTENIR SALAIRE MENSUEL NET
+    const revenuNetMensuel = parseInt(data.appointments) / 12;
     const nbrHeures = parseInt(data.hours);
 
-    // Formule à demander a Nico le gentil
-    const resultat = (nbrChildren * revenuNetMensuel) / nbrHeures;
+    const calculatedEffortRate = () => {
+      if (nbrChildren === 1) {
+        return 0.000615;
+      }
+      if (nbrChildren === 2) {
+        return 0.000512;
+      }
+      if (nbrChildren === 3) {
+        return 0.00041;
+      }
+      if (nbrChildren === 4) {
+        return 0.000307;
+      }
+      return 0;
+    };
 
-    // const resultat = ([revenus mensuels nets du foyer (VOIR calculattedReferenceSalary )] X [taux d’effort (VOIR calculatedEffortRate )] X [nb d’heures par jour en crèche] X [nb de jours d’accueil par mois]);
+    const calculattedReferenceSalary = () => {
+      if (revenuNetMensuel < 711.62) {
+        return 712;
+      }
+      if (revenuNetMensuel > 5800) {
+        return 5800;
+      }
+      return revenuNetMensuel;
+    };
 
-    // const calculatedEffortRate = () => {
-    //   let effortRate = 0;
-    //   if (data.children === '1') {
-    //     effortRate = 0.000615;
-    //   } else if (data.children === '2') {
-    //     effortRate = 0.000512;
-    //   } else if (data.children === '3') {
-    //     effortRate = 0.00041;
-    //   } else if (data.children === '4+') {
-    //     effortRate = 0.000307;
-    //   }
-    //   calculatedEffortRate(effortRate);
-    // };
+    const resultat =
+      calculattedReferenceSalary() * calculatedEffortRate() * nbrHeures;
 
-    // const calculattedReferenceSalary = (revenuNetMensuel) => {
-    //   let referenceSalary = 0;
-    //   if (revenuNetMensuel < 711.62) {
-    //     referenceSalary = 712;
-    //   } else if (revenuNetMensuel > 5800) {
-    //     referenceSalary = 5800;
-    //   } else {
-    //     referenceSalary = revenuNetMensuel;
-    //   }
-    //   calculatedReferenceSalary(referenceSalary);
-    // };
+    // const resultat = ([revenus mensuels nets du foyer (VOIR calculattedReferenceSalary )] X [taux d’effort (VOIR calculatedEffortRate )]);
 
     setResultatSimulateur(resultat);
   };
@@ -161,7 +162,7 @@ export default function Simulateur() {
                       type="radio"
                       id="four"
                       name="children"
-                      value="4+"
+                      value="4"
                       className={styles.demo2}
                       ref={register({ required: true })}
                     />
@@ -266,7 +267,7 @@ export default function Simulateur() {
                   </h5>
                   <p className={styles.critereTitre}>
                     <span className={styles.resultatEuroHeure}>
-                      {resultatSimulateur.toFixed(2)}
+                      {(resultatSimulateur / 10).toFixed(2)}{' '}
                     </span>
                     <FontAwesomeIcon
                       icon={faEuroSign}
@@ -278,12 +279,12 @@ export default function Simulateur() {
                     <p className={styles.critereTitre}>
                       <span className={styles.critereTitreResultat}>soit </span>
                       <span className={styles.resultatEuroJour}>
-                        {(resultatSimulateur / 20).toFixed(2)}
+                        {resultatSimulateur.toFixed(2)}
                       </span>
                       <FontAwesomeIcon
                         icon={faEuroSign}
                         className={styles.iconesEuro2}
-                      />{' '}
+                      />
                       /jour
                     </p>
                   </div>
