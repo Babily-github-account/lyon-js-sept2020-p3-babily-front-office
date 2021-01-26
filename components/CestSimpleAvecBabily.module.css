@@ -87,10 +87,23 @@
   margin-top: 50px;
   cursor: pointer;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
   .titreSimpleBabily {
     margin-left: 0;
     text-align: center;
+  }
+}
+@media screen and (max-width: 800px){
+  .titreSimpleBabily {
+    font-size: 28px;
+    line-height: 2.5rem;
+  }
+  .ch{
+    transform: scale(0.8);
+    margin-bottom: 0;
+  }
+  .option{
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 500px) {
