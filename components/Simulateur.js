@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable radix */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/jsx-no-comment-textnodes */
@@ -18,15 +19,47 @@ import styles from './Simulateur.module.css';
 
 export default function Simulateur() {
   const [resultatSimulateur, setResultatSimulateur] = useState(0);
+
   const { register, handleSubmit, errors } = useForm({
     mode: 'onTouched',
   });
+
   const onSubmit = (data) => {
     const nbrChildren = parseInt(data.children);
-    const revenuNetMensuel = parseInt(data.appointments);
+    const revenuNetMensuel = parseInt(data.appointments); // A DIVISER PAR 12 POUR OBTENIR SALAIRE MENSUEL NET
     const nbrHeures = parseInt(data.hours);
+
     // Formule à demander a Nico le gentil
     const resultat = (nbrChildren * revenuNetMensuel) / nbrHeures;
+
+    // const resultat = ([revenus mensuels nets du foyer (VOIR calculattedReferenceSalary )] X [taux d’effort (VOIR calculatedEffortRate )] X [nb d’heures par jour en crèche] X [nb de jours d’accueil par mois]);
+
+    // const calculatedEffortRate = () => {
+    //   let effortRate = 0;
+    //   if (data.children === '1') {
+    //     effortRate = 0.000615;
+    //   } else if (data.children === '2') {
+    //     effortRate = 0.000512;
+    //   } else if (data.children === '3') {
+    //     effortRate = 0.00041;
+    //   } else if (data.children === '4+') {
+    //     effortRate = 0.000307;
+    //   }
+    //   calculatedEffortRate(effortRate);
+    // };
+
+    // const calculattedReferenceSalary = (revenuNetMensuel) => {
+    //   let referenceSalary = 0;
+    //   if (revenuNetMensuel < 711.62) {
+    //     referenceSalary = 712;
+    //   } else if (revenuNetMensuel > 5800) {
+    //     referenceSalary = 5800;
+    //   } else {
+    //     referenceSalary = revenuNetMensuel;
+    //   }
+    //   calculatedReferenceSalary(referenceSalary);
+    // };
+
     setResultatSimulateur(resultat);
   };
 
