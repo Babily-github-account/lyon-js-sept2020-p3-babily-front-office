@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable radix */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/jsx-no-comment-textnodes */
@@ -18,15 +19,47 @@ import styles from './Simulateur.module.css';
 
 export default function Simulateur() {
   const [resultatSimulateur, setResultatSimulateur] = useState(0);
+
   const { register, handleSubmit, errors } = useForm({
     mode: 'onTouched',
   });
+
   const onSubmit = (data) => {
     const nbrChildren = parseInt(data.children);
-    const revenuNetMensuel = parseInt(data.appointments);
+    const revenuNetMensuel = parseInt(data.appointments); // A DIVISER PAR 12 POUR OBTENIR SALAIRE MENSUEL NET
     const nbrHeures = parseInt(data.hours);
+
     // Formule à demander a Nico le gentil
     const resultat = (nbrChildren * revenuNetMensuel) / nbrHeures;
+
+    // const resultat = ([revenus mensuels nets du foyer (VOIR calculattedReferenceSalary )] X [taux d’effort (VOIR calculatedEffortRate )] X [nb d’heures par jour en crèche] X [nb de jours d’accueil par mois]);
+
+    // const calculatedEffortRate = () => {
+    //   let effortRate = 0;
+    //   if (data.children === '1') {
+    //     effortRate = 0.000615;
+    //   } else if (data.children === '2') {
+    //     effortRate = 0.000512;
+    //   } else if (data.children === '3') {
+    //     effortRate = 0.00041;
+    //   } else if (data.children === '4+') {
+    //     effortRate = 0.000307;
+    //   }
+    //   calculatedEffortRate(effortRate);
+    // };
+
+    // const calculattedReferenceSalary = (revenuNetMensuel) => {
+    //   let referenceSalary = 0;
+    //   if (revenuNetMensuel < 711.62) {
+    //     referenceSalary = 712;
+    //   } else if (revenuNetMensuel > 5800) {
+    //     referenceSalary = 5800;
+    //   } else {
+    //     referenceSalary = revenuNetMensuel;
+    //   }
+    //   calculatedReferenceSalary(referenceSalary);
+    // };
+
     setResultatSimulateur(resultat);
   };
 
@@ -39,7 +72,6 @@ export default function Simulateur() {
     transform: `perspective(600px) rotateX(${flipped ? 360 : 0}deg)`,
     config: { mass: 5, tension: 500, friction: 80 },
   });
-  console.log(set);
 
   const [modalVisible, setModalVisible] = useState(false);
   const transitions = useTransition(modalVisible, null, {
@@ -88,11 +120,7 @@ export default function Simulateur() {
         >
           {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
           {resultatSimulateur <= 0 ? (
-            <a.div
-              style={{
-                transform,
-              }}
-            >
+            <a.div className={styles.criteresRecherche}>
               <form
                 className={styles.criteres}
                 onSubmit={handleSubmit(onSubmit)}
@@ -227,7 +255,7 @@ export default function Simulateur() {
           ) : (
             <a.div
               style={{
-                transform: transform.interpolate((t) => `${t} rotateX(360deg)`),
+                transform,
               }}
             >
               {/* ------------------------------------ CARTE RESULTAT-------------------------------------------  */}
@@ -267,7 +295,7 @@ export default function Simulateur() {
                 </Link>
 
                 <button
-                  onClick={(() => set((state) => !state), newSimulation)}
+                  onClick={newSimulation}
                   type="button"
                   className={styles.nouveauCalcul}
                 >
