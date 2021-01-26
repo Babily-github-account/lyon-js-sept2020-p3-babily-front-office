@@ -267,7 +267,7 @@ export default function Simulateur() {
                   </h5>
                   <p className={styles.critereTitre}>
                     <span className={styles.resultatEuroHeure}>
-                      {(resultatSimulateur / 10).toFixed(2)}
+                      {(resultatSimulateur / 10).toFixed(2)}{' '}
                     </span>
                     <FontAwesomeIcon
                       icon={faEuroSign}
@@ -284,7 +284,7 @@ export default function Simulateur() {
                       <FontAwesomeIcon
                         icon={faEuroSign}
                         className={styles.iconesEuro2}
-                      />{' '}
+                      />
                       /jour
                     </p>
                   </div>
