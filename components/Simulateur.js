@@ -39,7 +39,6 @@ export default function Simulateur() {
     transform: `perspective(600px) rotateX(${flipped ? 360 : 0}deg)`,
     config: { mass: 5, tension: 500, friction: 80 },
   });
-  console.log(set);
 
   const [modalVisible, setModalVisible] = useState(false);
   const transitions = useTransition(modalVisible, null, {
@@ -88,11 +87,7 @@ export default function Simulateur() {
         >
           {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
           {resultatSimulateur <= 0 ? (
-            <a.div
-              style={{
-                transform,
-              }}
-            >
+            <a.div className={styles.criteresRecherche}>
               <form
                 className={styles.criteres}
                 onSubmit={handleSubmit(onSubmit)}
@@ -227,7 +222,7 @@ export default function Simulateur() {
           ) : (
             <a.div
               style={{
-                transform: transform.interpolate((t) => `${t} rotateX(360deg)`),
+                transform,
               }}
             >
               {/* ------------------------------------ CARTE RESULTAT-------------------------------------------  */}
@@ -267,7 +262,7 @@ export default function Simulateur() {
                 </Link>
 
                 <button
-                  onClick={(() => set((state) => !state), newSimulation)}
+                  onClick={newSimulation}
                   type="button"
                   className={styles.nouveauCalcul}
                 >
