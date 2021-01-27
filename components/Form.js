@@ -1,8 +1,15 @@
 import { useForm } from 'react-hook-form';
+import { useState } from 'react';
+// import ReactDOM from 'react-dom';
+import Recaptcha from 'react-google-recaptcha';
 import { InlineWidget } from 'react-calendly';
 import styles from './Form.module.css';
 
 const Form = (props) => {
+  const { handleSubmit, register } = useForm({
+    mode: 'onChange',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const sujetForm = props;
 
   const sujetAPICalendly = (sujet) => {
@@ -20,14 +27,23 @@ const Form = (props) => {
     }
   };
 
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
+  const siteKey = `${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`;
+
+  const executeCaptcha = async () => {
+    await setIsSubmitting(!isSubmitting);
+  };
+
+  const onSubmit = (values) => {
+    // setIsSubmitting(true);
+    if (isSubmitting) {
+      console.log(values);
+    }
+    setIsSubmitting(false);
   };
   return sujetAPICalendly(sujetForm.sujet) === 'email' ? (
     <form className={styles.formContact} onSubmit={handleSubmit(onSubmit)}>
-      <h1 className={styles.formTitle}>Envoyer un mail à Babily</h1>
-      <div style={{ display: 'flex', flexDirection: 'row', fontSize: '1.2em' }}>
+      <h1 className={styles.formTitle}>Envoyez un mail à Babily</h1>
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
         <div className={styles.formLeftColumn}>
           <input
             className={styles.leftInput}
@@ -42,8 +58,9 @@ const Form = (props) => {
             ref={register}
           />
           <select className={styles.leftInput} name="gender" ref={register}>
-            <option value="femme">Femme</option>
-            <option value="homme">Homme</option>
+            <option value="crèche">Crèche</option>
+            <option value="parent">Parent</option>
+            <option value="entreprise">Entreprise</option>
           </select>
         </div>
         <div className={styles.formRightColumn}>
@@ -51,10 +68,18 @@ const Form = (props) => {
             className={styles.rightInput}
             name="message"
             placeholder="Ecrivez votre message ici"
+            ref={register}
           />
         </div>
       </div>
       <input type="submit" className={styles.inputSubmit} />
+      <Recaptcha
+        // ref={(e) => (recaptchaInstance = e)}
+        sitekey={siteKey}
+        ref={register}
+        size="normal"
+        onChange={executeCaptcha}
+      />
     </form>
   ) : (
     <div className={styles.formContact}>
