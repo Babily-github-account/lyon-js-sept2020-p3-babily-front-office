@@ -1,27 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Krub:wght@600;700&family=Montserrat+Alternates:wght@800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@600;700&family=Montserrat+Alternates:wght@800&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
-
-
-
 .formeJaune {
   position: absolute;
   height: 426px;
   right: 20%;
   top: 40%;
 }
-
 .formeBig {
   position: absolute;
   left: 20%;
   height: 40%;
 }
-
 .imgFille {
   position: absolute;
   height: 60%;
@@ -29,13 +22,11 @@
   top: 20%;
   z-index: 1;
 }
-
 .formeRouge {
   position: absolute;
   left: 30%;
   top: 80%;
 }
-
 .fillette2 {
   position: absolute;
   top: 120%;
@@ -43,17 +34,14 @@
 }
 .saviezVous {
   position: absolute;
-
   height: 45px;
   left: 493px;
   top: 932px;
-
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 35px;
   line-height: 44px;
-
   color: #3c84fb;
 }
 .ligneSaviez {
@@ -62,130 +50,104 @@
   height: 0.08px;
   left: 493px;
   top: 977.49px;
-
   border: 7px solid #3c84fb;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
-
 .chiffre {
   position: absolute;
   right: 30%;
   top: 135%;
   height: 40%;
 }
-
 .textJaune {
   position: absolute;
   width: 251px;
   height: 36px;
   right: 13%;
   top: 1105px;
-
-  font-family: "Krub", sans-serif;
+  font-family: 'Krub', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-
   color: #000000;
 }
-
 .soustitre2 {
   font-size: 11px;
 }
-
 .textBleu {
   position: absolute;
   width: 170px;
   right: 17%;
   top: 165%;
-
-  font-family: "Krub", sans-serif;
+  font-family: 'Krub', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-
   color: #000000;
 }
-
 .textRouge {
   position: absolute;
   width: 245px;
   left: 32%;
   top: 165%;
-
-  font-family: "Krub", sans-serif;
+  font-family: 'Krub', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
   text-align: right;
-
   color: #000000;
 }
-
 .hour {
   color: #fa6870;
 }
-
 .simulatorTitle {
   position: absolute;
-
   height: 45px;
   left: 9%;
   top: 220%;
-
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 35px;
   line-height: 44px;
-
   color: #3c84fb;
 }
-
 .ligne3 {
   position: absolute;
   width: 360px;
   height: 0.35px;
   left: 9%;
   top: 226%;
-
   border: 7px solid #3c84fb;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
-
 .soustitreSimulator {
   position: absolute;
   width: 368px;
   height: 55px;
   left: 9%;
   top: 231%;
-
-  font-family: "Krub", sans-serif;
+  font-family: 'Krub', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 21px;
-
   color: #000000;
 }
-
 .simulator {
   position: absolute;
   height: 414px;
   right: 17%;
   top: 209%;
 }
-
 .simulatorLink {
   position: absolute;
-
   left: 9%;
   top: 240%;
-
-  font-family: "Krub", sans-serif;
+  font-family: 'Krub', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -193,14 +155,11 @@
   display: flex;
   align-items: flex-end;
   text-decoration-line: underline;
-
   color: #ff6d6d;
 }
-
 .price {
   color: #ff6d6d;
 }
-
 .train {
   position: absolute;
   height: 10%;
