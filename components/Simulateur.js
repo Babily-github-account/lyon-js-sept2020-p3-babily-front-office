@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-param-reassign */
 /* eslint-disable radix */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/jsx-no-comment-textnodes */
@@ -18,15 +20,47 @@ import styles from './Simulateur.module.css';
 
 export default function Simulateur() {
   const [resultatSimulateur, setResultatSimulateur] = useState(0);
+
   const { register, handleSubmit, errors } = useForm({
     mode: 'onTouched',
   });
+
   const onSubmit = (data) => {
     const nbrChildren = parseInt(data.children);
-    const revenuNetMensuel = parseInt(data.appointments);
+    const revenuNetMensuel = parseInt(data.appointments) / 12;
     const nbrHeures = parseInt(data.hours);
-    // Formule à demander a Nico
-    const resultat = (nbrChildren * revenuNetMensuel) / nbrHeures;
+
+    const calculatedEffortRate = () => {
+      if (nbrChildren === 1) {
+        return 0.000615;
+      }
+      if (nbrChildren === 2) {
+        return 0.000512;
+      }
+      if (nbrChildren === 3) {
+        return 0.00041;
+      }
+      if (nbrChildren === 4) {
+        return 0.000307;
+      }
+      return 0;
+    };
+
+    const calculattedReferenceSalary = () => {
+      if (revenuNetMensuel < 711.62) {
+        return 712;
+      }
+      if (revenuNetMensuel > 5800) {
+        return 5800;
+      }
+      return revenuNetMensuel;
+    };
+
+    const resultat =
+      calculattedReferenceSalary() * calculatedEffortRate() * nbrHeures;
+
+    // const resultat = ([revenus mensuels nets du foyer (VOIR calculattedReferenceSalary )] X [taux d’effort (VOIR calculatedEffortRate )]);
+
     setResultatSimulateur(resultat);
   };
 
@@ -39,7 +73,6 @@ export default function Simulateur() {
     transform: `perspective(600px) rotateX(${flipped ? 360 : 0}deg)`,
     config: { mass: 5, tension: 500, friction: 80 },
   });
-  console.log(set);
 
   const [modalVisible, setModalVisible] = useState(false);
   const transitions = useTransition(modalVisible, null, {
@@ -88,11 +121,7 @@ export default function Simulateur() {
         >
           {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
           {resultatSimulateur <= 0 ? (
-            <a.div
-              style={{
-                transform,
-              }}
-            >
+            <a.div className={styles.criteresRecherche}>
               <form
                 className={styles.criteres}
                 onSubmit={handleSubmit(onSubmit)}
@@ -133,7 +162,7 @@ export default function Simulateur() {
                       type="radio"
                       id="four"
                       name="children"
-                      value="4+"
+                      value="4"
                       className={styles.demo2}
                       ref={register({ required: true })}
                     />
@@ -227,7 +256,7 @@ export default function Simulateur() {
           ) : (
             <a.div
               style={{
-                transform: transform.interpolate((t) => `${t} rotateX(360deg)`),
+                transform,
               }}
             >
               {/* ------------------------------------ CARTE RESULTAT-------------------------------------------  */}
@@ -238,7 +267,7 @@ export default function Simulateur() {
                   </h5>
                   <p className={styles.critereTitre}>
                     <span className={styles.resultatEuroHeure}>
-                      {resultatSimulateur.toFixed(2)}
+                      {(resultatSimulateur / 10).toFixed(2)}{' '}
                     </span>
                     <FontAwesomeIcon
                       icon={faEuroSign}
@@ -250,12 +279,12 @@ export default function Simulateur() {
                     <p className={styles.critereTitre}>
                       <span className={styles.critereTitreResultat}>soit </span>
                       <span className={styles.resultatEuroJour}>
-                        {(resultatSimulateur / 20).toFixed(2)}
+                        {resultatSimulateur.toFixed(2)}
                       </span>
                       <FontAwesomeIcon
                         icon={faEuroSign}
                         className={styles.iconesEuro2}
-                      />{' '}
+                      />
                       /jour
                     </p>
                   </div>
@@ -267,7 +296,7 @@ export default function Simulateur() {
                 </Link>
 
                 <button
-                  onClick={(() => set((state) => !state), newSimulation)}
+                  onClick={newSimulation}
                   type="button"
                   className={styles.nouveauCalcul}
                 >

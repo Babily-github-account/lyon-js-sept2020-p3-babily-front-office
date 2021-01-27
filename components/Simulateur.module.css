@@ -155,6 +155,14 @@
   position: relative;
   padding: 3%;
 }
+.criteresRecherche{
+  animation-name: entering;
+  animation-duration: 1s;
+}
+@keyframes entering {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 .critere {
   margin-bottom: 3%;
 }
