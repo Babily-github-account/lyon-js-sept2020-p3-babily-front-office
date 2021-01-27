@@ -13,7 +13,10 @@ export default function CestSimpleAvecBabily(props) {
         <div className={styles.inlineForm}>
           <div className={styles.form}>
             {espace.pagePro || espace.pageParent ? (
-              <p className={styles.ch}>1</p>
+              <>
+                <div className={styles.ch} />
+                <p className={styles.chText}>1</p>
+              </>
             ) : (
               <Image
                 src="/images/stylos.svg"
@@ -39,7 +42,13 @@ export default function CestSimpleAvecBabily(props) {
           </div>
           <div className={styles.form}>
             {espace.pagePro || espace.pageParent ? (
-              <p className={styles.ch}>2</p>
+              <>
+                <div
+                  className={styles.ch}
+                  style={{ transform: 'rotate(90deg)' }}
+                />
+                <p className={styles.chText}>2</p>
+              </>
             ) : (
               <Image
                 src="/images/calendrier_mini.svg"
@@ -80,7 +89,13 @@ export default function CestSimpleAvecBabily(props) {
           </div>
           <div className={styles.form}>
             {espace.pagePro || espace.pageParent ? (
-              <p className={styles.ch}>3</p>
+              <>
+                <div
+                  className={styles.ch}
+                  style={{ transform: 'rotate(180deg)' }}
+                />
+                <p className={styles.chText}>3</p>
+              </>
             ) : (
               <Image
                 src="/images/mail_notif.svg"

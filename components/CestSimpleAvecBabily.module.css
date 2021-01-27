@@ -19,18 +19,20 @@
   margin-left: 150px;
 }
 .ch {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: content-box;
-  font-weight: 700;
-  font-size: 4em;
-  color: white;
   background: url(/images/forme2:home.png);
-  background-size: cover;
+  background-size: 100% 100%;
   height: 280px;
   width: 300px;
   margin: 20px 0;
+  position: relative;
+}
+.chText{
+  font-weight: 700;
+  font-size: 4em;
+  position: relative;
+  color: white;
+  bottom: 150px;
+  margin: -50px;
 }
 .inlineForm {
   display: flex;
@@ -87,10 +89,22 @@
   margin-top: 50px;
   cursor: pointer;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
   .titreSimpleBabily {
     margin-left: 0;
     text-align: center;
+  }
+}
+@media screen and (max-width: 800px){
+  .titreSimpleBabily {
+    font-size: 28px;
+    line-height: 2.5rem;
+  }
+  .ch, .chText{
+    margin-bottom: 0;
+  }
+  .option{
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 500px) {
