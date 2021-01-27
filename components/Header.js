@@ -15,7 +15,7 @@ export default function Header() {
                 src="/images/BabilylogoSansBaselineCoul.png"
                 alt="Babily.fr"
                 layout="fixed"
-                width={200}
+                width={177.78}
                 height={100}
               />
             </a>
