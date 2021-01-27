@@ -65,8 +65,9 @@ const Form = (props) => {
               ref={register}
             />
             <select className={styles.leftInput} name="gender" ref={register}>
-              <option value="femme">Femme</option>
-              <option value="homme">Homme</option>
+              <option value="crèche">Crèche</option>
+              <option value="parent">Parent</option>
+              <option value="entreprise">Entreprise</option>
             </select>
           </div>
           <div className={styles.formRightColumn}>
