@@ -1,8 +1,14 @@
 import { useForm } from 'react-hook-form';
-import ReCAPTCHA from 'react-google-recaptcha';
+import { useState } from 'react';
+// import ReactDOM from 'react-dom';
+import Recaptcha from 'react-google-recaptcha';
 import styles from './Form.module.css';
 
 const Form = (props) => {
+  const { handleSubmit, register } = useForm({
+    mode: 'onChange',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const sujetForm = props;
   const titleSujet = (sujet) => {
     switch (sujet) {
@@ -18,14 +24,28 @@ const Form = (props) => {
         return 'Envoyer un mail à Babily';
     }
   };
-  const onChange = (value) => {
-    console.log('Captcha value:', value);
+
+  const siteKey = `${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`;
+
+  const executeCaptcha = async () => {
+    await setIsSubmitting(!isSubmitting);
   };
 
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = (values) => {
+    // setIsSubmitting(true);
+    if (isSubmitting) {
+      console.log(values);
+    }
+    setIsSubmitting(false);
   };
+
+  // const onVerifyCaptcha = (token) => {
+  //   setValue('isRobot', token);
+  // };
+
+  // useEffect(() => {
+  //   register({ name: 'isRobot' }, { required: true });
+  // });
   return (
     <>
       <form className={styles.formContact} onSubmit={handleSubmit(onSubmit)}>
@@ -48,21 +68,24 @@ const Form = (props) => {
               <option value="femme">Femme</option>
               <option value="homme">Homme</option>
             </select>
-            <ReCAPTCHA
-              sitekey="6Lfu0TsaAAAAAFSUb-pYbEBnh0HRne38JuOp6wj-"
-              onChange={onChange}
-            />
-            ,
           </div>
           <div className={styles.formRightColumn}>
             <textarea
               className={styles.rightInput}
               name="message"
               placeholder="Ecrivez votre message ici"
+              ref={register}
             />
           </div>
         </div>
         <input type="submit" className={styles.inputSubmit} />
+        <Recaptcha
+          // ref={(e) => (recaptchaInstance = e)}
+          sitekey={siteKey}
+          ref={register}
+          size="normal"
+          onChange={executeCaptcha}
+        />
       </form>
     </>
   );
