@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&family=Montserrat+Alternates:wght@700&display=swap');
 
 .img{
-
   aspect-ratio: attr(width) / attr(height);
 }
 .header {
@@ -142,11 +141,7 @@
     display: block;
   }
 }
-/* @media screen and (max-width: 1249px){
-  .logoHeader{
-    width: 120px;
-  } 
-  } */
+
 @media screen and (max-width: 900px) {
   .header {
     padding-left: 10px;

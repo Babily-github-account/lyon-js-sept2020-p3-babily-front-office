@@ -1,5 +1,4 @@
 import Link from 'next/link';
-// import Image from 'next/image';
 import styles from './PresentationEspacePro.module.css';
 import CestSimpleAvecBabily from './CestSimpleAvecBabily';
 import Cards from './cards';
