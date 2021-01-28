@@ -3,7 +3,6 @@
 .containerSimulateur {
   width: 100%;
   height: auto;
-  background-color: #FAF5F0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
