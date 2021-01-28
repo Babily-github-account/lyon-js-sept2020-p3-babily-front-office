@@ -56,10 +56,12 @@ export default function Simulateur() {
       return revenuNetMensuel;
     };
 
+    // Coût de la place en crèche selon la Caisse d'Allocations Familiales =
+    // ([revenus mensuels nets du foyer (VOIR calculattedReferenceSalary )] * [taux d’effort (VOIR calculatedEffortRate )]
+    // * [Nombre d'heures de garde]);
+
     const resultat =
       calculattedReferenceSalary() * calculatedEffortRate() * nbrHeures;
-
-    // const resultat = ([revenus mensuels nets du foyer (VOIR calculattedReferenceSalary )] X [taux d’effort (VOIR calculatedEffortRate )]);
 
     setResultatSimulateur(resultat);
   };

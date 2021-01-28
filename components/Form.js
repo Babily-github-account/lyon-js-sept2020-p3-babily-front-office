@@ -1,6 +1,5 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
-// import ReactDOM from 'react-dom';
 import Recaptcha from 'react-google-recaptcha';
 import { InlineWidget } from 'react-calendly';
 import styles from './Form.module.css';
@@ -34,7 +33,6 @@ const Form = (props) => {
   };
 
   const onSubmit = (values) => {
-    // setIsSubmitting(true);
     if (isSubmitting) {
       console.log(values);
     }
@@ -74,7 +72,6 @@ const Form = (props) => {
       </div>
       <input type="submit" className={styles.inputSubmit} />
       <Recaptcha
-        // ref={(e) => (recaptchaInstance = e)}
         sitekey={siteKey}
         ref={register}
         size="normal"
