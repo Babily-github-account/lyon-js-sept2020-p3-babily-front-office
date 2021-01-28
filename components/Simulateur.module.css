@@ -139,7 +139,7 @@
   width: 300px;
   height: 300px;
   top: 58%;
-  left: 23%;
+  left: 20%;
   transform: translate(-50%, -50%);
   }
   .cercle4 {
@@ -155,11 +155,13 @@
   position: relative;
   padding: 3%;
 }
-.critereRecherche {
-  position: absolute;
-  will-change: transform, opacity;
-  top: 18%;
-  left: 18%;
+.criteresRecherche{
+  animation-name: entering;
+  animation-duration: 1s;
+}
+@keyframes entering {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 .critere {
   margin-bottom: 3%;

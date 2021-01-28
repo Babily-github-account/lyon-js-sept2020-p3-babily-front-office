@@ -14,7 +14,6 @@
   padding-top: 34px;
   padding-bottom: 20px;
 }
-
 .inlineContainer {
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +33,6 @@
   cursor: pointer;
   padding-bottom: 40px;
 }
-
 @media (max-width: 500px) {
   .vagueHomeContainer {
     background-color: #fa6870;

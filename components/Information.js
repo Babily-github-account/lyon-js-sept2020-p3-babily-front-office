@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Information.module.css';
 
 export default function Information() {
@@ -10,9 +11,9 @@ export default function Information() {
         <br /> Cum sociis natoque penatibus et magnis dis parturient montes,
         nascetur ridiculus{' '}
       </p>
-      <button type="button" className={styles.buttonInfo}>
-        Contactez-nous
-      </button>
+      <Link href="/contact">
+        <a className={styles.btn}>Contactez-nous !</a>
+      </Link>
     </div>
   );
 }
