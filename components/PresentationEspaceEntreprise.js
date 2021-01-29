@@ -10,11 +10,9 @@ export default function PresentationEspaceEntreprise() {
         <section className={styles.sectionPresEspacePro}>
           <h1 className={styles.titlePres}>Vous êtes une entreprise</h1>
           <p className={styles.textPresPro}>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim.
+            Vous n'avez pas de crèche entreprise, mais avez à coeur de proposer
+            un service de ce type à vos salariés? Babily est l'intermédiaire qui
+            facilitera le lien entre parents et crèches de leur choix.
           </p>
           <div className={styles.avionPapier} />
         </section>
