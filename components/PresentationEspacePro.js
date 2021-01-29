@@ -12,11 +12,9 @@ export default function PresentationEspacePro() {
             Vous êtes un professionnel de la petite enfance
           </h1>
           <p className={styles.textPresPro}>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim.
+            Toutes vos heures d'accueil ne sont pas pourvues? Babily vous permet
+            de mettre à disposition un calendrier partagé avec les parents qui
+            recherchent un créneau dans votre établissement.
           </p>
           <div className={styles.avionPapier} />
         </section>

@@ -11,11 +11,10 @@ export default function PresentationEspaceParent() {
         <section className={styles.sectionPresEspacePro}>
           <h1 className={styles.titlePres}>Vous êtes un Parent</h1>
           <p className={styles.textPresPro}>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim.
+            Saviez-vous que des heures de gardes n'étaient pas pourvues dans
+            toutes les crèches? Babily est là pour vous faciliter l'accès à
+            cette information, et vous met en relation avec la crèche de votre
+            choix.
           </p>
           <div className={styles.avionPapier} />
         </section>
