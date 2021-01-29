@@ -8,14 +8,14 @@ export default function Espaces() {
       <div className={styles.espaceTitle}>
         <Image
           src="/images/triangle.png"
-          alt="Picture of the author"
+          alt="triangle"
           width={40}
           height={40}
         />
         <h4 className={styles.titleName}>Pour les parents</h4>
         <p className={styles.lorem}>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor.
+          Babily c'est LA solution qui vous permet de visualiser les créneaux
+          disponibles dans votre crèche.
         </p>
         <div className={styles.espaceBouton}>
           <Link href="/espaceparents">
@@ -26,16 +26,11 @@ export default function Espaces() {
         </div>
       </div>
       <div className={styles.espaceTitle}>
-        <Image
-          src="/images/rond.png"
-          alt="Picture of the author"
-          width={40}
-          height={40}
-        />
+        <Image src="/images/rond.png" alt="circle" width={40} height={40} />
         <h4 className={styles.titleName}>Pour les crèches</h4>
         <p className={styles.lorem}>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor.{' '}
+          Babily c'est le service qui vous vous met en relation avec les parents
+          afin de compléter vos plages horaires disponibles.{' '}
         </p>
         <div className={styles.espaceBouton}>
           <Link href="/espacepro">
@@ -45,17 +40,17 @@ export default function Espaces() {
           </Link>
         </div>
       </div>
-      <div className={styles.espaceTitle}>
+      <div className={styles.espaceTitleRhombus}>
         <Image
           src="/images/rectangle.png"
-          alt="Picture of the author"
-          width={50}
-          height={50}
+          alt="rhombus"
+          width={48}
+          height={48}
         />
         <h4 className={styles.titleName}>Pour les employeurs</h4>
         <p className={styles.lorem}>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor.{' '}
+          Babily c'est le service dont vos salariés pourront profiter, et qui
+          leur permettra de réserver des créneaux à tout moment.{' '}
         </p>
         <div className={styles.espaceBouton}>
           <Link href="/espaceentreprise">
