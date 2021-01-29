@@ -6,7 +6,7 @@ import ReservationParents from '../components/ReservationParents';
 import ViewSource from '../components/view-source';
 import CestQuoiBabily from '../components/CestQuoiBabily';
 import Bandeau from '../components/Bandeau';
-import LeSaviezVous from '../components/LeSaviezVous';
+import DidYouKnow from '../components/DidYouKnow';
 import Cards from '../components/cards';
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
       <ReservationParents />
       <div style={containerBg}>
         <CestQuoiBabily />
-        <LeSaviezVous />
+        <DidYouKnow />
         <Bandeau />
       </div>
       <div style={background2}>

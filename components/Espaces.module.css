@@ -8,14 +8,17 @@
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #faf5f0;
-  margin-bottom: 10%;
 }
 
 .espaceTitle {
   width: 22%;
   padding: 5% 1%;
-  /* // border: 4mm ridge rgba(170; 50; 220; .6); */
 }
+.espaceTitleRhombus {
+  width: 22%;
+  padding: 4.2% 1%;
+}
+
 
 .titleName {
   font-family: 'Montserrat Alternates', sans-serif;
@@ -28,6 +31,7 @@
   font-family: 'Krub', sans-serif;
   font-size: 15px;
   text-align: justify;
+  min-height: 80px;
 }
 
 .espaceBouton {

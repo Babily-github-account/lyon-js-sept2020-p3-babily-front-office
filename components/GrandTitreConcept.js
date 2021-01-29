@@ -8,7 +8,7 @@ export default function GrandTitreConcept() {
         <div className={styles.containerImg}>
           <Image
             src="/images/concept1.jpg"
-            alt="fillette sur un crayon"
+            alt="enfants qui jouent"
             width={700}
             height={455}
           />
@@ -38,7 +38,7 @@ export default function GrandTitreConcept() {
         <div className={styles.containerImg}>
           <Image
             src="/images/concept2.jpg"
-            alt="Mains d'un pere et son bebe"
+            alt="enfants qui jouent"
             width={700}
             height={455}
             className={styles.photoBbPapa}
@@ -49,7 +49,7 @@ export default function GrandTitreConcept() {
         <div className={styles.containerImg}>
           <Image
             src="/images/concept3.jpg"
-            alt="bebe qui dort"
+            alt="enfants qui jouent"
             width={700}
             height={455}
             className={styles.photoBbSecurite}
