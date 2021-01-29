@@ -47,13 +47,13 @@ const Form = (props) => {
         <div className={styles.formLeftColumn}>
           <input
             className={styles.leftInput}
-            placeholder="prenom"
+            placeholder="Prenom"
             name="prenom"
             ref={register}
           />
           <input
             className={styles.leftInput}
-            placeholder="nom"
+            placeholder="NOM"
             name="nom"
             ref={register}
           />
