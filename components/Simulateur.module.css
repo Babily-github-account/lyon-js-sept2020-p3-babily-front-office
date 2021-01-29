@@ -3,7 +3,6 @@
 .containerSimulateur {
   width: 100%;
   height: auto;
-  background-color: #FAF5F0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -226,17 +225,14 @@ input[type="radio"].demo2:checked + label {
 .champSaisie:focus {
   outline: none;
 }
-/* Remove arrows input/number on Firefox */
 .champSaisie{
   -moz-appearance: textfield;
 }
-/* Remove arrows input/number on Chrome */
 .champSaisie::-webkit-inner-spin-button,
 .champSaisie::-webkit-outer-spin-button { 
 -webkit-appearance: none;
 margin:0;
 }
-/* Remove arrows input/number on Opéra*/
 .champSaisie::-o-inner-spin-button,
 .champSaisie::-o-outer-spin-button { 
 -o-appearance: none;

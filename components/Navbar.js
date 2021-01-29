@@ -17,7 +17,6 @@ function useOutsideAlerter(wrapperRef, toggleRef) {
       if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
         if (event.target.id !== toggleRef.current.id) {
           closeNavbar(toggleRef);
-          // toggleRef.current.checked = false;
         }
       }
     }

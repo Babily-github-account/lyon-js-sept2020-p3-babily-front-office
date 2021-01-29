@@ -1,5 +1,3 @@
-// import Link from 'next/link';
-// import Image from 'next/image';
 import GoogleFonts from 'next-google-fonts';
 import Layout from '../components/Layout';
 import ReservationParents from '../components/ReservationParents';
