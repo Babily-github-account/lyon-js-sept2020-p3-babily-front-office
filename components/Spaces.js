@@ -18,7 +18,7 @@ export default function Spaces() {
           disponibles dans votre crèche.
         </p>
         <div className={styles.spaceButton}>
-          <Link href="/espaceparents">
+          <Link href="/parentsSection">
             <button className={styles.linkSpace} type="button">
               <a>Decouvrir</a>
             </button>
@@ -33,7 +33,7 @@ export default function Spaces() {
           afin de compléter vos plages horaires disponibles.{' '}
         </p>
         <div className={styles.spaceButton}>
-          <Link href="/espacepro">
+          <Link href="/nurserySection">
             <button className={styles.linkSpace} type="button">
               <a>Decouvrir</a>
             </button>
@@ -53,7 +53,7 @@ export default function Spaces() {
           leur permettra de réserver des créneaux à tout moment.{' '}
         </p>
         <div className={styles.spaceButton}>
-          <Link href="/espaceentreprise">
+          <Link href="/companySection">
             <button className={styles.linkSpace} type="button">
               <a>Decouvrir</a>
             </button>

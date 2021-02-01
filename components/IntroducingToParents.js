@@ -1,14 +1,14 @@
-import styles from './PresentationEspacePro.module.css';
+import styles from './IntroducingToCompanies.module.css';
 import SimpleWithBabily from './SimpleWithBabily';
 import Simulator from './Simulator';
 import Cards from './Cards';
 import Contact from './Contact';
 
-export default function PresentationEspaceParent() {
+export default function IntroducingToParents() {
   return (
     <>
-      <div className={styles.sectionEspace}>
-        <section className={styles.sectionPresEspacePro}>
+      <div className={styles.sectionArea}>
+        <section className={styles.sectionAreaPro}>
           <h1 className={styles.titlePres}>Vous êtes un Parent</h1>
           <p className={styles.textPresPro}>
             Saviez-vous que des heures de gardes n'étaient pas pourvues dans
@@ -16,22 +16,22 @@ export default function PresentationEspaceParent() {
             cette information, et vous met en relation avec la crèche de votre
             choix.
           </p>
-          <div className={styles.avionPapier} />
+          <div className={styles.planePaper} />
         </section>
         <section className={styles.sectionPresBabily}>
-          <div className={styles.presBerceaux}>
-            <div className={styles.titleBerceaux}>
+          <div className={styles.presCradle}>
+            <div className={styles.titleCradle}>
               Trouver une place en crèche
             </div>
             <div className={styles.textBabily}>
               <p>
                 C'est <b>complexe</b> et <b>fastidieux</b>
               </p>
-              <hr className={styles.ligneRouge} />
+              <hr className={styles.redLine} />
               <p>
                 Mode de garde <b>exclusif</b>
               </p>
-              <hr className={styles.ligneRouge} />
+              <hr className={styles.redLine} />
               <p>
                 Les <b>processus sont longs</b>
               </p>
@@ -43,13 +43,13 @@ export default function PresentationEspaceParent() {
               <p>
                 C'est <b>gratuit</b> et <b>facile</b> d'utilisation
               </p>
-              <hr className={styles.plusBleuHorizontal} />
-              <hr className={styles.plusBleuVertical} />
+              <hr className={styles.plusBlueHorizontal} />
+              <hr className={styles.plusBlueVertical} />
               <p>
                 <b>Réservation ponctuelle</b> d'une place
               </p>
-              <hr className={styles.plusBleuHorizontal} />
-              <hr className={styles.plusBleuVertical} />
+              <hr className={styles.plusBlueHorizontal} />
+              <hr className={styles.plusBlueVertical} />
               <p>
                 Vous êtes <b>prévenus automatiquement</b> dès qu'une place se
                 libère

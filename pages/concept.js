@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import HeaderConcept from '../components/HeaderConcept';
-import SuiteConcept from '../components/SuiteConcept';
+import ConceptPartTwo from '../components/ConceptPartTwo';
 import Spaces from '../components/Spaces';
 import IssuesPrecautionsSecurity from '../components/IssuesPrecautionsSecurity';
 import TalkAboutUs from '../components/TalkAboutUs';
@@ -11,7 +11,7 @@ export default function concept() {
   return (
     <Layout pageTitle="Inscription">
       <HeaderConcept />
-      <SuiteConcept />
+      <ConceptPartTwo />
       <Spaces />
       <IssuesPrecautionsSecurity />
       <BabilysStatistics />

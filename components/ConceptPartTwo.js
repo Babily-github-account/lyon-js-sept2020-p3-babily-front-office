@@ -1,6 +1,6 @@
-import styles from './SuiteConcept.module.css';
+import styles from './ConceptPartTwo.module.css';
 
-export default function concept() {
+export default function ConceptBis() {
   return (
     <div className={styles.containerNotreConcept}>
       <div className={styles.containerNotreConceptTexte}>
