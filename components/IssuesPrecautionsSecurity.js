@@ -1,21 +1,21 @@
 import Image from 'next/image';
-import styles from './GrandTitreConcept.module.css';
+import styles from './IssuesPrecautionsSecurity.module.css';
 
-export default function GrandTitreConcept() {
+export default function IssuesPrecautionsSecurity() {
   return (
     <div className={styles.containerBackground}>
-      <div className={styles.containerParagraphe}>
+      <div className={styles.containerParagraph}>
         <div className={styles.containerImg}>
           <Image
             src="/images/concept1.jpg"
-            alt="enfants qui jouent"
+            alt="children playing"
             width={700}
             height={455}
           />
         </div>
-        <div className={styles.containerSousTitre}>
-          <h3 className={styles.titleParagraphe}>Les enjeux</h3>
-          <p className={styles.paragrapheConcept}>
+        <div className={styles.containerSubtitle}>
+          <h3 className={styles.titleParagraph}>Les enjeux</h3>
+          <p className={styles.paragraphConcept}>
             + Offrir <b>transparence</b> et <b>accessibilité</b> à la place en
             crèche <br />+ <b>Fluidifier</b> la gestion des disponibilités
             <br />+ Décrocher des <b>budgets</b> additionels <br />+
@@ -24,10 +24,10 @@ export default function GrandTitreConcept() {
           </p>
         </div>
       </div>
-      <div className={styles.containerParagraphe}>
-        <div className={styles.containerSousTitre}>
-          <h3 className={styles.titleParagraphe}>Les précautions</h3>
-          <p className={styles.paragrapheConcept}>
+      <div className={styles.containerParagraph}>
+        <div className={styles.containerSubtitle}>
+          <h3 className={styles.titleParagraph}>Les précautions</h3>
+          <p className={styles.paragraphConcept}>
             + Veiller à la <b>stabilité affective </b>de l'enfant <br />+
             Préserver les <b>échanges humains</b> importants <br />+ Maintenir
             <b>l'équilibre</b> des groupes d'âges <br />+ <b>Considerez</b> les
@@ -38,26 +38,24 @@ export default function GrandTitreConcept() {
         <div className={styles.containerImg}>
           <Image
             src="/images/concept2.jpg"
-            alt="enfants qui jouent"
+            alt="children playing"
             width={700}
             height={455}
-            className={styles.photoBbPapa}
           />
         </div>
       </div>
-      <div className={styles.containerParagraphe}>
+      <div className={styles.containerParagraph}>
         <div className={styles.containerImg}>
           <Image
             src="/images/concept3.jpg"
-            alt="enfants qui jouent"
+            alt="children playing"
             width={700}
             height={455}
-            className={styles.photoBbSecurite}
           />
         </div>
-        <div className={styles.containerSousTitre}>
-          <h3 className={styles.titleParagraphe}>En securité</h3>
-          <p className={styles.paragrapheConcept}>
+        <div className={styles.containerSubtitle}>
+          <h3 className={styles.titleParagraph}>En securité</h3>
+          <p className={styles.paragraphConcept}>
             Nous avons à coeur de <b>vous protéger</b>, c'est pour quoi Babily
             dévellope son application avec les meilleurs <b>outils</b> de
             protection de données. <br />

@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './Bandeau.module.css';
+import styles from './Bar.module.css';
 
-export default function VagueHome() {
+export default function Bar() {
   return (
     <div>
-      <div className={styles.divVague}>
+      <div className={styles.divBar}>
         <svg
           width="100%"
           height="100%"
@@ -15,8 +15,8 @@ export default function VagueHome() {
           <path d="M0,40 L0,5 Q250,0 500,6 L500,40 Z" fill="#FA6870" />
         </svg>
       </div>
-      <div className={styles.vagueHomeContainer}>
-        <h5 className={styles.titre}>Ils contribuent au dispositif</h5>
+      <div className={styles.barHomeContainer}>
+        <h5 className={styles.title}>Ils contribuent au dispositif</h5>
         <div className={styles.inlineContainer}>
           <div className={styles.logo}>
             <Link href="https://advizi.fr" target="_blank" rel="noreferrer">

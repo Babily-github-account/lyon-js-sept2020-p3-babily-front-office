@@ -6,7 +6,7 @@
   margin-right: 20px;
   margin-bottom: 60px;
 }
-.titreSimpleBabily {
+.titleSimpleBabily {
   color: #3c84fa;
   
   margin-top: 50px;
@@ -90,13 +90,13 @@
   cursor: pointer;
 }
 @media screen and (max-width: 900px){
-  .titreSimpleBabily {
+  .titleSimpleBabily {
     margin-left: 0;
     text-align: center;
   }
 }
 @media screen and (max-width: 800px){
-  .titreSimpleBabily {
+  .titleSimpleBabily {
     font-size: 28px;
     line-height: 2.5rem;
   }

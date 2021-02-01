@@ -5,7 +5,7 @@ export default function Information() {
   return (
     <div className={styles.containerInformation}>
       <h3 className={styles.titleInfo}>Besoin d'une information?</h3>
-      <p className={styles.paragrapheInfo}>
+      <p className={styles.paragraphInfo}>
         Vous n'avez pas trouvé les informations que vous recherchiez, ou
         souhaitez avoir plus de détails?
         <br /> Nous pouvons nous rencontrer ou échanger via divers réseaux de

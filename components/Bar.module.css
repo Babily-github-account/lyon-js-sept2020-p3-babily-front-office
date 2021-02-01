@@ -3,11 +3,11 @@
   width: 100%;
   height: 26px;
 }
-.divVague {
+.divBar {
   width: 100%;
   height: 20px;
 }
-.vagueHomeContainer {
+.barHomeContainer {
   background-color: #fa6870;
   height: auto;
   width: 100%;
@@ -21,7 +21,7 @@
   align-content: center;
   margin-top: 50px;
 }
-.titre {
+.title {
   color: white;
   font-size: 20px;
   text-align: center;

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&family=Montserrat+Alternates:wght@700&display=swap');
 
-.containerSpeak {
+.containerTalk {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
 }
 
-.titleSpeack {
+.titleTalk {
   width: 100%;
   margin-left: 10%;
   font-size: 2.5rem;
@@ -25,7 +25,7 @@
   text-decoration-thickness: 1.2rem;
 }
 
-.linkSpeack {
+.linkTalk {
   text-decoration: underline;
   font-family: 'Krub', sans-serif;
   font-size: 17px;
@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 
-.imageSiteWeb {
+.imageWebSite {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +41,7 @@
   margin: 5%;
 }
 @media screen and (max-width: 600px) {
-  .titleSpeack {
+  .titleTalk {
     font-size: 20px;
     text-decoration-thickness: 9px;
   }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&family=Montserrat+Alternates:wght@700&display=swap');
 
-.cestQuoiBabily {
+.whatIsBabily {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-top: 3%;
   padding-bottom: 3%;
@@ -19,7 +19,7 @@
   max-width: 600px;
 }
 
-.titre {
+.title {
   color: #fa6870;
   font-family: 'Montserrat Alternates', sans-serif;
   text-decoration-line: underline;
@@ -37,7 +37,7 @@
   margin-top: 7%;
 }
 
-.boutonDecouvrir {
+.buttonDiscover {
   margin-top: 3%;
   font-family: 'Krub', sans-serif;
   font-size: 14px;
@@ -52,21 +52,21 @@
   cursor: pointer;
 }
 
-.boutonDecouvrir:hover {
+.buttonDiscover:hover {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.spanDecouvrir {
+.spanDiscover {
   font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
-  .cestQuoiBabily {
+  .whatIsBabily {
     padding-top: 5%;
     padding-bottom: 5%;
     width: 100%;
   }
-  .titre {
+  .title {
     font-size: 20px;
     text-decoration-thickness: 9px;
   }
@@ -76,14 +76,14 @@
     padding-top: 4%;
   }
 
-  .boutonDecouvrir {
+  .buttonDiscover {
     padding: 4%;
     width: 50%;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  .cestQuoiBabily {
+  .whatIsBabily {
     padding-top: 5%;
     padding-bottom: 5%;
     width: 100%;
