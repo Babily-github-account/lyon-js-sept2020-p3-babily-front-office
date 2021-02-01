@@ -13,6 +13,9 @@
 .iconsContact {
   position: relative;
   margin: 80px;
+  width: 150px;
+
+  height: 150px;
 }
 .pContact {
   position: absolute;
@@ -35,9 +38,10 @@
   width: 260px;
   font-size: 30px;
   font-style: italic;
+  
 }
 
-.iconsContact img:hover {
+.iconsContact:hover {
   cursor: pointer;
   opacity: 50%;
 }
