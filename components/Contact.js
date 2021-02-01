@@ -41,7 +41,7 @@ const Contact = () => {
 
             <div
               className={styles.iconsContact}
-              onMouseEnter={() => handleTextMouse('Coffee')}
+              onMouseEnter={() => handleTextMouse('Café')}
               onMouseLeave={() => handleTextMouse('')}
               onClick={() => {
                 setSujet('Coffee');
@@ -54,7 +54,7 @@ const Contact = () => {
                 width={150}
                 height={150}
               />
-              {titleSujet === 'Coffee' ? (
+              {titleSujet === 'Café' ? (
                 <p className={styles.pContact}>{titleSujet}</p>
               ) : null}
             </div>
@@ -78,7 +78,6 @@ const Contact = () => {
                 <p className={styles.pContact}>{titleSujet}</p>
               ) : null}
             </div>
-
             <div
               style={{
                 backgroundColor: '#0575A5',

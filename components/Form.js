@@ -12,6 +12,7 @@ const Form = (props) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [message, setMessage] = useState({});
   const sujetForm = props;
 
   const sujetAPICalendly = (sujet) => {
@@ -37,9 +38,10 @@ const Form = (props) => {
 
   const onSubmit = async (values) => {
     if (isSubmitting) {
-      console.log(values);
+      await setMessage(values);
       await setIsOpen(true);
     }
+    await setIsSubmitting(false);
   };
 
   const onCloseModal = () => setIsOpen(false);
@@ -52,7 +54,7 @@ const Form = (props) => {
             <input
               className={styles.leftInput}
               placeholder="nom"
-              name="nom"
+              name="name"
               ref={register}
               required
             />
@@ -61,7 +63,7 @@ const Form = (props) => {
             )}
             <input
               className={styles.leftInput}
-              placeholder="email"
+              placeholder="Adresse email"
               name="email"
               ref={register({
                 pattern: {
@@ -75,9 +77,9 @@ const Form = (props) => {
               <span className={styles.alertError}>{errors.email.message}</span>
             )}
             <select className={styles.leftInput} name="gender" ref={register}>
-              <option value="creche">Crèche</option>
-              <option value="parent">Parent</option>
-              <option value="entreprise">Entreprise</option>
+              <option value="creche">Je suis une Crèche</option>
+              <option value="parent">Je suis un Parent</option>
+              <option value="entreprise">Je suis une Entreprise</option>
             </select>
             <Recaptcha
               sitekey={siteKey}
@@ -102,7 +104,20 @@ const Form = (props) => {
         <input type="submit" className={styles.inputSubmit} />
       </form>
       <Modal open={isOpen} onClose={onCloseModal} center>
-        <h2>Message envoyé</h2>
+        <div>
+          {message ? (
+            <>
+              <h2>Message envoyé</h2>
+              <div>
+                Par : {message.name} <br />
+                Message : <br />
+                {message.message}
+              </div>
+            </>
+          ) : (
+            <h2>Problème avec le message</h2>
+          )}
+        </div>
       </Modal>
     </>
   ) : (
