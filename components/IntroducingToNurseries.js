@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import styles from './PresentationEspacePro.module.css';
+import styles from './IntroducingToCompanies.module.css';
 import SimpleWithBabily from './SimpleWithBabily';
 import Cards from './Cards';
 
-export default function PresentationEspacePro() {
+export default function IntroducingToNurseries() {
   return (
     <>
-      <div className={styles.sectionEspace}>
-        <section className={styles.sectionPresEspacePro}>
+      <div className={styles.sectionArea}>
+        <section className={styles.sectionAreaPro}>
           <h1 className={styles.titlePres}>
             Vous êtes un professionnel de la petite enfance
           </h1>
@@ -16,26 +16,26 @@ export default function PresentationEspacePro() {
             de mettre à disposition un calendrier partagé avec les parents qui
             recherchent un créneau dans votre établissement.
           </p>
-          <div className={styles.avionPapier} />
+          <div className={styles.planePapier} />
         </section>
         <section className={styles.sectionPresBabily}>
-          <div className={styles.presBerceaux}>
-            <div className={styles.titleBerceaux}>
+          <div className={styles.presCradle}>
+            <div className={styles.titleCradle}>
               Les berceaux entreprises sont...
             </div>
             <div className={styles.textBabily}>
               <p>
                 Une <b>commercialisation complexe</b>
               </p>
-              <hr className={styles.ligneRouge} />
+              <hr className={styles.redLine} />
               <p>
                 Des réservations à l’année, <b>sans garantie d’occupations</b>
               </p>
-              <hr className={styles.ligneRouge} />
+              <hr className={styles.redLine} />
               <p>
                 Une gestion inévitable de <b>l’accueil occasionnel</b>
               </p>
-              <hr className={styles.ligneRouge} />
+              <hr className={styles.redLine} />
               <p>
                 Une <b>charge administrative</b>, deportant les équipes de{' '}
                 <b>leur mission première</b>
@@ -49,14 +49,14 @@ export default function PresentationEspacePro() {
                 <b>Boostez vos clients entreprises</b> en répondant à leur
                 besoin réel
               </p>
-              <hr className={styles.plusBleuHorizontal} />
-              <hr className={styles.plusBleuVertical} />
+              <hr className={styles.plusBlueHorizontal} />
+              <hr className={styles.plusBlueVertical} />
               <p>
                 <b>Optimiser votre taux d’occupation</b> à l’aide de votre
                 calendrier partagé
               </p>
-              <hr className={styles.plusBleuHorizontal} />
-              <hr className={styles.plusBleuVertical} />
+              <hr className={styles.plusBlueHorizontal} />
+              <hr className={styles.plusBlueVertical} />
               <p>
                 <b>Recentrez votre équipe</b> sur le coeur de metier : bébé !
               </p>
@@ -67,7 +67,7 @@ export default function PresentationEspacePro() {
       <section className={styles.sectionPres}>
         <SimpleWithBabily pagePro />
         <div className={styles.containerContact}>
-          <p className={styles.bien_etre}>Plus de bien être pour tous !</p>
+          <p className={styles.wellBeing}>Plus de bien être pour tous !</p>
           <Link href="/contact">
             <a className={styles.btn}>Contactez-nous !</a>
           </Link>
