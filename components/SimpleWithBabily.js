@@ -2,14 +2,14 @@
 /* eslint-disable react/void-dom-elements-no-children */
 /* eslint-disable react/button-has-type */
 import Image from 'next/image';
-import styles from './CestSimpleAvecBabily.module.css';
+import styles from './SimpleWithBabily.module.css';
 
-export default function CestSimpleAvecBabily(props) {
+export default function SimpleWithBabily(props) {
   const espace = props;
   return (
     <>
       <div className={styles.containerSimpleBabily}>
-        <h3 className={styles.titreSimpleBabily}>C'est simple avec Babily</h3>
+        <h3 className={styles.titleSimpleBabily}>C'est simple avec Babily</h3>
         <div className={styles.inlineForm}>
           <div className={styles.form}>
             {espace.pagePro || espace.pageParent ? (
@@ -76,9 +76,9 @@ export default function CestSimpleAvecBabily(props) {
                     textAlign: 'center',
                   }}
                 >
-                  (à noter que si votre enfant n’est pas dans une crèche il
-                  faudrait faire une demande d’acceptation et d’adaptation par
-                  celle-ci)
+                  (à noter que si votre enfant n’est pas inscrit dans une
+                  crèche, il faut faire une demande d’acceptation et
+                  d’adaptation par celle-ci)
                 </p>
               </>
             ) : (

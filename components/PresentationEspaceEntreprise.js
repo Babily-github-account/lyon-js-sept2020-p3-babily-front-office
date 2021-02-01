@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './PresentationEspacePro.module.css';
-import CestSimpleAvecBabily from './CestSimpleAvecBabily';
-import Cards from './cards';
+import SimpleWithBabily from './SimpleWithBabily';
+import Cards from './Cards';
 
 export default function PresentationEspaceEntreprise() {
   return (
@@ -57,7 +57,7 @@ export default function PresentationEspaceEntreprise() {
         </section>
       </div>
       <section className={styles.sectionPres}>
-        <CestSimpleAvecBabily pageEntreprise />
+        <SimpleWithBabily pageEntreprise />
         <div className={styles.containerContact}>
           <p className={styles.bien_etre}>Plus de bien être pour tous !</p>
           <Link href="/contact">

@@ -1,5 +1,6 @@
+/* eslint-disable import/no-unresolved */
 import Link from 'next/link';
-import styles from './cards.module.css';
+import styles from './Cards.module.css';
 
 export default function Cards() {
   return (

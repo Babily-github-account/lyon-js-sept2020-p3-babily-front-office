@@ -16,20 +16,19 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from './Modal';
-import styles from './Simulateur.module.css';
+import styles from './Simulator.module.css';
 
-export default function Simulateur() {
-  const [resultatSimulateur, setResultatSimulateur] = useState(0);
+export default function Simulator() {
+  const [simulatorResult, setSimulatorResult] = useState(0);
 
   const { register, handleSubmit, errors } = useForm({
     mode: 'onTouched',
   });
 
   const onSubmit = (data) => {
-    console.log(data);
     const nbrChildren = parseInt(data.children);
-    const revenuNetMensuel = parseInt(data.appointments) / 12;
-    const nbrHeures = parseInt(data.hours);
+    const monthlySalary = parseInt(data.appointments) / 12;
+    const nbrHours = parseInt(data.hours);
 
     const calculatedEffortRate = () => {
       if (nbrChildren === 1) {
@@ -48,27 +47,27 @@ export default function Simulateur() {
     };
 
     const calculattedReferenceSalary = () => {
-      if (revenuNetMensuel < 711.62) {
+      if (monthlySalary < 711.62) {
         return 712;
       }
-      if (revenuNetMensuel > 5800) {
+      if (monthlySalary > 5800) {
         return 5800;
       }
-      return revenuNetMensuel;
+      return monthlySalary;
     };
 
     // Coût de la place en crèche selon la Caisse d'Allocations Familiales =
     // ([revenus mensuels nets du foyer (VOIR calculattedReferenceSalary )] * [taux d’effort (VOIR calculatedEffortRate )]
     // * [Nombre d'heures de garde]);
 
-    const resultat =
-      calculattedReferenceSalary() * calculatedEffortRate() * nbrHeures;
+    const result =
+      calculattedReferenceSalary() * calculatedEffortRate() * nbrHours;
 
-    setResultatSimulateur(resultat);
+    setSimulatorResult(result);
   };
 
   const newSimulation = () => {
-    setResultatSimulateur(0);
+    setSimulatorResult(0);
   };
 
   const [flipped, set] = useState(false);
@@ -85,19 +84,19 @@ export default function Simulateur() {
   });
 
   return (
-    <div className={styles.containerSimulateur}>
-      <div className={styles.simulateurTexte}>
-        <h3 className={styles.titreSimulateur}>
+    <div className={styles.containerSimulator}>
+      <div className={styles.simulatorText}>
+        <h3 className={styles.titleSimulator}>
           Estimer le tarif de ma place en crèche
         </h3>
-        <p className={styles.simulateurInformation}>
+        <p className={styles.simulatorInformation}>
           Tarif émis à titre indicatif
         </p>
-        <p className={styles.etoile}>
+        <p className={styles.star}>
           Sur la majorité des structures sous régime PSU*
         </p>
 
-        <p className={styles.etoile}>
+        <p className={styles.star}>
           Cette simulation utilise le mode de calcul de la Prestation Service
           Unique (PSU). Elle se base sur des mois comptant 4 semaines et sur des
           journées d'accueil complètes de 10 heures. Elle est indicative et non
@@ -107,33 +106,33 @@ export default function Simulateur() {
           href="https://www.caf.fr/allocataires/droits-et-prestations/connaitre-vos-droits-selon-votre-situation/je-fais-garder-mon-enfant-dans-une-creche-ou-en-microcreche-la-caf-va-t-elle-m-aider#:~:text=Le%20montant%20de%20cette%20aide,pas%2085%20%25%20du%20montant%20total."
           target="_blank"
           rel="noreferrer"
-          className={styles.lienPlusDinfos}
+          className={styles.linkMoreInfos}
         >
           Plus d'informations
         </a>
       </div>
 
-      <div className={styles.simulateur}>
-        <div className={styles.cercle1} />
-        <div className={styles.cercle2} />
-        <div className={styles.cercle3} />
-        <div className={styles.cercle4} />
+      <div className={styles.simulator}>
+        <div className={styles.circle1} />
+        <div className={styles.circle2} />
+        <div className={styles.circle3} />
+        <div className={styles.circle4} />
         <div
-          className={styles.criteres}
+          className={styles.criterias}
           onSubmit={() => set((state) => !state)}
         >
           {/* ------------------------------------ CARTE RECHERCHE------------------------------------------- */}
-          {resultatSimulateur <= 0 ? (
-            <a.div className={styles.criteresRecherche}>
+          {simulatorResult <= 0 ? (
+            <a.div className={styles.searchCriterias}>
               <form
-                className={styles.criteres}
+                className={styles.criterias}
                 onSubmit={handleSubmit(onSubmit)}
               >
-                <div className={styles.critere}>
-                  <label htmlFor="children" className={styles.critereTitre}>
+                <div className={styles.criteria}>
+                  <label htmlFor="children" className={styles.criteriaTitle}>
                     Nombres d'enfant(s) à charge
                   </label>
-                  <div className={styles.nbEnfants}>
+                  <div>
                     <input
                       type="radio"
                       id="one"
@@ -177,12 +176,15 @@ export default function Simulateur() {
                     </span>
                   )}
                 </div>
-                <div className={styles.critere}>
-                  <label htmlFor="appointments" className={styles.critereTitre}>
+                <div className={styles.criteria}>
+                  <label
+                    htmlFor="appointments"
+                    className={styles.criteriaTitle}
+                  >
                     Revenu net annuel{' '}
                     <FontAwesomeIcon
                       icon={faInfoCircle}
-                      className={styles.iconeInfo}
+                      className={styles.iconInfo}
                       onClick={() => setModalVisible(true)}
                     />
                     {transitions.map(
@@ -196,7 +198,7 @@ export default function Simulateur() {
                         )
                     )}
                   </label>
-                  <div className={styles.champ}>
+                  <div className={styles.field}>
                     <input
                       type="number"
                       id="appointments"
@@ -205,11 +207,11 @@ export default function Simulateur() {
                         required: 'Merci de compléter ce champ',
                         min: 0,
                       })}
-                      className={styles.champSaisie}
+                      className={styles.fieldEntry}
                     />
                     <FontAwesomeIcon
                       icon={faEuroSign}
-                      className={styles.iconeEuro}
+                      className={styles.iconEuro}
                     />
                   </div>
                   {errors.appointments && (
@@ -218,11 +220,11 @@ export default function Simulateur() {
                     </span>
                   )}
                 </div>
-                <div className={styles.critere}>
-                  <label htmlFor="hours" className={styles.critereTitre}>
+                <div className={styles.criteria}>
+                  <label htmlFor="hours" className={styles.criteriaTitle}>
                     Nombre d'heure(s) de garde par semaine
                   </label>
-                  <div className={styles.champ}>
+                  <div className={styles.field}>
                     <input
                       type="number"
                       id="hours"
@@ -232,11 +234,11 @@ export default function Simulateur() {
                         min: 1,
                         max: 60,
                       })}
-                      className={styles.champSaisie}
+                      className={styles.fieldEntry}
                     />{' '}
                     <FontAwesomeIcon
                       icon={faClock}
-                      className={styles.iconeClock}
+                      className={styles.iconClock}
                     />
                   </div>
                   {errors.hours && (
@@ -249,7 +251,7 @@ export default function Simulateur() {
                 <button
                   type="submit"
                   name="calculer"
-                  className={styles.calculer}
+                  className={styles.calculate}
                   onSubmit={() => set((state) => !state)}
                 >
                   Calculer
@@ -263,14 +265,14 @@ export default function Simulateur() {
               }}
             >
               {/* ------------------------------------ CARTE RESULTAT-------------------------------------------  */}
-              <div className={styles.criteresResultat}>
-                <div className={styles.critere}>
-                  <h5 className={styles.critereTitreResultat}>
+              <div className={styles.criteriasResultat}>
+                <div className={styles.criteria}>
+                  <h5 className={styles.criteriaTitleResult}>
                     Cela vous coûterait
                   </h5>
-                  <p className={styles.critereTitre}>
-                    <span className={styles.resultatEuroHeure}>
-                      {(resultatSimulateur / 10).toFixed(2)}{' '}
+                  <p className={styles.criteriaTitle}>
+                    <span className={styles.resultEuroHour}>
+                      {(simulatorResult / 10).toFixed(2)}{' '}
                     </span>
                     <FontAwesomeIcon
                       icon={faEuroSign}
@@ -278,22 +280,22 @@ export default function Simulateur() {
                     />{' '}
                     /heure
                   </p>
-                  <div className={styles.resultatJour}>
-                    <p className={styles.critereTitre}>
-                      <span className={styles.critereTitreResultat}>soit </span>
-                      <span className={styles.resultatEuroJour}>
-                        {resultatSimulateur.toFixed(2)}
+                  <div className={styles.dayResult}>
+                    <p className={styles.criteriaTitle}>
+                      <span className={styles.criteriaTitleResult}>soit </span>
+                      <span className={styles.dayEuroResult}>
+                        {simulatorResult.toFixed(2)}
                       </span>
                       <FontAwesomeIcon
                         icon={faEuroSign}
-                        className={styles.iconesEuro2}
+                        className={styles.iconsEuro2}
                       />
                       /jour
                     </p>
                   </div>
                 </div>
                 <Link href="/">
-                  <a href="" rel="noreferrer" className={styles.choisirCreche}>
+                  <a href="" rel="noreferrer" className={styles.chooseNursery}>
                     Choisir ma crèche
                   </a>
                 </Link>
@@ -301,7 +303,7 @@ export default function Simulateur() {
                 <button
                   onClick={newSimulation}
                   type="button"
-                  className={styles.nouveauCalcul}
+                  className={styles.newCalculation}
                 >
                   Nouvelle simulation
                 </button>
