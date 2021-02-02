@@ -13,8 +13,8 @@
 }
 
 .titleTalk {
-  width: 100%;
-  margin-left: 10%;
+  width: 92%;
+  margin-left: 8%;
   font-size: 2.5rem;
   line-height: 4rem;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -45,4 +45,14 @@
     font-size: 20px;
     text-decoration-thickness: 9px;
   }
+  .imageWebSite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    max-width: 250px;
+  }
 }
+
+
