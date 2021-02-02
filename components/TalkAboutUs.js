@@ -10,8 +10,8 @@ export default function IlsParlentDeNous() {
         <Image
           src="/images/lesProsDeLaPetiteEnfance.png"
           alt="logo pros of early childhood"
-          width={502}
-          height={121}
+          width={335}
+          height={81}
         />
       </div>
       <Link href="https://lesprosdelapetiteenfance.fr/initiatives/autres-initiatives/babily-un-service-dedie-laccueil-occasionnel">

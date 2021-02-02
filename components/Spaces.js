@@ -40,7 +40,7 @@ export default function Spaces() {
           </Link>
         </div>
       </div>
-      <div className={styles.spaceTitleRhombus}>
+      <div className={styles.spaceTitle}>
         <Image
           src="/images/rectangle.png"
           alt="rhombus"
