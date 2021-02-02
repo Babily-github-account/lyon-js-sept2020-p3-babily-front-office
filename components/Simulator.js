@@ -56,10 +56,6 @@ export default function Simulator() {
       return monthlySalary;
     };
 
-    // Coût de la place en crèche selon la Caisse d'Allocations Familiales =
-    // ([revenus mensuels nets du foyer (VOIR calculattedReferenceSalary )] * [taux d’effort (VOIR calculatedEffortRate )]
-    // * [Nombre d'heures de garde]);
-
     const result =
       calculattedReferenceSalary() * calculatedEffortRate() * nbrHours;
 
@@ -250,9 +246,8 @@ export default function Simulator() {
                 </div>
                 <button
                   type="submit"
-                  name="calculer"
+                  name="calculate"
                   className={styles.calculate}
-                  onSubmit={() => set((state) => !state)}
                 >
                   Calculer
                 </button>
