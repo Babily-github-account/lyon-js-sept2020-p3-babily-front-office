@@ -1,0 +1,242 @@
+.sectionArea{
+    background-image: url(/images/background9.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.sectionAreaPro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    overflow: visible;
+}
+.titlePres{
+    text-align: center;
+    color: #FFBB69;
+    font-size: 363%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color:#FFBB69;
+    text-decoration-thickness: 20px;
+    line-height: 4.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.textPresPro{
+    width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+}
+.planePaper{
+    background-image: url(/images/avionPapier.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(35deg);
+    width: 350px;
+    height: 300px;  
+}
+.sectionPresBabily{
+    width: 100%;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+}
+.presCradle{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    width: 50%;
+}
+.titleCradle {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    background-image: url(/images/Baniere1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat Alternates', sans-serif;
+    flex-shrink: 0;
+    height: 250px;
+    margin-left: 50px;
+    
+}
+.presBabily{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.titleBabily{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 1.8em;
+    text-align: center;
+    color: white;
+    background-image: url(/images/Baniere2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    flex-shrink: 0;
+    margin-right: 50px;
+}
+.textBabily{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-size: 1.2em;
+}
+.redLine{
+    border: 7px solid;
+    border-color: #FA6870;
+    border-radius: 2px;
+    height: 0px;
+    width: 100px;
+}
+.plusBlueHorizontal{
+    margin-top: 5px;
+    border: 7px solid;
+    border-color: #3C84FB;
+    width: 40px;
+    border-radius: 2px;
+}
+.plusBlueVertical{
+    margin-top: 5px;
+    top: -28px;
+    position: relative;
+    border: 7px solid;
+    border-color: #3C84FB;
+    width: 40px;
+    transform: rotate(90deg);
+    border-radius: 2px;
+}
+.wellBeing {
+    text-align: center;
+    margin-top: 100px;
+    color: #ffbb69;
+    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.containerContact{
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.btn {
+    text-align: center;
+    width: 250px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: #3c84fa;
+    padding: 10px;
+    border-radius:35px;
+    border: 0px;
+    color: white;
+    margin-bottom: 50px;
+}
+.sectionPres{
+    background-image: url(/images/background10.jpg);
+    background-position:left;
+    background-size: 50% -100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px){
+    .textPresPro{
+        width: 80%;
+    }
+    .titleCradle{
+        height: 160px;
+        font-size: 1.5em;
+    }
+    .titleBabily{
+        height: 160px;
+        font-size: 1.5em;
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .sectionAreaPro{
+        background:none;
+    }
+    .sectionPresBabily{
+        flex-direction: column;
+        background:none;
+    }
+    .planePapier{
+        width: 250px;
+        height: 220px; 
+    }
+    .presCradle{
+        width: 100%;
+    }
+    .titleCradle{
+        height: 220px;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 1.8em;
+
+    }
+    .presBabily{
+        width: 100%;
+    }
+    .titleBabily{
+        height: 220px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        font-size: 1.8em;
+    }
+    .textBabily{
+        padding: 25px;
+    }
+}
+@media screen and (max-width: 600px){
+    .titlePres{
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+    .titleCradle{
+        height: 160px;
+        font-size: 1.35em;
+
+    }
+    .titleCradle{
+        height: 160px;
+        font-size: 1.35em;
+    }
+}
+@media screen and (max-width: 400px){
+    .titlePres{
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+    .titleCradle{
+        height: 140px;
+        font-size: 1.35em;
+
+    }
+    .titleBabily{
+        height: 140px;
+        font-size: 1.35em;
+    }
+}

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&family=Montserrat+Alternates:wght@700&display=swap');
 
 .img{
-
   aspect-ratio: attr(width) / attr(height);
 }
 .header {
@@ -115,13 +114,12 @@
   min-width: 100px;
   font-family: 'Krub', sans-serif;
   font-weight: bold;
-
   color: white;
   background-color: #4d84f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
 .linkSignin:hover {
-  box-shadow: inset -2px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset -2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 @media screen and (max-width: 1363px) {
   .navHeader {
@@ -142,11 +140,7 @@
     display: block;
   }
 }
-/* @media screen and (max-width: 1249px){
-  .logoHeader{
-    width: 120px;
-  } 
-  } */
+
 @media screen and (max-width: 900px) {
   .header {
     padding-left: 10px;

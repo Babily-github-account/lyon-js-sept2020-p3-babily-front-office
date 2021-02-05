@@ -13,47 +13,46 @@ export default function ReservationParents() {
           </h1>
           <p className={styles.textHome}>
             Trouvez et reservez{' '}
-            <span className={styles.spanRapide} style={{ color: '#FA6870' }}>
+            <span className={styles.spanRapid} style={{ color: '#FA6870' }}>
               rapidement
             </span>{' '}
             <br />
             votre place en crèche !
           </p>
           <div className={styles.boxReservation}>
-            <Link href="/espaceparents">
+            <Link href="/parentsSection">
               <a>
                 <button className={styles.btnReservation} type="button">
                   Je réserve !
                 </button>
               </a>
             </Link>
-            <Link href="/espacepro">
+            <Link href="/companySection">
               <a className={styles.linkDispo}>Voir les disponibilités</a>
             </Link>
           </div>
         </div>
         <div className={styles.containerImgReservation}>
           <Image
-            className={styles.imgFilleCreche}
-            id="imgFilleCreche"
+            className={styles.imgGirlNursery}
             src="/images/fillette:home.jpg"
-            alt="Fille en crèche"
-            width={490}
-            height={450}
+            alt="Girl hugging herself"
+            width={640}
+            height={451}
           />
 
-          <div className={styles.imgFormeJaune}>
+          <div className={styles.imgYellowPalette}>
             <Image
               src="/images/forme2:home.png"
-              alt="Forme jaune"
+              alt="yellow palette"
               width={300}
               height={300}
             />
           </div>
-          <div className={styles.imgFormeRouge}>
+          <div className={styles.imgRedPalette}>
             <Image
               src="/images/forme3:home.png"
-              alt="Forme Rouge"
+              alt="red palette"
               width={100}
               height={100}
             />

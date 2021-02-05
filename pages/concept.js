@@ -1,21 +1,21 @@
 import Layout from '../components/Layout';
 import HeaderConcept from '../components/HeaderConcept';
-import SuiteConcept from '../components/SuiteConcept';
-import Espaces from '../components/Espaces';
-import GrandTitreConcept from '../components/GrandTitreConcept';
-import IlsParlentDeNous from '../components/IlsParlentDeNous';
+import ConceptPartTwo from '../components/ConceptPartTwo';
+import Spaces from '../components/Spaces';
+import IssuesPrecautionsSecurity from '../components/IssuesPrecautionsSecurity';
+import TalkAboutUs from '../components/TalkAboutUs';
 import Information from '../components/Information';
-import LesChiffresBabilyConcept from '../components/LesChiffresBabilyConcept';
+import BabilysStatistics from '../components/BabilysStatistics';
 
 export default function concept() {
   return (
     <Layout pageTitle="Inscription">
       <HeaderConcept />
-      <SuiteConcept />
-      <Espaces />
-      <GrandTitreConcept />
-      <LesChiffresBabilyConcept />
-      <IlsParlentDeNous />
+      <ConceptPartTwo />
+      <Spaces />
+      <IssuesPrecautionsSecurity />
+      <BabilysStatistics />
+      <TalkAboutUs />
       <Information />
     </Layout>
   );

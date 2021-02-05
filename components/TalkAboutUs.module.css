@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&family=Montserrat+Alternates:wght@700&display=swap');
+
+.containerTalk {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-image: url(/images/background4.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.titleTalk {
+  width: 92%;
+  margin-left: 8%;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #ffbb69;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #ffbb69;
+  text-decoration-thickness: 1.2rem;
+}
+
+.linkTalk {
+  text-decoration: underline;
+  font-family: 'Krub', sans-serif;
+  font-size: 17px;
+  margin: 5%;
+  cursor: pointer;
+}
+
+.imageWebSite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+}
+@media screen and (max-width: 600px) {
+  .titleTalk {
+    font-size: 20px;
+    text-decoration-thickness: 9px;
+  }
+  .imageWebSite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    max-width: 250px;
+  }
+}
+
+

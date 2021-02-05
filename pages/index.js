@@ -1,13 +1,11 @@
-// import Link from 'next/link';
-// import Image from 'next/image';
 import GoogleFonts from 'next-google-fonts';
 import Layout from '../components/Layout';
 import ReservationParents from '../components/ReservationParents';
 import ViewSource from '../components/view-source';
-import CestQuoiBabily from '../components/CestQuoiBabily';
-import Bandeau from '../components/Bandeau';
-import LeSaviezVous from '../components/LeSaviezVous';
-import Cards from '../components/cards';
+import WhatIsBabily from '../components/WhatIsBabily';
+import Bar from '../components/Bar';
+import DidYouKnow from '../components/DidYouKnow';
+import Cards from '../components/Cards';
 
 export default function Home() {
   const containerBg = {
@@ -26,9 +24,9 @@ export default function Home() {
       <GoogleFonts href="https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Montserrat+Alternates:ital,wght@0,800;1,600&display=swap" />
       <ReservationParents />
       <div style={containerBg}>
-        <CestQuoiBabily />
-        <LeSaviezVous />
-        <Bandeau />
+        <WhatIsBabily />
+        <DidYouKnow />
+        <Bar />
       </div>
       <div style={background2}>
         <Cards />

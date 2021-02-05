@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@600&family=Montserrat+Alternates:ital,wght@0,800;1,600;1,700&display=swap');
+
+.containerSpaces {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #faf5f0;
+}
+
+.spaceTitle {
+  width: 22%;
+  padding: 5% 1%;
+}
+
+
+.titleName {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+  margin: 2% auto;
+}
+
+.lorem {
+  font-family: 'Krub', sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  min-height: 80px;
+}
+
+.spaceButton {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.linkSpace {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Krub', sans-serif;
+  background-color: #3c84fb;
+  padding: 4%;
+  margin: 5% auto;
+  border-radius: 30px;
+  border: none;
+  width: 45%;
+  min-width: 100px; 
+  height: auto;
+  text-align: center;
+}
+.linkSpace:focus {
+  outline: none;
+}
+
+.linkSpace:hover {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 600px) {
+  .titleName {
+    font-size: 15px;
+  }
+  .lorem {
+    font-size: 10px;
+  }
+  .spaceTitle {
+    width: 70%;
+    padding: 5%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .spaceTitle {
+    width: 33%;
+    padding: 5%;
+  }
+  .linkSpace {
+    width: 67%;
+  }
+}
