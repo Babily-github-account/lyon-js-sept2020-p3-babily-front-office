@@ -1,0 +1,91 @@
+.modalSpace {
+  width: 100%;
+  min-width: 100%;
+  padding-top: 10%;
+  padding-bottom: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(/images/background2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.fille {
+  width: 100%;
+  height: 300px;
+  background-image: url(/images/fille.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+}
+
+.garcon {
+  width: 100%;
+  height: 300px;
+  background-image: url(/images/garcon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+}
+.card {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #faf5f0;
+  width: 200px;
+  min-width: 600px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 1px 1px 12px #ffbb69;
+}
+.paragrapheModal {
+  font-family: 'Krub', sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.creche {
+  padding-top: 20px;
+  font-size: 25px;
+  color: #3c84fb;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #3c84fb;
+  text-decoration-thickness: 15px;
+}
+
+.spaceButton {
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+.linkSpace {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Krub', sans-serif;
+  background-color: #3c84fb;
+  padding: 4%;
+  margin: 5% auto;
+  border-radius: 30px;
+  border: none;
+  width: 45%;
+  min-width: 100px;
+  height: auto;
+  text-align: center;
+}
+.linkSpace:focus {
+  outline: none;
+}
+
+.linkSpace:hover {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

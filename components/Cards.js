@@ -33,7 +33,7 @@ export default function Cards() {
           </h6>
         </div>
       </div>
-      <Link href="/espacetemoignage">
+      <Link href="/mentions">
         <p className={styles.linkCards}>Voir les témoignages</p>
       </Link>
     </div>

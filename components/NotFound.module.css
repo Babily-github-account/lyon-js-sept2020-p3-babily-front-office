@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&family=Montserrat+Alternates:wght@700&display=swap');
+
+.notFound {
+  width: 100%;
+  padding-top: 12%;
+  padding-bottom: 12%;
+}
+
+.titleNotFound {
+  color: #3c84fb;
+  font-family: 'Montserrat Alternates', sans-serif;
+  display: flex;
+  justify-content: center;
+
+  font-size: 60px;
+  text-decoration-line: overline;
+  text-decoration-style: solid;
+  text-decoration-color: #3c84fb;
+  text-decoration-thickness: 15px;
+}
+
+.car {
+  animation-duration: 20s;
+  animation-name: taxiDriving;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  position: absolute;
+  animation-direction: reverse;
+}
+
+@keyframes taxiDriving {
+  from {
+    margin-right: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}

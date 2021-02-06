@@ -1,10 +1,10 @@
 import Layout from '../components/Layout';
-import NotFound from '../components/NotFound';
+import ModalSpace from '../components/ModalSpace';
 
-export default function connexion() {
+export default function modal() {
   return (
     <Layout pageTitle="Inscription">
-      <NotFound />
+      <ModalSpace />
     </Layout>
   );
 }
