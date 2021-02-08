@@ -10,7 +10,7 @@
   flex-wrap: wrap;
 }
 
-.iconsContact, .iconsContactVisio {
+.iconsContact {
   position: relative;
   margin: 80px;
   width: 150px;
@@ -32,7 +32,6 @@
   margin-left: 120px;
   color: #fa6870;
   border-top: 10px solid #fa6870;
-  font-family: '';
   font-family: 'Montserrat Alternates', sans-serif;
   width: 260px;
   font-size: 30px;

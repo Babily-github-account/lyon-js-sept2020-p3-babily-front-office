@@ -79,14 +79,13 @@ const Contact = () => {
               ) : null}
             </div>
             <div
+              className={styles.iconsContact}
               style={{
-                backgroundColor: '#0575A5',
                 borderRadius: '200px',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
               }}
-              className={styles.iconsContact}
               onMouseEnter={() => handleTextMouse('Visio')}
               onMouseLeave={() => handleTextMouse('')}
               onClick={() => {
@@ -95,10 +94,10 @@ const Contact = () => {
               }}
             >
               <Image
-                src="/images/facetime.png"
-                alt="logo facetime"
-                width={100}
-                height={100}
+                src="/images/visio.png"
+                alt="logo video camera"
+                width={140}
+                height={140}
               />
               {titleSujet === 'Visio' ? (
                 <p className={styles.pContact}>{titleSujet}</p>
