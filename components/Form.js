@@ -122,7 +122,9 @@ const Form = (props) => {
     <div className={styles.formContact}>
       <h1 className={styles.formTitle}>Planifiez votre rendez-vous :</h1>
       <InlineWidget
-        url={`https://calendly.com/testag/${sujetAPICalendly(sujetForm.sujet)}`}
+        url={`https://calendly.com/babily-rdv/${sujetAPICalendly(
+          sujetForm.sujet
+        )}`}
         styles={{
           height: '1000px',
           width: '100%',
