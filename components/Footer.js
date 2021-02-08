@@ -10,19 +10,21 @@ export default function Footer() {
         <h5 className={styles.titleFooter}>Babily.fr</h5>
         <p className={styles.followFooter}>Suivez-nous !</p>
         <div className={styles.iconsSocial}>
-          <RiFacebookBoxLine />
-          <FaTwitterSquare />
-          <RiLinkedinBoxLine />
+          <Link href="https://www.facebook.com/Babily/">
+            <RiFacebookBoxLine />
+          </Link>
+          <Link href="https://twitter.com/babily">
+            <FaTwitterSquare />
+          </Link>
+          <Link href="https://www.linkedin.com/company/babily/?originalSubdomain=fr">
+            <RiLinkedinBoxLine />
+          </Link>
         </div>
       </div>
 
       <div className={styles.footerNav}>
-        <Link href="/decouvrir">
+        <Link href="/concept">
           <a>Découvrir</a>
-        </Link>
-
-        <Link href="/votrespace">
-          <a>Votre espace</a>
         </Link>
 
         <Link href="/temoignages">
