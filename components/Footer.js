@@ -1,9 +1,20 @@
+import React from 'react';
 import { RiFacebookBoxLine, RiLinkedinBoxLine } from 'react-icons/ri';
 import { FaTwitterSquare } from 'react-icons/fa';
 import Link from 'next/link';
 import styles from './Footer.module.css';
 
 export default function Footer() {
+  const CustomComponentFacebook = React.forwardRef(function CustomComponent() {
+    return <RiFacebookBoxLine />;
+  });
+  const CustomComponentTwitter = React.forwardRef(function CustomComponent() {
+    return <FaTwitterSquare />;
+  });
+  const CustomComponentLinkedIn = React.forwardRef(function CustomComponent() {
+    return <RiLinkedinBoxLine />;
+  });
+
   return (
     <div className={styles.containerFooter}>
       <div className={styles.containerReseaux}>
@@ -11,13 +22,13 @@ export default function Footer() {
         <p className={styles.followFooter}>Suivez-nous !</p>
         <div className={styles.iconsSocial}>
           <Link href="https://www.facebook.com/Babily/">
-            <RiFacebookBoxLine />
+            <CustomComponentFacebook />
           </Link>
           <Link href="https://twitter.com/babily">
-            <FaTwitterSquare />
+            <CustomComponentTwitter />
           </Link>
           <Link href="https://www.linkedin.com/company/babily/?originalSubdomain=fr">
-            <RiLinkedinBoxLine />
+            <CustomComponentLinkedIn />
           </Link>
         </div>
       </div>
