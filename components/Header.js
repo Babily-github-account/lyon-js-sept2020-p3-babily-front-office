@@ -20,7 +20,7 @@ export default function Header() {
               />
             </a>
           </Link>
-          <Link href="/espacepro">
+          <Link href="/modal">
             <a className={styles.linkPro}>Vous êtes un professionnel ?</a>
           </Link>
         </div>

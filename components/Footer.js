@@ -1,28 +1,41 @@
+import React from 'react';
 import { RiFacebookBoxLine, RiLinkedinBoxLine } from 'react-icons/ri';
 import { FaTwitterSquare } from 'react-icons/fa';
 import Link from 'next/link';
 import styles from './Footer.module.css';
 
 export default function Footer() {
+  const CustomComponentFacebook = React.forwardRef(function CustomComponent() {
+    return <RiFacebookBoxLine />;
+  });
+  const CustomComponentTwitter = React.forwardRef(function CustomComponent() {
+    return <FaTwitterSquare />;
+  });
+  const CustomComponentLinkedIn = React.forwardRef(function CustomComponent() {
+    return <RiLinkedinBoxLine />;
+  });
+
   return (
     <div className={styles.containerFooter}>
       <div className={styles.containerReseaux}>
         <h5 className={styles.titleFooter}>Babily.fr</h5>
         <p className={styles.followFooter}>Suivez-nous !</p>
         <div className={styles.iconsSocial}>
-          <RiFacebookBoxLine />
-          <FaTwitterSquare />
-          <RiLinkedinBoxLine />
+          <Link href="https://www.facebook.com/Babily/">
+            <CustomComponentFacebook />
+          </Link>
+          <Link href="https://twitter.com/babily">
+            <CustomComponentTwitter />
+          </Link>
+          <Link href="https://www.linkedin.com/company/babily/?originalSubdomain=fr">
+            <CustomComponentLinkedIn />
+          </Link>
         </div>
       </div>
 
       <div className={styles.footerNav}>
-        <Link href="/decouvrir">
+        <Link href="/concept">
           <a>Découvrir</a>
-        </Link>
-
-        <Link href="/votrespace">
-          <a>Votre espace</a>
         </Link>
 
         <Link href="/temoignages">

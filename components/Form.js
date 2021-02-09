@@ -50,10 +50,10 @@ const Form = (props) => {
       <form className={styles.formContact} onSubmit={handleSubmit(onSubmit)}>
         <h1 className={styles.formTitle}>Envoyez un mail à Babily</h1>
         <div style={{ display: 'flex', flexDirection: 'row' }}>
-          <div className={styles.formLeftColumn}>
+          <div className={styles.formColumn}>
             <input
-              className={styles.leftInput}
-              placeholder="nom"
+              className={styles.upperInput}
+              placeholder="Nom"
               name="name"
               ref={register}
               required
@@ -62,7 +62,7 @@ const Form = (props) => {
               <span className={styles.alertError}>Le nom est obligatoire</span>
             )}
             <input
-              className={styles.leftInput}
+              className={styles.upperInput}
               placeholder="Adresse email"
               name="email"
               ref={register({
@@ -76,7 +76,7 @@ const Form = (props) => {
             {errors.email && (
               <span className={styles.alertError}>{errors.email.message}</span>
             )}
-            <select className={styles.leftInput} name="gender" ref={register}>
+            <select className={styles.upperInput} name="gender" ref={register}>
               <option value="creche">Je suis une Crèche</option>
               <option value="parent">Je suis un Parent</option>
               <option value="entreprise">Je suis une Entreprise</option>
@@ -87,10 +87,8 @@ const Form = (props) => {
               size="normal"
               onChange={executeCaptcha}
             />
-          </div>
-          <div className={styles.formRightColumn}>
             <textarea
-              className={styles.rightInput}
+              className={styles.downInput}
               name="message"
               placeholder="Ecrivez votre message ici"
               ref={register}
@@ -124,7 +122,9 @@ const Form = (props) => {
     <div className={styles.formContact}>
       <h1 className={styles.formTitle}>Planifiez votre rendez-vous :</h1>
       <InlineWidget
-        url={`https://calendly.com/testag/${sujetAPICalendly(sujetForm.sujet)}`}
+        url={`https://calendly.com/babily-rdv/${sujetAPICalendly(
+          sujetForm.sujet
+        )}`}
         styles={{
           height: '1000px',
           width: '100%',

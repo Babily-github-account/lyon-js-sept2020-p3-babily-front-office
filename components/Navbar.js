@@ -44,11 +44,11 @@ function Navbar() {
           <span />
           <span />
           <ul className={styles.menu} ref={wrapperMenu}>
-            <li>
-              <Link href="/espacepro">
+            {/* <li>
+              <Link href="/companySection">
                 <a className={styles.linkPro}>Vous êtes un professionnel ?</a>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/connexion">
                 <a className={styles.linkLogin}>
