@@ -266,26 +266,26 @@ export default function Simulator() {
                     Cela vous coûterait
                   </h5>
                   <p className={styles.criteriaTitle}>
-                    <span className={styles.resultEuroHour}>
-                      {(simulatorResult / 10).toFixed(2)}{' '}
+                    <span className={styles.resultEuroWeek}>
+                      {simulatorResult.toFixed(2)}{' '}
                     </span>
                     <FontAwesomeIcon
                       icon={faEuroSign}
                       className={styles.icones}
                     />{' '}
-                    /heure
+                    /semaine
                   </p>
-                  <div className={styles.dayResult}>
+                  <div className={styles.monthResult}>
                     <p className={styles.criteriaTitle}>
                       <span className={styles.criteriaTitleResult}>soit </span>
-                      <span className={styles.dayEuroResult}>
-                        {simulatorResult.toFixed(2)}
+                      <span className={styles.monthEuroResult}>
+                        {(simulatorResult * 4).toFixed(2)}
                       </span>
                       <FontAwesomeIcon
                         icon={faEuroSign}
                         className={styles.iconsEuro2}
                       />
-                      /jour
+                      /mois
                     </p>
                   </div>
                 </div>

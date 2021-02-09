@@ -303,7 +303,7 @@ margin:0
   margin: 2% auto;
   padding-bottom: 16%;
 }
-.resultEuroHour {
+.resultEuroWeek {
   font-family:'Krub', sans-serif;
   font-size: 3.2rem;
   font-weight: bold;
@@ -311,10 +311,10 @@ margin:0
   color: #FFBB69;
   margin: 2% auto;
 }
-.dayResult {
+.monthResult {
   margin: 15% auto;
 }
-.dayEuroResult {
+.monthEuroResult {
   font-family:'Krub', sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
