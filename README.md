@@ -30,17 +30,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
-## Calendly
-​
-Email : ga.wildcode@gmail.com
-Mot de passe : gil3004uqu
-​
-## Code Source de l'appli
-​
-Lien : https://github.com/Babily-github-account/lyon-js-sept2020-p3-babily-front-office
-​
-Username : Babily-github-account
-Mot de passe : gil3004uqu
 ​
 ### Déploiement de l'application sur un serveur privé
 ​
